@@ -73,7 +73,7 @@
     <ul class="slides">
       <li>
         <img src="img/slider/3.png"> <!-- random image -->
-        <div class="caption right-align">
+        <div class="caption right-align"  >
           <h3> Web Development</h3>
           <p class="light grey-text text-lighten-3">Programmer ditempat kami memiliki segudang pengalaman yang cocok
             untuk pembuatan website</p>
@@ -171,37 +171,23 @@
 
   <!-- akhir Services -->
 
+  <!-- portfolio-->
+    <section class="portfolio scrollspy" id="portfolio">
 
-  <!-- portfolio -->
-  <section class="portfolio scrollspy" id="portfolio">
-    <div class="container">
+<div class="container">
       <h3 class=" light center grey-text text-darken-3"> Portfolio </h3>
 
-      <div class="row">
-        <div class="col m3 s12">
-          <img src="  img/portfolio/aa.png" class=" responsive-img materialboxed">
-
-        </div>
-        <div class="col m3 s12">
-          <img src="  img/portfolio/r1.png" class=" responsive-img materialboxed">
-
-        </div>
-        <div class="col m3 s12">
-          <img src="  img/portfolio/ux.png" class=" responsive-img materialboxed">
-
-        </div>
-        <div class="col m3 s12">
-          <img src="  img/portfolio/hospital.png" class=" responsive-img materialboxed">
-
-        </div>
-      </div>
-
- 
-
-    </div>
-  </section>
-  <!-- akhir portfolio -->
-
+  <div class="carousel">
+    <a class="carousel-item" href="#one!"><img src="img/portfolio/hospital.png" class=" responsive-img materialboxed"></a>
+    <a class="carousel-item" href="#two!"><img src="img/portfolio/ux.png" class=" responsive-img materialboxed"></a>
+    <a class="carousel-item" href="#three!"><img src="img/portfolio/r1.png" class=" responsive-img materialboxed"> </a>
+    <a class="carousel-item" href="#four!"><img src="img/portfolio/aa.png" class=" responsive-img materialboxed"></a>
+  </div>
+  </div>
+</section>
+      
+  <!-- akhir-->
+  
 
 
   <!-- Client -->
@@ -228,6 +214,7 @@
   </div>
 
   <!-- akhir Client -->
+
 
 
 
@@ -353,7 +340,7 @@
 
     const slider = document.querySelectorAll('.slider');
     M.Slider.init(slider, {
-      indicators: false,
+      indicators: true,
       height: 500,
       transition: 600,
       interval: 3000
@@ -371,6 +358,12 @@
     M.ScrollSpy.init(scroll, {
       scrollOffset: 50
     });
+   const carousel = document.querySelectorAll('.carousel');
+   M.Carousel.init(carousel, {
+    indicators:true,
+    transition: 600,
+    interval :3000
+   });
   </script>
 
   <script src="script.js">  </script>
