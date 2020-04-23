@@ -15,7 +15,7 @@
 }
 
 .clients img {
-	max-width: 130px;
+	/*max-width: 130px*/;
 	filter: drop-shadow(1px, 1px, 1px rgba(0, 0, 0, 0.8));
 }
 section,
