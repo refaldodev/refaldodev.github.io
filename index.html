@@ -219,9 +219,10 @@
     
 
 
-    <a class="carousel-item" href="#two!"><img src="img/portfolio/ux.png" class=" responsive-img materialboxed"></a>
+    <a class="carousel-item" href="#two!"><img src="img/portfolio/ux.png" class=" responsive-img materialboxed" ></a>
     <a class="carousel-item" href="#three!"><img src="img/portfolio/r1.png" class=" responsive-img materialboxed"> </a>
     <a class="carousel-item" href="#four!"><img src="img/portfolio/aa.png" class=" responsive-img materialboxed"></a>
+    
   </div>
         </div>
       </div>
@@ -375,11 +376,13 @@
     });
    const carousel = document.querySelectorAll('.carousel');
    M.Carousel.init(carousel, {
-    indicators:false,
+    indicators:true,
+    fullWidth : false,
           transition: 600,
 
     interval :3000
    });
+
   </script>
 
   <script src="script.js">  </script>
