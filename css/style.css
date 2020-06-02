@@ -100,14 +100,22 @@ section .card-panel.computer:hover{
 
  .panel .update{
  	font-size: 22px;
- 	color: black;
- 	text-shadow: 0px 2px 2px black;
+ 	text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+	margin-bottom: 30px;
  }
  .tabel {
  	height: 	300px;
  	overflow: 	scroll;
- 	 	margin-bottom: 50px;
-	
+ 	margin-bottom: 50px;
+
+ }
+ .tabel .container .row table{
+ 	font-size: 8px;
+ }
+
+ .tabel .container .row .col .card-panel.card-table{
+ 	height: 100%;
+
  }
  .container.peta{
  	height: 	100px;
@@ -229,14 +237,17 @@ section .card-panel.computer:hover{
 
  .panel .update{
  	font-size: 32px;
- 	color: black;
- 	text-shadow: 0px 2px 2px black;
+ 	
+	text-shadow: 1px 1px 3px rgba(0, 0, 0, 1);
  	margin-top: 10px;
  	margin-bottom: 20px;
  }
  .panel .container .row .card-panel.info img{
  	height: 	50px;
  	width: 50px;
+ }
+ .tabel .container .row table{
+ 	font-size: 20px;
  }
  .tabel {
  	height: 	500px;
@@ -251,9 +262,7 @@ section .card-panel.computer:hover{
  	height: 	600px;
 
  }
- .container.peta{
- 	
- }
+ 
  #mapid {
  	height: 	500px;
  }
