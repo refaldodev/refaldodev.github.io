@@ -1,10 +1,30 @@
 
 body{
 	background-color: white;
+	font-family: 'Roboto', sans-serif;
 }
 .slider h3,
 .slider h5,	 .clients h3 {
 	text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+}
+
+.corona{
+	height: 50px;
+}
+.corona img{
+	height: 20px;
+	width: 25px;
+}
+.corona a {
+	text-decoration: none;
+	color: black;
+}
+.corona h2{
+	font-size: 13px;
+	text-align: right;
+	margin:  	auto;
+	padding-top: 10px;
+	margin-right: 10px;
 }
 
 .parallax-container {
@@ -72,12 +92,59 @@ section .card-panel.computer:hover{
 		
  }
 
+ .panel .container .row .card-panel.info {
+ 	height: 	200px;
+ 	
+
+ }
+
+ .panel .update{
+ 	font-size: 22px;
+ 	color: black;
+ 	text-shadow: 0px 2px 2px black;
+ }
+ .tabel {
+ 	height: 	300px;
+ 	overflow: 	scroll;
+ 	 	margin-bottom: 50px;
+	
+ }
+ .container.peta{
+ 	height: 	100px;
+ }
+
+ #mapid {
+ 	height: 	300px;
+ }
+
+ .petaP{
+ 	height: 	400px;
+ }
 /*dekstop*/
 @media (min-width: 992px) {
 	body{
 	background-color: white;
 }
-.navbar-fixed .nav .right a:hover{
+
+.corona{
+	height: 60px;
+}
+.corona img{
+	height: 30px;
+	width: 30px;
+}
+.corona a {
+	text-decoration: none;
+	color: black;
+}
+.corona h2{
+	font-size: 20px;
+	text-align: right;
+	margin:  	auto;
+	padding-top: 10px;
+	margin-right: 220px;
+}
+ .nav .right a:hover{
 	background-color: blue;
 }
 .slider h3,
@@ -151,7 +218,48 @@ section .card-panel.computer:hover{
 	transition: 1s;
 		
  }
+ .panel .container .row .card-panel:hover{
+ 	background-color: red;
+ }
+ .panel .container .row .card-panel.info {
+ 	height: 	250px;
+ 	
 
- 
+ }
+
+ .panel .update{
+ 	font-size: 32px;
+ 	color: black;
+ 	text-shadow: 0px 2px 2px black;
+ 	margin-top: 10px;
+ 	margin-bottom: 20px;
+ }
+ .panel .container .row .card-panel.info img{
+ 	height: 	50px;
+ 	width: 50px;
+ }
+ .tabel {
+ 	height: 	500px;
+ 	overflow: 	auto;
+ 	margin-bottom: 50px;
+
+ }
+ .tabel .container .row .col .card-panel.card-table{
+ 	height: 100%;
+ }
+ .petaP{
+ 	height: 	600px;
+
+ }
+ .container.peta{
+ 	
+ }
+ #mapid {
+ 	height: 	500px;
+ }
+ section .container .centered .grey .atasbro{
+           
+        
+ }
 }
 
