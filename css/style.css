@@ -10,13 +10,13 @@ body{
 .jumbo  {
  	
 
-            height: 500px;
+            height: 300px;
 
 
 
  }
  .jumbo img{
- 	            height: 500px;
+ 	            height: 200px;
  	            width: 100%;
 
 
@@ -25,16 +25,18 @@ body{
  	background-repeat: no-repeat;
  }
  .jumbo .text-jumbo .judul{
-	font-size: 40px;
+	font-size: 12px;
 	
 	text-align: justify;
 }
 .jumbo .text-jumbo p {
-	font-size: 12px;
+	font-size: 8px;
 
 }
 .jumbo img{
-	width: 400px;
+width: 100%;
+height: 220px;
+padding-top: 20px;
 }
 .corona{
 	height: 50px;
@@ -161,6 +163,9 @@ section .card-panel.computer:hover{
 	body{
 	background-color: white;
 }
+.jumbo {
+	height: 500px;
+}
 .jumbo .text-jumbo .judul{
 	font-size: 40px;
 	margin-top: 100px;
@@ -171,6 +176,7 @@ section .card-panel.computer:hover{
 }
 .jumbo img{
 	width: 100%;
+	height: 400px;
 }
 .corona{
 	height: 60px;
