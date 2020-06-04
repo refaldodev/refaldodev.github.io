@@ -11,31 +11,6 @@ function scrollAppear() {
 window.addEventListener('scroll', scrollAppear);
 
 
-
-function scrollImage() {
-    var gambar = document.querySelector('.gambar');
-    var gambarPosition = gambar.getBoundingClientRect().top;
-    var screenGambar = window.innerHeight;
-
-
-
-    if (gambarPosition < 3000) {
-        gambar.classList.add('gambar-view');
-    }
-}
-window.addEventListener('scroll', scrollImage);
-
-function scrollText() {
-    var textJumbo = document.querySelector('.text-jumbo');
-    var textPosition = textJumbo.getBoundingClientRect().top;
-    var textScreen = window.innerHeight;
-
-    if (textPosition < 3000) {
-        textJumbo.classList.add('text-view');
-    }
-}
-window.addEventListener('scroll', scrollText);
-
 function scrollCard() {
     var cardPanel = document.querySelector('.card-corona');
     var cardPosition = cardPanel.getBoundingClientRect().top;

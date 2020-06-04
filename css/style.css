@@ -142,7 +142,7 @@ section .card-panel.games:hover {
 .card-corona {
 	opacity: 0;
 	transform: translateY(20px);
-	transition: 0.8s all ease-in-out;
+	transition: 0.9s all ease-in-out;
 
 }
 
@@ -232,7 +232,7 @@ section .card-panel.games:hover {
 
 	opacity: 0;
 	transform: translateY(20px);
-	transition: 0.5s all ease-in-out;
+	transition: 0.9s all ease-in-out;
 }
 
 .tabel-appear {
@@ -285,7 +285,7 @@ section .card-panel.games:hover {
 	.text-jumbo {
 		opacity: 0;
 		transform: translateX(20px);
-		transition: 0.8s all ease-in-out;
+		transition: 0.9s all ease-in-out;
 
 	}
 
@@ -297,7 +297,7 @@ section .card-panel.games:hover {
 	.gambar {
 		opacity: 0;
 		transform: translateX(100px);
-		transition: 0.7s all ease-in-out;
+		transition: 0.9s all ease-in-out;
 
 
 	}
@@ -426,7 +426,7 @@ section .card-panel.games:hover {
 	.card-corona {
 		opacity: 0;
 		transform: translateY(20px);
-		transition: 0.8s all ease-in-out;
+		transition: 0.9s all ease-in-out;
 
 	}
 
@@ -475,7 +475,7 @@ section .card-panel.games:hover {
 
 		opacity: 0;
 		transform: translateY(100px);
-		transition: 0.8s all ease-in-out;
+		transition: 0.9s all ease-in-out;
 	}
 
 	.tabel-appear {
