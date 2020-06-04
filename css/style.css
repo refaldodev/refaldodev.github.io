@@ -1,58 +1,94 @@
-
-body{
+body {
 	background-color: white;
 	font-family: 'Roboto', sans-serif;
 }
+
 .slider h3,
-.slider h5,	 .clients h3 {
+.slider h5,
+.clients h3 {
 	text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
 }
-.jumbo  {
- 	
 
-            height: 300px;
+.jumbo {
 
 
-
- }
- .jumbo img{
- 	            height: 200px;
- 	            width: 100%;
+	height: 300px;
 
 
- 	background-size: cover;
- 	
- 	background-repeat: no-repeat;
- }
- .jumbo .text-jumbo .judul{
+
+}
+
+.text-jumbo {
+	opacity: 0;
+	transform: translateX(100px);
+	transition: transition: 0.8s all ease-in-out;
+
+}
+
+.text-view {
+	opacity: 1;
+	transform: translateX(0px);
+}
+
+.gambar {
+	opacity: 0;
+	transform: translateX(100px);
+	transition: 0.8s all ease-in-out;
+
+
+}
+
+.gambar-view {
+
+	opacity: 1;
+	transform: translateX(0px);
+}
+
+.jumbo img {
+	height: 200px;
+	width: 100%;
+
+
+	background-size: cover;
+
+	background-repeat: no-repeat;
+}
+
+.jumbo .text-jumbo .judul {
 	font-size: 12px;
-	
+
 	text-align: justify;
 }
+
 .jumbo .text-jumbo p {
 	font-size: 8px;
 
 }
-.jumbo img{
-width: 100%;
-height: 220px;
-padding-top: 20px;
+
+.jumbo img {
+	width: 100%;
+	height: 220px;
+	padding-top: 20px;
 }
-.corona{
+
+.corona {
 	height: 50px;
 }
-.corona img{
+
+.corona img {
 	height: 20px;
 	width: 25px;
 }
+
 .corona a {
 	text-decoration: none;
 	color: black;
 }
-.corona h2{
+
+.corona h2 {
 	font-size: 13px;
 	text-align: right;
-	margin:  	auto;
+	margin: auto;
 	padding-top: 10px;
 	margin-right: 10px;
 }
@@ -67,9 +103,11 @@ padding-top: 20px;
 }
 
 .clients img {
-	/*max-width: 130px*/;
+	/*max-width: 130px*/
+	;
 	filter: drop-shadow(1px, 1px, 1px rgba(0, 0, 0, 0.9));
 }
+
 section,
 footer {
 	padding: 20px 0;
@@ -77,7 +115,7 @@ footer {
 
 footer {
 	height: 300px;
-	
+
 }
 
 .striped {
@@ -90,232 +128,462 @@ thead {
 	padding-top: 300px;
 }
 
-.teks p{
-	text-align: 	justify;	
-	margin: 0;
-	font-size: 	15px;
-
-}
-.p1{
-	font-size: 	15px;
-	font-weight: 	bold;	
-	
-}
-section .card-panel.computer:hover{
-
-		background-color: #17A2B8;
-	transition: 1s;
-
-	color:white;
- }
- section .card-panel.android:hover{
-	color:white;
-		background-color: #28A745;
-			transition: 1s;
-
-
- }
- section .card-panel.games:hover{
-	color:white;
-		background-color: #1a237e;
-	transition: 1s;
-		
- }
-
- .panel .container .row .card-panel.info {
- 	height: 	200px;
- 	
-
- }
-
- .panel .update{
- 	font-size: 22px;
- 	text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
-	margin-bottom: 30px;
- }
- .tabel {
- 	height: 	300px;
- 	overflow: 	scroll;
- 	margin-bottom: 50px;
-
- }
- .tabel .container .row table{
- 	font-size: 8px;
- }
-
- .tabel .container .row .col .card-panel.card-table{
- 	height: 100%;
-
- }
- .container.peta{
- 	height: 	100px;
- }
-
- #mapid {
- 	height: 	300px;
- }
-
- .petaP{
- 	height: 	400px;
- }
-/*dekstop*/
-@media (min-width: 992px) {
-	body{
-	background-color: white;
-}
-.jumbo {
-	height: 500px;
-}
-.jumbo .text-jumbo .judul{
-	font-size: 40px;
-	margin-top: 100px;
+.teks p {
 	text-align: justify;
-}
-.jumbo .text-jumbo p {
+	margin: 0;
 	font-size: 15px;
+
 }
-.jumbo img{
-	width: 100%;
+
+.p1 {
+	font-size: 15px;
+	font-weight: bold;
+
+}
+
+section .card-panel.computer:hover {
+
+	background-color: #17A2B8;
+	transition: 1s;
+
+	color: white;
+}
+
+section .card-panel.android:hover {
+	color: white;
+	background-color: #28A745;
+	transition: 1s;
+
+
+}
+
+section .card-panel.games:hover {
+	color: white;
+	background-color: #1a237e;
+	transition: 1s;
+
+}
+
+.card-corona {
+	opacity: 0;
+	transform: translateY(20px);
+	transition: transition: 0.8s all ease-in-out;
+
+}
+
+.card-panel-view {
+	opacity: 1;
+	transform: translateY(0px);
+}
+
+.panel .card-panel.info p {
+	margin-top: 2px;
+	margin-bottom: -1px;
+
+}
+
+.panel .card-panel .text {
+
+	display: flex;
+	justify-content: space-around;
+	/* margin-left: 5px; */
+}
+
+.panel .container .row .card-panel.info {
+	height: 200px;
+
+
+}
+
+.panel .update {
+	font-size: 22px;
+	text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+	margin-bottom: 30px;
+}
+
+/* statistik */
+#container {
 	height: 400px;
 }
-.corona{
-	height: 60px;
-}
-.corona img{
-	height: 30px;
-	width: 30px;
-}
-.corona a {
-	text-decoration: none;
-	color: black;
-}
-.corona h2{
-	font-size: 20px;
-	text-align: right;
-	margin:  	auto;
-	padding-top: 10px;
-	margin-right: 220px;
-}
- .nav .right a:hover{
-	background-color: blue;
-}
-.slider h3,
-.slider h5,	 .clients h3 {
-	text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+
+.highcharts-figure,
+.highcharts-data-table table {
+	min-width: 310px;
+	max-width: 800px;
+	margin: 1em auto;
 }
 
-.parallax-container {
-	height: 20%;
+.highcharts-data-table table {
+	font-family: Verdana, sans-serif;
+	border-collapse: collapse;
+	border: 1px solid #EBEBEB;
+	margin: 10px auto;
+	text-align: center;
+	width: 100%;
+	max-width: 500px;
 }
 
-.parallax img {
-	filter: grayscale(1);
-	opacity: 0.9 !important;
+.highcharts-data-table caption {
+	padding: 1em 0;
+	font-size: 1.2em;
+	color: #555;
 }
 
-.clients img {
-	/*max-width: 130px*/;
-	filter: drop-shadow(1px, 1px, 1px rgba(0, 0, 0, 0.9));
+.highcharts-data-table th {
+	font-weight: 600;
+	padding: 0.5em;
+}
+
+.highcharts-data-table td,
+.highcharts-data-table th,
+.highcharts-data-table caption {
+	padding: 0.5em;
+}
+
+.highcharts-data-table thead tr,
+.highcharts-data-table tr:nth-child(even) {
+	background: #f8f8f8;
+}
+
+.highcharts-data-table tr:hover {
+	background: #f1f7ff;
 }
 
 
-section,
-footer {
-	padding: 20px 0;
+.tabel {
+	height: 300px;
+	overflow: scroll;
+	margin-bottom: 50px;
+
+	opacity: 0;
+	transform: translateY(20px);
+	transition: 0.5s all ease-in-out;
 }
 
-footer {
+.tabel-appear {
+	opacity: 1;
+	transform: translateY(0px);
+
+}
+
+.tabel .container .row table {
+	font-size: 8px;
+}
+
+.tabel .container .row .col .card-panel.card-table {
+	height: 100%;
+
+}
+
+.container.peta {
+	height: 100px;
+}
+
+#mapid {
 	height: 300px;
 }
 
-.striped {
-	width: 100%;
-	border: 1px solid black;
-
+.petaP {
+	height: 400px;
 }
 
-thead {
-	padding-top: 300px;
-}
+/*dekstop*/
+@media (min-width: 992px) {
+	body {
+		background-color: white;
+	}
 
-.teks p{
-	text-align: 	justify;	
-	margin: 0;
-	font-size: 	15px;
+	.jumbo {
+		height: 500px;
+	}
 
-}
-.p1{
-	font-size: 	15px;
-	font-weight: 	bold;	
-	
-}
+	.jumbo .text-jumbo .judul {
+		font-size: 40px;
+		margin-top: 100px;
+		text-align: justify;
+	}
 
-section .card-panel.computer:hover{
+	.jumbo .text-jumbo p {
+		font-size: 15px;
+	}
+
+	.text-jumbo {
+		opacity: 0;
+		transform: translateX(20px);
+		transition: transition: 0.8s all ease-in-out;
+
+	}
+
+	.text-view {
+		opacity: 1;
+		transform: translateX(0px);
+	}
+
+	.gambar {
+		opacity: 0;
+		transform: translateX(100px);
+		transition: 0.7s all ease-in-out;
+
+
+	}
+
+	.gambar-view {
+
+		opacity: 1;
+		transform: translateX(0px);
+	}
+
+
+	.jumbo img {
+		width: 100%;
+		height: 400px;
+	}
+
+	.corona {
+		height: 60px;
+	}
+
+	.corona img {
+		height: 30px;
+		width: 30px;
+	}
+
+	.corona a {
+		text-decoration: none;
+		color: black;
+	}
+
+	.corona h2 {
+		font-size: 20px;
+		text-align: right;
+		margin: auto;
+		padding-top: 10px;
+		margin-right: 220px;
+	}
+
+	.nav .right a:hover {
+		background-color: blue;
+	}
+
+	.slider h3,
+	.slider h5,
+	.clients h3 {
+		text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+	}
+
+	.parallax-container {
+		height: 20%;
+	}
+
+	.parallax img {
+		filter: grayscale(1);
+		opacity: 0.9 !important;
+	}
+
+	.clients img {
+		/*max-width: 130px*/
+
+		filter: drop-shadow(1px, 1px, 1px rgba(0, 0, 0, 0.9));
+	}
+
+
+	section,
+	footer {
+		padding: 20px 0;
+	}
+
+	footer {
+		height: 300px;
+	}
+
+	.striped {
+		width: 100%;
+		border: 1px solid black;
+
+	}
+
+	thead {
+		padding-top: 300px;
+	}
+
+	.teks p {
+		text-align: justify;
+		margin: 0;
+		font-size: 15px;
+
+	}
+
+
+	.p1 {
+		font-size: 15px;
+		font-weight: bold;
+
+	}
+
+	.panel .card-panel.info p {
+		margin-top: 0px;
+		margin-bottom: -1px;
+	}
+
+	section .card-panel.computer:hover {
 
 		background-color: #17A2B8;
-	transition: 1s;
+		transition: 1s;
 
-	color:white;
- }
- section .card-panel.android:hover{
-	color:white;
+		color: white;
+	}
+
+	section .card-panel.android:hover {
+		color: white;
 		background-color: #28A745;
-			transition: 1s;
+		transition: 1s;
 
 
- }
- section .card-panel.games:hover{
-	color:white;
+	}
+
+	section .card-panel.games:hover {
+		color: white;
 		background-color: #1a237e;
-	transition: 1s;
-		
- }
- .panel .container .row .card-panel:hover{
- 	background-color: red;
- }
- .panel .container .row .card-panel.info {
- 	height: 	250px;
- 	
+		transition: 1s;
 
- }
+	}
 
- .panel .update{
- 	font-size: 32px;
- 	
-	text-shadow: 1px 1px 3px rgba(0, 0, 0, 1);
- 	margin-top: 10px;
- 	margin-bottom: 20px;
- }
- .panel .container .row .card-panel.info img{
- 	height: 	50px;
- 	width: 50px;
- }
- .tabel .container .row table{
- 	font-size: 20px;
- }
- .tabel {
- 	height: 	500px;
- 	overflow: 	auto;
- 	margin-bottom: 50px;
+	.card-corona {
+		opacity: 0;
+		transform: translateY(20px);
+		transition: transition: 0.8s all ease-in-out;
 
- }
- .tabel .container .row .col .card-panel.card-table{
- 	height: 100%;
- }
- .petaP{
- 	height: 	600px;
+	}
 
- }
- 
- #mapid {
- 	height: 	500px;
- }
- section .container .centered .grey .atasbro{
-           
-        
- }
+	.card-panel-view {
+		opacity: 1;
+		transform: translateY(0x);
+	}
 
- /*jumbo*/
+
+	.panel .card-panel .text {
+
+		display: inline-block;
+		justify-content: space-around;
+		/* margin-left: 5px; */
+	}
+
+	.panel .container .row .card-panel:hover {
+		background-color: red;
+	}
+
+	.panel .container .row .card-panel.info {
+		height: 250px;
+
+
+	}
+
+	.panel .card-panel.medium .panel .update {
+		font-size: 32px;
+
+		text-shadow: 1px 1px 3px rgba(0, 0, 0, 1);
+		margin-top: 10px;
+		margin-bottom: 20px;
+	}
+
+
+	.panel .container .row .card-panel.info img {
+		height: 50px;
+		width: 50px;
+	}
+
+
+	.tabel {
+		height: 500px;
+		overflow: scroll;
+		margin-bottom: 50px;
+
+		opacity: 0;
+		transform: translateY(100px);
+		transition: 0.8s all ease-in-out;
+	}
+
+	.tabel-appear {
+		opacity: 1;
+		transform: translateY(0px);
+
+	}
+
+
+	.tabel .container .row table {
+		font-size: 20px;
+	}
+
+
+	.tabel .container .row .col .card-panel.card-table {
+		height: 100%;
+	}
+
+	.petaP {
+		height: 600px;
+
+	}
+
+	#mapid {
+		height: 500px;
+	}
+
+	section .container .centered .grey .atasbro {}
+
+	/*jumbo*/
+
+	/* statistik */
+
+	#container {
+		height: 500px;
+		width: 100%;
+		margin-top: 20px;
+		margin-bottom: 50px;
+	}
+
+	.highcharts-figure,
+	.highcharts-data-table table {
+		min-width: 310px;
+		max-width: 800px;
+		margin: 1em auto;
+	}
+
+	.highcharts-data-table table {
+		font-family: Verdana, sans-serif;
+		border-collapse: collapse;
+		border: 1px solid #EBEBEB;
+		margin: 10px auto;
+		text-align: center;
+		width: 100%;
+		max-width: 500px;
+	}
+
+	.highcharts-data-table caption {
+		padding: 1em 0;
+		font-size: 1.2em;
+		color: #555;
+	}
+
+	.highcharts-data-table th {
+		font-weight: 600;
+		padding: 0.5em;
+	}
+
+	.highcharts-data-table td,
+	.highcharts-data-table th,
+	.highcharts-data-table caption {
+		padding: 0.5em;
+	}
+
+	.highcharts-data-table thead tr,
+	.highcharts-data-table tr:nth-child(even) {
+		background: #f8f8f8;
+	}
+
+	.highcharts-data-table tr:hover {
+		background: #f1f7ff;
+	}
+
+
 
 }
-
