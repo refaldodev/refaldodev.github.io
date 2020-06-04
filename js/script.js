@@ -17,7 +17,9 @@ function scrollImage() {
     var gambarPosition = gambar.getBoundingClientRect().top;
     var screenGambar = window.innerHeight;
 
-    if (gambarPosition < 30) {
+
+
+    if (gambarPosition < 3000) {
         gambar.classList.add('gambar-view');
     }
 }
@@ -28,7 +30,7 @@ function scrollText() {
     var textPosition = textJumbo.getBoundingClientRect().top;
     var textScreen = window.innerHeight;
 
-    if (textPosition < 30) {
+    if (textPosition < 3000) {
         textJumbo.classList.add('text-view');
     }
 }

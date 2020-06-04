@@ -104,7 +104,7 @@ body {
 
 .clients img {
 	/*max-width: 130px*/
-	;
+
 	filter: drop-shadow(1px, 1px, 1px rgba(0, 0, 0, 0.9));
 }
 
@@ -167,7 +167,7 @@ section .card-panel.games:hover {
 .card-corona {
 	opacity: 0;
 	transform: translateY(20px);
-	transition: transition: 0.8s all ease-in-out;
+	transition: 0.8s all ease-in-out;
 
 }
 
@@ -310,7 +310,7 @@ section .card-panel.games:hover {
 	.text-jumbo {
 		opacity: 0;
 		transform: translateX(20px);
-		transition: transition: 0.8s all ease-in-out;
+		transition: 0.8s all ease-in-out;
 
 	}
 
@@ -451,7 +451,7 @@ section .card-panel.games:hover {
 	.card-corona {
 		opacity: 0;
 		transform: translateY(20px);
-		transition: transition: 0.8s all ease-in-out;
+		transition: 0.8s all ease-in-out;
 
 	}
 
