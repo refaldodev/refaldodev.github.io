@@ -18,31 +18,6 @@ body {
 
 }
 
-.text-jumbo {
-	opacity: 0;
-	transform: translateX(100px);
-	transition: transition: 0.8s all ease-in-out;
-
-}
-
-.text-view {
-	opacity: 1;
-	transform: translateX(0px);
-}
-
-.gambar {
-	opacity: 0;
-	transform: translateX(100px);
-	transition: 0.8s all ease-in-out;
-
-
-}
-
-.gambar-view {
-
-	opacity: 1;
-	transform: translateX(0px);
-}
 
 .jumbo img {
 	height: 200px;
