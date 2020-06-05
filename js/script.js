@@ -11,6 +11,34 @@ function scrollAppear() {
 window.addEventListener('scroll', scrollAppear);
 
 
+function scrollGambar() {
+    var gambar = document.querySelector('.gambar');
+    var gambarPosition = gambar.getBoundingClientRect().top;
+    var gambarScreen = window.innerHeight;
+
+    if (gambarPosition < gambarScreen) {
+        gambar.classList.add('gambar-view');
+    }
+
+
+}
+window.addEventListener('scroll', scrollGambar);
+
+
+
+function scrollText() {
+    var textJumbo = document.querySelector('.text-jumbo');
+    var textJumboPosition = textJumbo.getBoundingClientRect().top;
+    var textScreen = window.innerHeight;
+
+    if (textJumboPosition < textScreen) {
+        textJumbo.classList.add('text-view');
+    }
+
+
+}
+window.addEventListener('scroll', scrollText);
+
 function scrollCard() {
     var cardPanel = document.querySelector('.card-corona');
     var cardPosition = cardPanel.getBoundingClientRect().top;
@@ -177,7 +205,7 @@ fetch(
         // positif += data[32].attributes.Confirmed;
         document.getElementById('positif').innerHTML = "Positif : " + data[32].attributes.Confirmed;
         // 
-        document.getElementById('sembuh').innerHTML = "Meninggal : " + data[32].attributes.Deaths;
+        document.getElementById('sembuh').innerHTML = "Sembuh   : " + data[32].attributes.Recovered;
         document.getElementById('pos').innerHTML = jumlah_postif;
         document.getElementById('men').innerHTML = jumlah_meninggal;
         document.getElementById('sem').innerHTML = jumlah_sembuh;
