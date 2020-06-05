@@ -162,7 +162,15 @@ fetch(
         var statPos = 0;
         var statCountry = 0;
 
+        function test(data) {
+            var a = data[32]['attributes']['Confirmed'];
+
+            console.log(a);
+        }
+        test(data);
+
         var j = Object.keys(data).length;
+
         // console.log(j);
         var no = 1;
         for (var i = 0; i < j; i++) {
@@ -257,6 +265,7 @@ fetch(
                     }
                 }
             },
+
 
             series: [{
                 name: data[32].attributes.Country_Region,
