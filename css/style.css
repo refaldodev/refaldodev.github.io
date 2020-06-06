@@ -234,6 +234,10 @@ section .card-panel.games:hover {
 
 	/* statistik */
 
+	highcharts-figure .container {
+		width: 100%;
+
+	}
 
 	.jumbo {
 		height: 500px;
