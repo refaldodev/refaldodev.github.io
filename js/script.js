@@ -165,7 +165,8 @@ fetch(
         function test(data) {
             var a = data[32]['attributes']['Confirmed'];
 
-            console.log(a);
+            if (a)
+                console.log(a);
         }
         test(data);
 

@@ -265,9 +265,14 @@ section .card-panel.games:hover {
 
 /*dekstop*/
 @media (min-width: 992px) {
+	html {
+		scroll-behavior: smooth;
+	}
+
 	body {
 		background-color: white;
 	}
+
 
 	.jumbo {
 		height: 500px;
@@ -446,6 +451,7 @@ section .card-panel.games:hover {
 
 		display: inline-block;
 		justify-content: space-around;
+
 		/* margin-left: 5px; */
 	}
 
