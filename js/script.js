@@ -52,6 +52,24 @@ function scrollCard() {
 }
 window.addEventListener('scroll', scrollCard);
 
+
+function set_titik(param, separator) {
+    var param_ = param.toString();
+    var jumlah = param_.length;
+    var split_ = typeof separator === "undefined" ? "." : separator;
+    var result = "";
+    while (true) {
+        if (jumlah > 3) {
+            jumlah = jumlah - 3;
+            result = split_ + param_.substr(jumlah, 3) + result;
+        } else {
+            result = param_.substr(0, jumlah) + result;
+            break;
+        }
+    }
+    return result;
+}
+
 var mymap = L.map('mapid').setView([5, 110], 3.5);
 
 L.tileLayer(
@@ -89,8 +107,8 @@ fetch(
 
                 .bindPopup("<h6 style='margin-bottom: -16px;'> Negara :" + peta[p].attributes.Country_Region +
                     " </h6> <br>" +
-                    "<h6 style='margin-bottom: -16px;'> Positif :" + peta[p].attributes.Confirmed + " </h6> <br>" +
-                    "<h6 style='margin-bottom: -16px;'> Meninggal :" + peta[p].attributes.Deaths + " </h6> <br>" +
+                    "<h6 style='margin-bottom: -16px;'> Positif :" + set_titik(peta[p].attributes.Confirmed) + " </h6> <br>" +
+                    "<h6 style='margin-bottom: -16px;'> Meninggal :" + set_titik(peta[p].attributes.Deaths) + " </h6> <br>" +
                     "<h6 style='margin-bottom: -16px;'> Sembuh :" + peta[p].attributes.Recovered + " </h6> <br>"
 
 
@@ -141,6 +159,10 @@ M.Carousel.init(carousel, {
 
 
 
+var country = [];
+var jumlah_Stat_Sakit = [];
+var jumlah_Stat_Sembuh = [];
+var jumlah_Stat_Meninggal = [];
 
 fetch(
         "https://api.kawalcorona.com/"
@@ -175,12 +197,12 @@ fetch(
         // console.log(j);
         var no = 1;
         for (var i = 0; i < j; i++) {
-            jumlah_postif = jumlah_postif + Number(data[i].attributes.Confirmed);
-            jumlah_meninggal += Number(data[i].attributes.Deaths);
-            jumlah_sembuh += Number(data[i].attributes.Recovered);
-            totalPos += Number(data[i].attributes.Confirmed);
-            totalMen += Number(data[i].attributes.Deaths);
-            totalSem += Number(data[i].attributes.Recovered);
+            jumlah_postif = jumlah_postif + (data[i].attributes.Confirmed);
+            jumlah_meninggal += (data[i].attributes.Deaths);
+            jumlah_sembuh += (data[i].attributes.Recovered);
+            totalPos += (data[i].attributes.Confirmed);
+            totalMen += (data[i].attributes.Deaths);
+            totalSem += (data[i].attributes.Recovered);
             // if (i == 32) {
             //   postif += Number(data[32].attributes.Confirmed);
             //   sembuh += Number(data[32].attributes.Recovered);
@@ -189,15 +211,20 @@ fetch(
             hasil += "<tr>"
             hasil += "<td>" + no + "</td>\n";
             hasil += "<td>" + data[i].attributes.Country_Region + "</td>\n";
-            hasil += "<td>" + data[i].attributes.Confirmed + "</td>\n";
+            hasil += "<td>" + set_titik(data[i].attributes.Confirmed) + "</td>\n";
             hasil += "<td>" + data[i].attributes.Recovered + "</td>\n";
-            hasil += "<td>" + data[i].attributes.Deaths + "</td>\n";
+            hasil += "<td>" + set_titik(data[i].attributes.Deaths) + "</td>\n";
 
             hasil += "</tr>\n"
             no++;
             statPos += Number(data[i].attributes.Confirmed);
             statCountry += Number(data[i].attributes.Confirmed);
-            // 
+
+            //  province[i] = hasil[i].attributes.Provinsi;
+            country[i] = data[i].attributes.Country_Region;
+            jumlah_Stat_Sakit[i] = data[i].attributes.Confirmed;
+            jumlah_Stat_Sembuh[i] = data[i].attributes.Recovered;
+            jumlah_Stat_Meninggal[i] = data[i].attributes.Deaths;
         }
 
         // totalPos +=  Number(data[i].attributes.Confirmed);
@@ -205,73 +232,76 @@ fetch(
         // totalSem +=  Number(data[i].attributes.Recovered);
         hasil += "<tr>"
         hasil += "<td colspan='2'> Jumlah </td>"
-        hasil += "<td> " + totalPos + "</td>"
-        hasil += "<td> " + totalMen + "</td>"
-        hasil += "<td> " + totalSem + "</td>"
+        hasil += "<td> " + set_titik(totalPos) + "</td>"
+        hasil += "<td> " + set_titik(totalMen) + "</td>"
+        hasil += "<td> " + set_titik(totalSem) + "</td>"
 
 
         hasil += "</tr>"
         // positif += data[32].attributes.Confirmed;
-        document.getElementById('positif').innerHTML = "Positif : " + data[32].attributes.Confirmed;
+        document.getElementById('positif').innerHTML = "Positif : " + set_titik(data[32].attributes.Confirmed);
         // 
-        document.getElementById('sembuh').innerHTML = "Sembuh   : " + data[32].attributes.Recovered;
-        document.getElementById('pos').innerHTML = jumlah_postif;
-        document.getElementById('men').innerHTML = jumlah_meninggal;
-        document.getElementById('sem').innerHTML = jumlah_sembuh;
+        document.getElementById('sembuh').innerHTML = "Sembuh   : " + set_titik(data[32].attributes.Recovered);
+        document.getElementById('pos').innerHTML = set_titik(jumlah_postif);
+        document.getElementById('men').innerHTML = set_titik(jumlah_meninggal);
+        document.getElementById('sem').innerHTML = set_titik(jumlah_sembuh);
         // document.getElementById('positif').innerHTML = positif;
         document.getElementById('isi').innerHTML = hasil;
-        document.getElementById('meninggal').innerHTML = "Meninggal : " + data[32].attributes.Deaths;
+        document.getElementById('meninggal').innerHTML = "Meninggal : " + set_titik(data[32].attributes.Deaths);
 
 
-        Highcharts.chart('container', {
-
-            chart: {
-                type: 'area'
-            },
-            title: {
-                text: 'Data Penyebaran Coronavirus di Dunia'
-            },
-            subtitle: {
-                text: 'Refaldodev.github.io'
-            },
-            xAxis: {
-                categories: [data[32].attributes.Last_Update],
-                tickmarkPlacement: 'on',
-                title: {
-                    enabled: false
-                }
-            },
-            yAxis: {
-                title: {
-                    text: 'Billions'
-                },
-                labels: {
-                    formatter: function () {
-                        return this.value;
-                    }
-                }
-            },
-            tooltip: {
-                split: true,
-                valueSuffix: 'Ribu'
-            },
-            plotOptions: {
-                area: {
-                    stacking: 'normal',
-                    lineColor: '#666666',
-                    lineWidth: 1,
-                    marker: {
-                        lineWidth: 1,
-                        lineColor: '#666666'
-                    }
-                }
-            },
-
-
-            series: [{
-                name: data[32].attributes.Country_Region,
-                data: [502, 635, 809, 947, 1402, 3634, 5268]
-
-            }]
-        });
     });
+console.log(call_hightchart());
+
+
+function call_hightchart() {
+
+    Highcharts.chart('container', {
+        chart: {
+            type: 'column'
+        },
+        title: {
+            text: 'Data Corona Indonesia'
+        },
+        subtitle: {
+            text: 'refaldodev.github.io'
+        },
+        xAxis: {
+            categories: ["indo", "arab", "yemen"],
+            crosshair: true
+        },
+        yAxis: {
+            min: 0,
+            title: {
+                text: 'Jumlah Orang'
+            }
+        },
+        tooltip: {
+            headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
+            pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
+                '<td style="padding:0"><b>{point.y:.1f}</b></td></tr>',
+            footerFormat: '</table>',
+            shared: true,
+            useHTML: true
+        },
+        plotOptions: {
+            column: {
+                pointPadding: 0.2,
+                borderWidth: 0
+            }
+        },
+        series: [{
+            name: 'Jumlah Sakit',
+            data: [123, 1231, 412]
+        }, {
+            name: 'Jumlah Sembuh',
+            data: [1231, 4, 121, 13]
+
+        }, {
+            name: 'Jumlah Meninggal',
+            data: jumlah_Stat_Meninggal
+
+        }]
+    });
+
+}
