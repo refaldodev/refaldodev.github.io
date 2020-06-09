@@ -105,11 +105,11 @@ fetch(
         for (var p = 0; p < a; p++) {
             L.marker([peta[p].attributes.Lat, peta[p].attributes.Long_]).addTo(mymap)
 
-                .bindPopup("<h6 style='margin-bottom: -16px;'> Negara :" + peta[p].attributes.Country_Region +
+                .bindPopup("<h6 style='margin-bottom: -16px;'> Country :" + peta[p].attributes.Country_Region +
                     " </h6> <br>" +
-                    "<h6 style='margin-bottom: -16px;'> Positif :" + set_titik(peta[p].attributes.Confirmed) + " </h6> <br>" +
-                    "<h6 style='margin-bottom: -16px;'> Meninggal :" + set_titik(peta[p].attributes.Deaths) + " </h6> <br>" +
-                    "<h6 style='margin-bottom: -16px;'> Sembuh :" + peta[p].attributes.Recovered + " </h6> <br>"
+                    "<h6 style='margin-bottom: -16px;'> Confirmed :" + set_titik(peta[p].attributes.Confirmed) + " </h6> <br>" +
+                    "<h6 style='margin-bottom: -16px;'> Deaths :" + set_titik(peta[p].attributes.Deaths) + " </h6> <br>" +
+                    "<h6 style='margin-bottom: -16px;'> Recovered :" + peta[p].attributes.Recovered + " </h6> <br>"
 
 
                 )
@@ -245,15 +245,15 @@ fetch(
 
         hasil += "</tr>"
         // positif += data[32].attributes.Confirmed;
-        document.getElementById('positif').innerHTML = "Positif : " + set_titik(data[32].attributes.Confirmed);
+        document.getElementById('positif').innerHTML = "Confirmed : " + set_titik(data[32].attributes.Confirmed);
         // 
-        document.getElementById('sembuh').innerHTML = "Sembuh   : " + set_titik(data[32].attributes.Recovered);
+        document.getElementById('sembuh').innerHTML = "Recovered   : " + set_titik(data[32].attributes.Recovered);
         document.getElementById('pos').innerHTML = set_titik(jumlah_postif);
         document.getElementById('men').innerHTML = set_titik(jumlah_meninggal);
         document.getElementById('sem').innerHTML = set_titik(jumlah_sembuh);
         // document.getElementById('positif').innerHTML = positif;
         document.getElementById('isi').innerHTML = hasil;
-        document.getElementById('meninggal').innerHTML = "Meninggal : " + set_titik(data[32].attributes.Deaths);
+        document.getElementById('meninggal').innerHTML = "Deaths : " + set_titik(data[32].attributes.Deaths);
 
 
 
