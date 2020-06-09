@@ -140,6 +140,29 @@ section .card-panel.games:hover {
 
 }
 
+.card.card-panel {
+	height: 300px;
+}
+
+.card.card-panel p {
+	font-size: 16px;
+
+
+}
+
+.card.card-panel img {
+	height: 180px;
+	width: 100%;
+}
+
+.card.card-panel h2 {
+	font-size: 15px;
+	font-weight: bold;
+
+	margin-top: 0px;
+
+}
+
 .card-corona {
 	opacity: 0;
 	transform: translateY(20px);
@@ -396,6 +419,24 @@ section .card-panel.games:hover {
 		color: white;
 		background-color: #1a237e;
 		transition: 1s;
+
+	}
+
+	.card.card-panel {
+		height: 300px;
+	}
+
+	.card.card-panel p {
+		font-size: 16px;
+		margin-left: -10px;
+
+	}
+
+	.card.card-panel h2 {
+		font-size: 20px;
+		font-weight: bold;
+		margin-left: -10px;
+		margin-top: -5px;
 
 	}
 
