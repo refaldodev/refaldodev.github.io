@@ -331,7 +331,7 @@ function call_hightchart() {
             type: 'area'
         },
         title: {
-            text: 'Statistik Penyeberan Corona'
+            text: 'Statistik Penyebaran Corona'
         },
         subtitle: {
             text: 'Refaldodev.github.io'
