@@ -3,6 +3,11 @@ body {
 	font-family: 'Roboto', sans-serif;
 }
 
+nav,
+footer {
+	background-color: #0F0E20;
+}
+
 .slider h3,
 .slider h5,
 .clients h3 {
@@ -13,7 +18,7 @@ body {
 
 
 	height: 300px;
-
+	margin-bottom: 0px;
 
 
 }
@@ -117,31 +122,11 @@ thead {
 
 }
 
-section .card-panel.computer:hover {
-
-	background-color: #17A2B8;
-	transition: 1s;
-
-	color: white;
-}
-
-section .card-panel.android:hover {
-	color: white;
-	background-color: #28A745;
-	transition: 1s;
-
-
-}
-
-section .card-panel.games:hover {
-	color: white;
-	background-color: #1a237e;
-	transition: 1s;
-
-}
 
 .card.card-panel {
 	height: 300px;
+	border-radius: 10px;
+
 }
 
 .card.card-panel p {
@@ -207,7 +192,7 @@ section .card-panel.games:hover {
 	height: 300px;
 	overflow: scroll;
 	margin-bottom: 50px;
-
+	margin-top: 50px;
 	opacity: 0;
 	transform: translateY(20px);
 	transition: 0.9s all ease-in-out;
@@ -255,6 +240,11 @@ section .card-panel.games:hover {
 		background-color: white;
 	}
 
+	nav,
+	footer {
+		background-color: #0F0E20;
+	}
+
 	/* statistik */
 
 	highcharts-figure .container {
@@ -264,6 +254,7 @@ section .card-panel.games:hover {
 
 	.jumbo {
 		height: 500px;
+		margin-bottom: -50px;
 	}
 
 	.jumbo .text-jumbo .judul {
@@ -424,6 +415,7 @@ section .card-panel.games:hover {
 
 	.card.card-panel {
 		height: 300px;
+		border-radius: 10px;
 	}
 
 	.card.card-panel p {
@@ -493,6 +485,7 @@ section .card-panel.games:hover {
 		height: 500px;
 		overflow: scroll;
 		margin-bottom: 50px;
+		margin-top: 50px;
 
 		opacity: 0;
 		transform: translateY(100px);
