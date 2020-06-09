@@ -377,13 +377,13 @@ function call_hightchart() {
             }
         },
         series: [{
-            name: 'Meninggal',
+            name: 'Deaths',
             data: Jumlah_Mat
         }, {
-            name: 'Positif',
+            name: 'Confirmed',
             data: Jumlah_Sak
         }, {
-            name: 'Sembuh',
+            name: 'Recovered',
             data: Jumlah_Semb
 
         }]
