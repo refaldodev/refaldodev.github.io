@@ -15,22 +15,14 @@ footer {
 }
 
 .jumbo {
-
-
 	height: 300px;
-	margin-bottom: 0px;
-
-
+	margin-bottom: 200px;
 }
-
 
 .jumbo img {
 	height: 200px;
 	width: 100%;
-
-
 	background-size: cover;
-
 	background-repeat: no-repeat;
 }
 
@@ -54,6 +46,19 @@ footer {
 
 .corona {
 	height: 50px;
+
+
+}
+
+#panel {
+	border-top: 1px solid rgba(0, 0, 0, 0.1);
+	margin-top: 100px;
+}
+
+.panel .card-corona .card-panel {
+	border-radius: 20px;
+
+
 }
 
 .corona img {
@@ -89,6 +94,26 @@ footer {
 	filter: drop-shadow(1px, 1px, 1px rgba(0, 0, 0, 0.9));
 }
 
+.contact {
+	margin-bottom: 50px;
+}
+
+.contact .test .container .card-panel {
+	border-radius: 20px !important;
+}
+
+.contact .test .container ul {
+
+	border-radius: 20px !important;
+}
+
+#statistik {
+	margin-top: 50px;
+	border-top: 1px solid rgba(0, 0, 0, 0.1);
+
+}
+
+
 section,
 footer {
 	padding: 20px 0;
@@ -120,6 +145,11 @@ thead {
 	font-size: 15px;
 	font-weight: bold;
 
+}
+
+#services {
+	border-top: 1px solid rgba(0, 0, 0, 0.1);
+	margin-bottom: 20px;
 }
 
 
@@ -196,6 +226,7 @@ thead {
 	opacity: 0;
 	transform: translateY(20px);
 	transition: 0.9s all ease-in-out;
+	border-top: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .tabel-appear {
@@ -228,7 +259,11 @@ thead {
 
 .petaP {
 	height: 400px;
+	margin-bottom: 40px;
+	border-top: 1px solid rgba(0, 0, 0, 0.1);
+
 }
+
 
 /*dekstop*/
 @media (min-width: 992px) {
@@ -253,14 +288,19 @@ thead {
 	}
 
 	.jumbo {
-		height: 500px;
-		margin-bottom: -50px;
+		height: 300px;
+
+	}
+
+	.jumbo .container {
+		margin-top: 20px;
 	}
 
 	.jumbo .text-jumbo .judul {
 		font-size: 40px;
 		margin-top: 100px;
 		text-align: justify;
+
 	}
 
 	.jumbo .text-jumbo p {
@@ -272,6 +312,12 @@ thead {
 		transform: translateX(20px);
 		transition: 0.9s all ease-in-out;
 
+	}
+
+	.jumbo img {
+		width: 100%;
+		height: 400px;
+		margin: auto;
 	}
 
 	.text-view {
@@ -294,10 +340,6 @@ thead {
 	}
 
 
-	.jumbo img {
-		width: 100%;
-		height: 400px;
-	}
 
 	.corona {
 		height: 50px;
@@ -349,6 +391,17 @@ thead {
 		/*max-width: 130px*/
 
 		filter: drop-shadow(1px, 1px, 1px rgba(0, 0, 0, 0.9));
+	}
+
+	/* contact index */
+
+	.contact .test .container .card-panel {
+		border-radius: 20px !important;
+	}
+
+	.contact .test .container ul {
+
+		border-radius: 20px !important;
 	}
 
 
@@ -411,6 +464,17 @@ thead {
 		background-color: #1a237e;
 		transition: 1s;
 
+	}
+
+	#statistik {
+		margin-top: 50px;
+		border-top: 1px solid rgba(0, 0, 0, 0.1);
+
+	}
+
+	#services {
+		border-top: 1px solid rgba(0, 0, 0, 0.1);
+		margin-bottom: 50px;
 	}
 
 	.card.card-panel {
@@ -520,6 +584,11 @@ thead {
 
 	#mapid {
 		height: 500px;
+
+	}
+
+	#peta {
+		margin-bottom: 40px;
 	}
 
 
@@ -527,6 +596,10 @@ thead {
 	/*jumbo*/
 
 	/* statistik */
+
+	/* contact index */
+
+
 
 
 
