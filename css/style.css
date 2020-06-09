@@ -5,7 +5,7 @@ body {
 
 nav,
 footer {
-	background-color: #0F0E20;
+	background-color: #0F0E20 !important;
 }
 
 .slider h3,
@@ -125,7 +125,7 @@ thead {
 
 .card.card-panel {
 	height: 300px;
-	border-radius: 10px;
+	border-radius: 20px;
 
 }
 
@@ -205,12 +205,12 @@ thead {
 }
 
 .tabel .container .row table tr th {
-	font-size: 10px;
+	font-size: 9px;
 
 }
 
 .tabel .container .row table tr td {
-	font-size: 10px;
+	font-size: 9px;
 }
 
 .tabel .container .row .col .card-panel.card-table {
