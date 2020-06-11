@@ -80,20 +80,9 @@ footer {
 
 .corona {
 	height: 50px;
-
-
+	m
 }
 
-#panel {
-	border-top: 1px solid rgba(0, 0, 0, 0.1);
-	margin-top: 100px;
-}
-
-.panel .card-corona .card-panel {
-	border-radius: 20px;
-
-
-}
 
 .corona img {
 	height: 20px;
@@ -110,7 +99,18 @@ footer {
 	text-align: right;
 	margin: auto;
 	padding-top: 10px;
-	margin-right: 10px;
+	margin-right: 20px;
+}
+
+#panel {
+	border-top: 1px solid rgba(0, 0, 0, 0.1);
+	margin-top: 100px;
+}
+
+.panel .card-corona .card-panel {
+	border-radius: 20px;
+
+
 }
 
 .parallax-container {
