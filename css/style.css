@@ -14,6 +14,40 @@ footer {
 	text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
 }
 
+/* hotline */
+
+.hotline {
+	height: 50px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-end;
+	align-self: center;
+
+}
+
+
+.hotline a {
+	text-decoration: none;
+	color: black;
+
+	padding-bottom: 100px;
+
+}
+
+.hotline i {
+	align-self: center;
+
+}
+
+
+.hotline h2 {
+	font-size: 13px;
+
+	align-self: center;
+	line-height: 50px;
+	margin: auto;
+}
+
 .jumbo {
 	height: 300px;
 	margin-bottom: 200px;
@@ -280,6 +314,41 @@ thead {
 		background-color: #0F0E20;
 	}
 
+	/* hotline */
+
+	.hotline {
+		height: 50px;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: flex-end;
+		align-self: center;
+
+	}
+
+
+	.hotline a {
+		text-decoration: none;
+		color: black;
+
+		padding-bottom: 100px;
+
+	}
+
+	.hotline i {
+		align-self: center;
+	}
+
+
+	.hotline h2 {
+		font-size: 15px;
+
+		align-self: center;
+		line-height: 50px;
+
+		margin: auto;
+	}
+
+	/* akhir hotline */
 	/* statistik */
 
 	highcharts-figure .container {
