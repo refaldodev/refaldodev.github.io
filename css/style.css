@@ -158,6 +158,10 @@ footer {
 
 }
 
+footer img {
+	margin-left: 5px;
+}
+
 .striped {
 	width: 100%;
 	border: 1px solid black;
@@ -481,6 +485,10 @@ thead {
 
 	footer {
 		height: 300px;
+	}
+
+	footer img {
+		margin-left: 5px;
 	}
 
 	.striped {
