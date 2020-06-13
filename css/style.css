@@ -15,7 +15,7 @@ footer {
 }
 
 /* hotline */
-
+/*
 .hotline {
 	height: 50px;
 	display: flex;
@@ -46,7 +46,7 @@ footer {
 	align-self: center;
 	line-height: 50px;
 	margin: auto;
-}
+}*/
 
 .jumbo {
 	height: 300px;
@@ -320,7 +320,7 @@ thead {
 
 	/* hotline */
 
-	.hotline {
+	/*.hotline {
 		height: 50px;
 		display: flex;
 		flex-wrap: wrap;
@@ -350,7 +350,7 @@ thead {
 		line-height: 50px;
 
 		margin: auto;
-	}
+	}*/
 
 	/* akhir hotline */
 	/* statistik */

@@ -245,15 +245,15 @@ fetch(
 
         hasil += "</tr>"
         // positif += data[32].attributes.Confirmed;
-        document.getElementById('positif').innerHTML = "Confirmed : " + set_titik(data[31].attributes.Confirmed);
+        document.getElementById('positif').innerHTML = "Confirmed : " + set_titik(data[30].attributes.Confirmed);
         // 
-        document.getElementById('sembuh').innerHTML = "Recovered   : " + set_titik(data[31].attributes.Recovered);
+        document.getElementById('sembuh').innerHTML = "Recovered   : " + set_titik(data[30].attributes.Recovered);
         document.getElementById('pos').innerHTML = set_titik(jumlah_postif);
         document.getElementById('men').innerHTML = set_titik(jumlah_meninggal);
         document.getElementById('sem').innerHTML = set_titik(jumlah_sembuh);
         // document.getElementById('positif').innerHTML = positif;
         document.getElementById('isi').innerHTML = hasil;
-        document.getElementById('meninggal').innerHTML = "Deaths : " + set_titik(data[31].attributes.Deaths);
+        document.getElementById('meninggal').innerHTML = "Deaths : " + set_titik(data[30].attributes.Deaths);
 
 
 
