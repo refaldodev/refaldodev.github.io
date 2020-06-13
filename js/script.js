@@ -271,8 +271,6 @@ fetch(
     });
 
 // for(a= 0; a<j; a++){
-
-// }
 // back to top
 $(document).ready(function () {
     $(window).scroll(function () {
@@ -288,6 +286,8 @@ $(document).ready(function () {
         }, 800);
     });
 });
+// }
+
 
 
 function call_hightchart() {
