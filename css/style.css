@@ -258,13 +258,14 @@ thead {
 
 .tabel {
 	height: 300px;
-	overflow: scroll;
+	overflow: auto;
 	margin-bottom: 50px;
 	margin-top: 50px;
 	opacity: 0;
 	transform: translateY(20px);
 	transition: 0.9s all ease-in-out;
 	border-top: 1px solid rgba(0, 0, 0, 0.1);
+	width: 100%;
 }
 
 .tabel-appear {
@@ -274,12 +275,12 @@ thead {
 }
 
 .tabel .container .row table tr th {
-	font-size: 9px;
+	font-size: 8px;
 
 }
 
 .tabel .container .row table tr td {
-	font-size: 9px;
+	font-size: 8px;
 }
 
 .tabel .container .row .col .card-panel.card-table {
