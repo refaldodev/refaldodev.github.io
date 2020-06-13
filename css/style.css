@@ -15,7 +15,7 @@ footer {
 }
 
 /* hotline */
-/*
+
 .hotline {
 	height: 50px;
 	display: flex;
@@ -46,7 +46,7 @@ footer {
 	align-self: center;
 	line-height: 50px;
 	margin: auto;
-}*/
+}
 
 .jumbo {
 	height: 300px;
@@ -286,18 +286,17 @@ thead {
 	height: 100%;
 
 }
-
+/*
 .container.peta {
-	height: 100px;
-}
+}*/
 
 #mapid {
-	height: 300px;
+	height: 200px;
 }
 
 .petaP {
 	height: 400px;
-	margin-bottom: 40px;
+	margin-bottom: 300px;
 	border-top: 1px solid rgba(0, 0, 0, 0.1);
 
 }
@@ -320,7 +319,7 @@ thead {
 
 	/* hotline */
 
-	/*.hotline {
+	.hotline {
 		height: 50px;
 		display: flex;
 		flex-wrap: wrap;
@@ -350,7 +349,7 @@ thead {
 		line-height: 50px;
 
 		margin: auto;
-	}*/
+	}
 
 	/* akhir hotline */
 	/* statistik */
