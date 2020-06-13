@@ -3,6 +3,27 @@ body {
 	font-family: 'Roboto', sans-serif;
 }
 
+/* button to top */
+#topBtn {
+	bottom: 30px;
+	position: fixed;
+	right: 15px;
+	font-size: 22px;
+	width: 40px;
+	height: 40px;
+	background-color: #7f8c8d;
+	opacity: 0.8;
+
+
+	color: white;
+	border: none;
+	cursor: pointer;
+	display: none;
+	z-index: 9999999;
+	border-radius: 5px;
+
+}
+
 nav,
 footer {
 	background-color: #0F0E20 !important;
@@ -80,7 +101,7 @@ footer {
 
 .corona {
 	height: 50px;
-	m
+
 }
 
 
@@ -238,7 +259,7 @@ thead {
 
 	display: flex;
 	justify-content: space-around;
-	 margin-left: 5px; 
+	margin-left: 5px;
 }
 
 .panel .container .row .card-panel.info {
@@ -287,19 +308,20 @@ thead {
 	height: 100%;
 
 }
+
 .petaP {
-		height: 400px;
+	height: 400px;
 
-	}
+}
 
-	#mapid {
-		height: 300px !important;
+#mapid {
+	height: 300px !important;
 
-	}
+}
 
-	#peta {
-		margin-bottom: 40px;
-	}
+#peta {
+	margin-bottom: 40px;
+}
 
 
 /*dekstop*/
@@ -315,6 +337,25 @@ thead {
 	nav,
 	footer {
 		background-color: #0F0E20;
+	}
+
+	/* button to top */
+	#topBtn {
+		bottom: 30px;
+		position: fixed;
+		right: 30px;
+		font-size: 22px;
+		width: 50px;
+		height: 50px;
+		background-color: black;
+		opacity: 0.8;
+		color: white;
+		border: none;
+		cursor: pointer;
+		display: none;
+		z-index: 99;
+		border-radius: 10px;
+
 	}
 
 	/* hotline */
