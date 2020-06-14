@@ -24,6 +24,10 @@ body {
 
 }
 
+#topBtn:hover {
+	color: lightskyblue;
+}
+
 nav,
 footer {
 	background-color: #0F0E20 !important;
@@ -358,6 +362,10 @@ thead {
 
 	}
 
+	#topBtn:hover {
+		color: lightskyblue;
+	}
+
 
 	/* hotline */
 
@@ -595,6 +603,7 @@ thead {
 		margin-bottom: 50px;
 	}
 
+
 	.card.card-panel {
 		height: 300px;
 		border-radius: 10px;
@@ -624,6 +633,13 @@ thead {
 	.card-panel-view {
 		opacity: 1;
 		transform: translateY(0x);
+	}
+
+	.panel .card-panel .text {
+
+		display: flex;
+
+		margin-top: 20px !important;
 	}
 
 
@@ -660,6 +676,9 @@ thead {
 	.panel .container .row .card-panel.info img {
 		height: 50px;
 		width: 50px;
+		display: flex;
+		margin: auto;
+		margin-top: 20px;
 	}
 
 
