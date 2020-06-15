@@ -115,10 +115,6 @@ fetch(
                 )
             // .openPopup();
 
-
-
-
-
         }
 
 
