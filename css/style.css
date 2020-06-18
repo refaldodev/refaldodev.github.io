@@ -259,8 +259,15 @@ thead {
 .panel .card-panel .text {
 
 	display: flex;
-	justify-content: space-around;
+	flex-wrap: wrap;
+	justify-content: center;
 
+}
+
+
+
+.panel .card-panel .text p {
+	width: 100%;
 }
 
 .panel .container .row .card-panel.info {
