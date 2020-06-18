@@ -360,8 +360,17 @@
                       <input id="icon_telephone" type="text" class="validate" id="no_telp" name="no_telp">
                       <label for="icon_telephone">Phone Number</label>
                     </div>
-                    <button type="submit" class="btn blue darken-1   right" name="submit"
-                      style="border-radius: 5px;">Send</button>
+                    <button type="submit" class="btn blue darken-1   modal-trigger right" style="border-radius: 5px;"
+                      id="modal" href="#modal1" data-target="modal1">Send</button>
+                    <div id="modal1" class="modal">
+                      <div class="modal-content">
+                        <h4>Alert!</h4>
+                        <p>Sorry we're Offline, please call us at number : 085839797013</p>
+                      </div>
+                      <div class="modal-footer">
+                        <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
+                      </div>
+                    </div>
                   </div>
                 </form>
               </div>
@@ -405,8 +414,8 @@
 
       <div class="row">
         <div class="col">
-           <a href=""><a href="https://www.linkedin.com/in/mohammad-refaldo-rachman-5904531b0/"><img src="img/footer/linkedin.png" alt=""
-                class="image-right"></a></a>
+          <a href=""><a href="https://www.linkedin.com/in/mohammad-refaldo-rachman-5904531b0/"><img
+                src="img/footer/linkedin.png" alt="" class="image-right"></a></a>
           <a href=""><a href="https://web.facebook.com/profile.php?id=100013774517713"><img
                 src="img/footer/facebook.png" alt="" class="image-right"></a></a>
           <a href=""><a href="https://twitter.com/Mohrefaldo"><img src="img/footer/twitter.png" alt=""
@@ -443,7 +452,10 @@
     const parallax = document.querySelectorAll('.parallax');
     M.Parallax.init(parallax);
 
-
+    const modal = document.querySelectorAll('.modal');
+    M.Modal.init(modal, {
+      inDuration: 150
+    });
     const materialbox = document.querySelectorAll('.materialboxed');
     M.Materialbox.init(materialbox);
 
