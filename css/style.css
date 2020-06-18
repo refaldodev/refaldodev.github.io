@@ -3,6 +3,33 @@ body {
 	font-family: 'Roboto', sans-serif;
 }
 
+.hotline {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+.hotline .telpon {
+	font-size: 20px;
+}
+
+
+.hotline p {
+	margin-left: 5px;
+}
+
+.hotline a {
+	color: #2019b4 !important;
+	font-weight: bold;
+	margin-left: 5px;
+
+}
+
+.hotline a:hover {
+	text-decoration: underline;
+	font-weight: bold;
+}
+
 /* button to top */
 #topBtn {
 	bottom: 30px;
@@ -39,39 +66,6 @@ footer {
 	text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
 }
 
-/* hotline */
-
-.hotline {
-	height: 50px;
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: flex-end;
-	align-self: center;
-
-}
-
-
-.hotline a {
-	text-decoration: none;
-	color: black;
-
-	padding-bottom: 100px;
-
-}
-
-.hotline i {
-	align-self: center;
-
-}
-
-
-.hotline h2 {
-	font-size: 13px;
-
-	align-self: center;
-	line-height: 50px;
-	margin: auto;
-}
 
 .jumbo {
 	height: 350px;
@@ -353,6 +347,33 @@ thead {
 		background-color: #0F0E20;
 	}
 
+	.hotline {
+		display: flex;
+		justify-content: flex-end;
+		align-items: center;
+	}
+
+	.hotline .telpon {
+		font-size: 20px;
+	}
+
+
+	.hotline p {
+		margin-left: 5px;
+	}
+
+	.hotline a {
+		color: #2019b4 !important;
+		font-weight: bold;
+		margin-left: 5px;
+
+	}
+
+	.hotline a:hover {
+		text-decoration: underline;
+		font-weight: bold;
+	}
+
 	/* button to top */
 	#topBtn {
 		bottom: 30px;
@@ -376,40 +397,6 @@ thead {
 		color: lightskyblue;
 	}
 
-
-	/* hotline */
-
-	.hotline {
-		height: 50px;
-		display: flex;
-		flex-wrap: wrap;
-		justify-content: flex-end;
-		align-self: center;
-
-	}
-
-
-	.hotline a {
-		text-decoration: none;
-		color: black;
-
-		padding-bottom: 100px;
-
-	}
-
-	.hotline i {
-		align-self: center;
-	}
-
-
-	.hotline h2 {
-		font-size: 15px;
-
-		align-self: center;
-		line-height: 50px;
-
-		margin: auto;
-	}
 
 	/* akhir hotline */
 	/* statistik */
