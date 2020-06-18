@@ -69,6 +69,10 @@ footer {
 }
 
 
+.about .container .row .center {
+	margin-bottom: 10px !important;
+}
+
 .jumbo {
 	height: 350px;
 	margin-bottom: 200px;
