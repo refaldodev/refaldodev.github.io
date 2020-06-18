@@ -331,6 +331,10 @@ thead {
 	margin-bottom: 40px;
 }
 
+.contact {
+	margin-bottom: 20px;
+}
+
 @media (min-width: 768px) {
 
 	.jumbo {
@@ -524,10 +528,23 @@ thead {
 		filter: drop-shadow(1px, 1px, 1px rgba(0, 0, 0, 0.9));
 	}
 
+	.about {
+		margin-bottom: 30px !important;
+	}
+
+	.about .container .row .center {
+		margin-bottom: 30px !important;
+	}
+
 	/* contact index */
+	.contact {
+		margin-bottom: 30px;
+
+	}
 
 	.contact .test .container .card-panel {
 		border-radius: 20px !important;
+		margin-top: 30px;
 	}
 
 	.contact .test .container ul {
@@ -612,6 +629,13 @@ thead {
 		margin-bottom: 50px;
 	}
 
+	#services {
+		margin-bottom: 30px;
+	}
+
+	.services .container .row .light {
+		margin-bottom: 30px !important;
+	}
 
 	.card.card-panel {
 		height: 300px;
