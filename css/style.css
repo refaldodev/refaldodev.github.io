@@ -57,6 +57,10 @@ body {
 	color: lightskyblue;
 }
 
+#wa {
+	display: none;
+}
+
 nav,
 footer {
 	background-color: #0F0E20 !important;
@@ -424,7 +428,7 @@ thead {
 		background-color: none;
 
 		opacity: 0.8;
-
+		display: none;
 		border: none;
 
 		z-index: 99;
