@@ -417,6 +417,27 @@ thead {
 		color: lightskyblue;
 	}
 
+	#wa {
+		bottom: 150px;
+		position: fixed;
+		right: 40px;
+		background-color: none;
+
+		opacity: 0.8;
+
+		border: none;
+
+		z-index: 99;
+		border: none;
+
+	}
+
+	#wa img {
+
+		width: 40px !important;
+		height: 40px !important;
+	}
+
 
 	/* akhir hotline */
 	/* statistik */
