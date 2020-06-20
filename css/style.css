@@ -177,6 +177,10 @@ footer {
 	border-top: 1px solid rgba(0, 0, 0, 0.1);
 
 }
+#statistik #container {
+		height: 450px !important; 
+	}
+
 
 
 section,
@@ -652,6 +656,9 @@ thead {
 		margin-top: 50px;
 		border-top: 1px solid rgba(0, 0, 0, 0.1);
 
+	}
+	#statistik #container {
+		height: 700px !important; 
 	}
 
 	#services {
