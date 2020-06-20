@@ -179,6 +179,9 @@ fetch(
         var totalSem = 0;
         var statPos = 0;
         var statCountry = 0;
+        var indoPos = 0;
+        var indoMen = 0;
+        var IndoSem = 0;
 
 
         // function test(data) {
@@ -205,6 +208,12 @@ fetch(
             //   sembuh += Number(data[32].attributes.Recovered);
             //   meninggal += Number(data[32].attributes.Deaths);
             // }
+            if(data[i].attributes.Country_Region == "Indonesia"){
+                    indoPos  = data[i]['attributes']['Confirmed'];
+                    IndoSem   = data[i]['attributes']['Recovered'];
+                    indoMen =data[i]['attributes']['Deaths'];
+            }
+            
             hasil += "<tr>"
             hasil += "<td>" + no + "</td>\n";
             hasil += "<td>" + data[i].attributes.Country_Region + "</td>\n";
@@ -219,7 +228,7 @@ fetch(
 
 
 
-
+                
             //  province[i] = hasil[i].attributes.Provinsi;
 
             Jumlah_Sak[i] = JSON.parse(data[i].attributes.Confirmed);
@@ -238,18 +247,23 @@ fetch(
         hasil += "<td> " + set_titik(totalMen) + "</td>"
         hasil += "<td> " + set_titik(totalSem) + "</td>"
 
-
+// console.log(indoPos);
+// console.log(IndoSem);
+// console.log(indoMen);
+// console.log(indoPos);
         hasil += "</tr>"
         // positif += data[32].attributes.Confirmed;
-        document.getElementById('positif').innerHTML = "Confirmed : " + set_titik(data[29].attributes.Confirmed);
+
+
+        document.getElementById('positif').innerHTML = "Confirmed : " + set_titik(indoPos);
         // 
-        document.getElementById('sembuh').innerHTML = "Recovered   : " + set_titik(data[29].attributes.Recovered);
+        document.getElementById('sembuh').innerHTML = "Recovered   : " + set_titik(IndoSem);
         document.getElementById('pos').innerHTML = set_titik(jumlah_postif);
         document.getElementById('men').innerHTML = set_titik(jumlah_meninggal);
         document.getElementById('sem').innerHTML = set_titik(jumlah_sembuh);
         // document.getElementById('positif').innerHTML = positif;
         document.getElementById('isi').innerHTML = hasil;
-        document.getElementById('meninggal').innerHTML = "Deaths : " + set_titik(data[29].attributes.Deaths);
+        document.getElementById('meninggal').innerHTML = "Deaths : " + set_titik(indoMen);
 
 
 
