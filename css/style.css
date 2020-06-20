@@ -143,6 +143,12 @@ footer {
 
 
 }
+.panel .container .row  h3{
+		font-size: 30px !important;
+		text-shadow: none;
+		
+	}
+
 
 .parallax-container {
 	height: 20%;
@@ -334,7 +340,11 @@ thead {
 	height: 400px;
 
 }
-
+.petaP .container h6 {
+	margin-bottom: 40px;
+	font-size: 30px;
+	margin-top: -20px;
+}
 #mapid {
 	height: 300px !important;
 
@@ -355,6 +365,7 @@ thead {
 		margin-top: 40px !important;
 
 	}
+	
 }
 
 
@@ -704,6 +715,11 @@ thead {
 		opacity: 1;
 		transform: translateY(0x);
 	}
+.panel .container .row  h3{
+		font-size: 40px !important;
+		text-shadow: none;
+		margin-top : -10px;
+	}
 
 	.panel .card-panel .text {
 
@@ -788,7 +804,10 @@ thead {
 		height: 600px;
 
 	}
+	.petaP .container h6{
+		font-size: 40px;
 
+	}
 	#mapid {
 		height: 500px !important;
 
