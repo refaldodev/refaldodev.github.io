@@ -138,17 +138,14 @@ footer {
 	margin-top: 100px;
 }
 
+#panel .container .row h3 {
+	font-size: 30px !important;
+}
 .panel .card-corona .card-panel {
 	border-radius: 20px;
 
 
 }
-.panel .container .row  h3{
-		font-size: 30px !important;
-		text-shadow: none;
-		
-	}
-
 
 .parallax-container {
 	height: 20%;
@@ -183,10 +180,6 @@ footer {
 	border-top: 1px solid rgba(0, 0, 0, 0.1);
 
 }
-#statistik #container {
-		height: 450px !important; 
-	}
-
 
 
 section,
@@ -305,7 +298,7 @@ thead {
 
 
 .tabel {
-	height: 300px;
+	height: 400px;
 	overflow: auto;
 	margin-bottom: 50px;
 	margin-top: 50px;
@@ -340,10 +333,10 @@ thead {
 	height: 400px;
 
 }
-.petaP .container h6 {
-	margin-bottom: 40px;
-	font-size: 30px;
-	margin-top: -20px;
+.petaP h2{
+	font-size: 30px !important;
+	margin-top: -35px;
+
 }
 #mapid {
 	height: 300px !important;
@@ -365,7 +358,9 @@ thead {
 		margin-top: 40px !important;
 
 	}
-	
+	.tabel {
+		height: 550px;
+	}
 }
 
 
@@ -669,7 +664,7 @@ thead {
 
 	}
 	#statistik #container {
-		height: 700px !important; 
+		height: 600px !important;
 	}
 
 	#services {
@@ -715,12 +710,9 @@ thead {
 		opacity: 1;
 		transform: translateY(0x);
 	}
-.panel .container .row  h3{
-		font-size: 40px !important;
-		text-shadow: none;
-		margin-top : -10px;
-	}
-
+#panel .container .row h3 {
+	font-size: 40px !important;
+}
 	.panel .card-panel .text {
 
 		display: flex;
@@ -769,7 +761,7 @@ thead {
 
 
 	.tabel {
-		height: 500px;
+		height: 550px;
 		overflow: scroll;
 		margin-bottom: 50px;
 		margin-top: 50px;
@@ -804,10 +796,13 @@ thead {
 		height: 600px;
 
 	}
-	.petaP .container h6{
-		font-size: 40px;
+	.petaP h2{
+	font-size: 40px !important;
+	margin-top: -20px;
+	margin-bottom: 35px;
 
-	}
+}
+
 	#mapid {
 		height: 500px !important;
 

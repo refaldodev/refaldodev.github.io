@@ -105,10 +105,10 @@ fetch(
         for (var p = 0; p < a; p++) {
             L.marker([peta[p].attributes.Lat, peta[p].attributes.Long_]).addTo(mymap)
 
-                .bindPopup("<h6 style='margin-bottom: -16px;'> Country :" + peta[p].attributes.Country_Region +
+                .bindPopup("<h6 style='margin-bottom: -16px;'> Country : " + peta[p].attributes.Country_Region +
                     " </h6> <br>" +
-                    "<h6 style='margin-bottom: -16px;'> Confirmed :" + set_titik(peta[p].attributes.Confirmed) + " </h6> <br>" +
-                    "<h6 style='margin-bottom: -16px;'> Deaths :" + set_titik(peta[p].attributes.Deaths) + " </h6> <br>" +
+                    "<h6 style='margin-bottom: -16px;'> Confirmed : " + set_titik(peta[p].attributes.Confirmed) + " </h6> <br>" +
+                    "<h6 style='margin-bottom: -16px;'> Deaths : " + set_titik(peta[p].attributes.Deaths) + " </h6> <br>" +
                     "<h6 style='margin-bottom: -16px;'> Recovered :" + peta[p].attributes.Recovered + " </h6> <br>"
 
 
