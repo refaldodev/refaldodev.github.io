@@ -247,7 +247,7 @@ fetch(
         hasil += "<td> " + set_titik(totalMen) + "</td>"
         hasil += "<td> " + set_titik(totalSem) + "</td>"
 
-// console.log(indoPos);
+console.log(indoPos);
 // console.log(IndoSem);
 // console.log(indoMen);
 // console.log(indoPos);
@@ -340,16 +340,17 @@ function call_hightchart() {
     //     series: [{
     //         name: 'Jumlah Sakit',
     //         data: Jumlah_Sak
-    //     }, {
-    //         name: 'Jumlah Sembuh',
+    //     },{
+    //         name: 'Confirmed',
+    //         data: Jumlah_Sak
+    //     }, 
+    //     {
+    //         name: 'sembuh',
     //         data: Jumlah_Semb
-
-    //     }, {
-    //         name: 'Jumlah Meninggal',
-    //         data: Jumlah_Mat
-
+        
     //     }]
     // });
+    
     Highcharts.chart('container', {
         chart: {
             type: 'area'
@@ -414,3 +415,70 @@ function call_hightchart() {
     });
 
 }
+
+$(document).ready(function(){
+
+dataGlobal();
+dataNegara();
+function dataGlobal(){
+
+
+
+    $.ajax({
+
+            url : 'https://coronavirus-19-api.herokuapp.com/all',
+            success : function(data){
+                try{
+                    var json = data;
+                    var kasus = set_titik(data.cases);
+                    var meninggal = set_titik(data.deaths);
+                    var Sembuh= set_titik(data.recovered);
+
+                    $('#pos').html(kasus);
+                    $('#men').html(meninggal);
+                    $('#sem').html(Sembuh);
+                }catch{
+                    alert('error');
+                }
+            }
+
+
+
+    });
+}
+ function dataNegara(){
+        $.ajax({
+            url : 'https://coronavirus-19-api.herokuapp.com/countries',
+            success : function(data){
+                try{
+
+                    var json = data;
+                    console.log(data);
+                    var html = [];
+
+                    if(json.length > 0){
+                        var i;
+                        for (i = 0; i < json.length; i++){
+                              var dataNegara = json[i];
+                              var namaNegara = dataNegara.country;
+
+                              if (namaNegara === 'Indonesia'){
+                                    var kasus = dataNegara.cases;
+
+                                    var mati = dataNegara.deaths;
+                                    var sembuh = dataNegara.recovered;
+                                    
+                                     $('#data-indo').html(
+                                        'Positif : ' + kasus + '<br>' + 'meninggal : ' +  mati + '<br>'+ 'Sembuh : ' +sembuh 
+                                      )
+                              }
+                        }
+                    }
+                    
+                }catch{
+                    alert('Error');
+                }
+            }
+        });
+      }
+});
