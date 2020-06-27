@@ -467,13 +467,13 @@ function dataGlobal(){
                               var namaNegara = dataNegara.country;
 
                               if (namaNegara === 'Indonesia'){
-                                    var kasus = dataNegara.cases;
+                                    var kasus = set_titik(dataNegara.cases);
 
-                                    var mati = dataNegara.deaths;
-                                    var sembuh = dataNegara.recovered;
+                                    var mati = set_titik(dataNegara.deaths);
+                                    var sembuh = set_titik(dataNegara.recovered);
                                     
                                      $('#data-indo').html(
-                                        'Confirmed   : ' + kasus + '<br>' + 'Deaths : ' +  mati + '<br>'+ 'Recovered : ' +sembuh 
+                                        'Confirmed   : ' + kasus + '<br>' + 'Deaths         &nbsp &nbsp : ' +  mati + '<br>'+ 'Recovered : ' +sembuh 
                                       )
                               }
                         }
