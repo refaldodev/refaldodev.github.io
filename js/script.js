@@ -473,7 +473,7 @@ function dataGlobal(){
                                     var sembuh = dataNegara.recovered;
                                     
                                      $('#data-indo').html(
-                                        'Positif : ' + kasus + '<br>' + 'meninggal : ' +  mati + '<br>'+ 'Sembuh : ' +sembuh 
+                                        'Confirmed   : ' + kasus + '<br>' + 'Deaths : ' +  mati + '<br>'+ 'Recovered : ' +sembuh 
                                       )
                               }
                         }
