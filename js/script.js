@@ -236,7 +236,11 @@ fetch(
             Jumlah_Semb[i] = JSON.parse(data[i].attributes.Recovered);
             Country[i] = data[i].attributes.Country_Region;
 
-
+                jml_sak = Jumlah_Sak;
+                jml_sem= jumlah_sembuh;
+                jml_mat = Jumlah_Mat;
+                negara = Country;
+                console.log(negara );
         }
         // totalPos +=  Number(data[i].attributes.Confirmed);
         // totalMen +=  Number(data[i].attributes.Deaths);
@@ -247,11 +251,8 @@ fetch(
         hasil += "<td> " + set_titik(totalMen) + "</td>"
         hasil += "<td> " + set_titik(totalSem) + "</td>"
 
-console.log(indoPos);
-// console.log(IndoSem);
-// console.log(indoMen);
-// console.log(indoPos);
         hasil += "</tr>"
+
         // positif += data[32].attributes.Confirmed;
 
 
@@ -298,7 +299,7 @@ $(document).ready(function () {
 });
 // }
 
-
+call_hightchart();
 
 function call_hightchart() {
 
@@ -351,68 +352,70 @@ function call_hightchart() {
     //     }]
     // });
     
-    Highcharts.chart('container', {
-        chart: {
-            type: 'area'
-        },
-        title: {
-            text: 'Statistik Penyebaran Corona'
-        },
-        subtitle: {
-            text: 'Refaldodev.github.io'
-        },
-        xAxis: {
-            categories: Country,
-            tickmarkPlacement: 'on',
-            title: {
-                enabled: false
-            }
-        },
-        yAxis: {
-            labels: {
-                format: '{value}%'
-            },
-            title: {
-                enabled: false
-            }
-        },
-        tooltip: {
-            pointFormat: '<span style="color:{series.color}">{series.name}</span>: <b></b> ({point.y:,.0f} )<br/>',
-            split: true
-        },
-        plotOptions: {
-            area: {
-                stacking: 'percent',
-                lineColor: '#ffffff',
-                lineWidth: 1,
-                marker: {
-                    lineWidth: 1,
-                    lineColor: '#ffffff'
-                },
-                accessibility: {
-                    pointDescriptionFormatter: function (point) {
-                        function round(x) {
-                            return Math.round(x * 100) / 100;
-                        }
-                        return (point.index + 1) + ', ' + point.category + ', ' +
-                            point.y + ' milions, ' + round(point.percentage) + '%, ' +
-                            point.series.name;
-                    }
-                }
-            }
-        },
-        series: [{
-            name: 'Deaths',
-            data: Jumlah_Mat
-        }, {
-            name: 'Confirmed',
-            data: Jumlah_Sak
-        }, {
-            name: 'Recovered',
-            data: Jumlah_Semb
+    // Highcharts.chart('container', {
+    //     chart: {
+    //         type: 'area'
+    //     },
+    //     title: {
+    //         text: 'Statistik Penyebaran Corona'
+    //     },
+    //     subtitle: {
+    //         text: 'Refaldodev.github.io'
+    //     },
+    //     xAxis: {
+    //         categories: negara ,
+    //         tickmarkPlacement: 'on',
+    //         title: {
+    //             enabled: false
+    //         }
+    //     },
+    //     yAxis: {
+    //         labels: {
+    //             format: '{value}%'
+    //         },
+    //         title: {
+    //             enabled: false
+    //         }
+    //     },
+    //     tooltip: {
+    //         pointFormat: '<span style="color:{series.color}">{series.name}</span>: <b></b> ({point.y:,.0f} )<br/>',
+    //         split: true
+    //     },
+    //     plotOptions: {
+    //         area: {
+    //             stacking: 'percent',
+    //             lineColor: '#ffffff',
+    //             lineWidth: 1,
+    //             marker: {
+    //                 lineWidth: 1,
+    //                 lineColor: '#ffffff'
+    //             },
+    //             accessibility: {
+    //                 pointDescriptionFormatter: function (point) {
+    //                     function round(x) {
+    //                         return Math.round(x * 100) / 100;
+    //                     }
+    //                     return (point.index + 1) + ', ' + point.category + ', ' +
+    //                         point.y + ' milions, ' + round(point.percentage) + '%, ' +
+    //                         point.series.name;
+    //                 }
+    //             }
+    //         }
+    //     },
+    //     series: [{
+    //         name: 'Deaths',
+    //         data: Jumlah_Mat
+    //     }, {
+    //         name: 'Confirmed',
+    //         data: Jumlah_Sak
 
-        }]
-    });
+    //     },{
+    //         name: 'Confirmed',
+    //         data: Jumlah_Sak
+
+
+    //     }]
+    // });
 
 }
 
@@ -420,6 +423,7 @@ $(document).ready(function(){
 
 dataGlobal();
 dataNegara();
+dataTable();
 function dataGlobal(){
 
 
@@ -453,7 +457,7 @@ function dataGlobal(){
                 try{
 
                     var json = data;
-                    console.log(data);
+                    
                     var html = [];
 
                     if(json.length > 0){
@@ -481,4 +485,125 @@ function dataGlobal(){
             }
         });
       }
+       function dataTable(){
+        $.ajax({
+            url : 'https://coronavirus-19-api.herokuapp.com/countries',
+             success  : function(data){
+              try{
+                var json = data;
+                var html = [];
+                var hasil = "";
+                var pos = 0;
+                var sem = 0;
+                var mat = 0; 
+
+                var no = 1;
+                        if(json.length > 0){
+                    var i;
+
+                    for(i = 0; i <json.length ; i++)
+                    {
+
+                          var dataAll = json;
+
+
+                            if ( dataAll[i].country != "World"){
+                        hasil += "<tr>"
+                        hasil += "<td>" + no + "</td>\n";
+                        hasil += "<td>" + dataAll[i].country + "</td>\n";
+                        hasil += "<td>" + set_titik(dataAll[i].cases) + "</td>\n";
+                        hasil += "<td>" + dataAll[i].recovered    + "</td>\n";
+                        hasil += "<td>" + set_titik(dataAll[i].deaths)   + "</td>\n";
+                        // hasil += "<td>" + set_titik(dataAll.cases) + "</td>\n";
+                        // hasil += "<td>" + set_titik(dataAll.recovered) + "</td>\n";
+                        // // hasil += "<td>" + set_titik(dataAll.deaths) + "</td>\n";
+                        // var test = dataAll.country;
+
+                        hasil += "</tr>\n"
+                        no++;
+
+                            
+                         pos += (dataAll[i].cases);
+                         sem += (dataAll[i].recovered);
+                         mat += (dataAll[i].deaths);
+              
+                }
+                }
+                        hasil += "<tr>"
+        hasil += "<td colspan='2'> Jumlah </td>"
+        hasil += "<td> " + set_titik(pos) + "</td>"
+        hasil += "<td> " + sem + "</td>"        
+        hasil += "<td> " + set_titik(mat) + "</td>"
+        
+
+        hasil += "</tr>"
+                $('#isi').html(hasil);
+            }
+              }catch {
+                alert('eror');
+              }
+              
+             }
+        });
+      }
+
+
+      // // public function statistik(){
+
+      // //       $.ajax({
+      // //       url : 'https://coronavirus-19-api.herokuapp.com/countries',
+      // //        success  : function(data){
+
+      // //               try{
+      // //           var json = data;
+      // //           var html = [];
+
+                    
+      // //       }catch{
+
+
+
+
+
+
+      // //       }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      // //        }
+
+
+
+
+      // //    });
+
+
+
+
+
+
+      // }
 });
