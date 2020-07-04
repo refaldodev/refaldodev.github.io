@@ -1,3 +1,7 @@
+setTimeout(function () {
+    $('.loader_bg').fadeToggle();
+}, 500);
+
 function init() {
     const slides = document.querySelectorAll('.slide');
     const pages = document.querySelectorAll('.page');

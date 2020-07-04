@@ -1,3 +1,7 @@
+setTimeout(function () {
+    $('.loader_bg').fadeToggle();
+}, 500);
+
 function scrollAppear() {
     var tabel = document.querySelector('.tabel');
     var tabelPosition = tabel.getBoundingClientRect().top;
@@ -211,12 +215,12 @@ fetch(
             //   sembuh += Number(data[32].attributes.Recovered);
             //   meninggal += Number(data[32].attributes.Deaths);
             // }
-            if(data[i].attributes.Country_Region == "Indonesia"){
-                    indoPos  = data[i]['attributes']['Confirmed'];
-                    IndoSem   = data[i]['attributes']['Recovered'];
-                    indoMen =data[i]['attributes']['Deaths'];
+            if (data[i].attributes.Country_Region == "Indonesia") {
+                indoPos = data[i]['attributes']['Confirmed'];
+                IndoSem = data[i]['attributes']['Recovered'];
+                indoMen = data[i]['attributes']['Deaths'];
             }
-            
+
             hasil += "<tr>"
             hasil += "<td>" + no + "</td>\n";
             hasil += "<td>" + data[i].attributes.Country_Region + "</td>\n";
@@ -231,7 +235,7 @@ fetch(
 
 
 
-                
+
             //  province[i] = hasil[i].attributes.Provinsi;
 
             Jumlah_Sak[i] = JSON.parse(data[i].attributes.Confirmed);
@@ -239,11 +243,11 @@ fetch(
             Jumlah_Semb[i] = JSON.parse(data[i].attributes.Recovered);
             Country[i] = data[i].attributes.Country_Region;
 
-                jml_sak = Jumlah_Sak;
-                jml_sem= jumlah_sembuh;
-                jml_mat = Jumlah_Mat;
-                negara = Country;
-                console.log(negara );
+            jml_sak = Jumlah_Sak;
+            jml_sem = jumlah_sembuh;
+            jml_mat = Jumlah_Mat;
+            negara = Country;
+            console.log(negara);
         }
         // totalPos +=  Number(data[i].attributes.Confirmed);
         // totalMen +=  Number(data[i].attributes.Deaths);
@@ -351,10 +355,10 @@ function call_hightchart() {
     //     {
     //         name: 'sembuh',
     //         data: Jumlah_Semb
-        
+
     //     }]
     // });
-    
+
     // Highcharts.chart('container', {
     //     chart: {
     //         type: 'area'
@@ -422,157 +426,156 @@ function call_hightchart() {
 
 }
 
-$(document).ready(function(){
+$(document).ready(function () {
 
-dataGlobal();
-dataNegara();
-dataTable();
-function dataGlobal(){
+    dataGlobal();
+    dataNegara();
+    dataTable();
+
+    function dataGlobal() {
 
 
 
-    $.ajax({
+        $.ajax({
 
-            url : 'https://coronavirus-19-api.herokuapp.com/all',
-            success : function(data){
-                try{
+            url: 'https://coronavirus-19-api.herokuapp.com/all',
+            success: function (data) {
+                try {
                     var json = data;
                     var kasus = set_titik(data.cases);
                     var meninggal = set_titik(data.deaths);
-                    var Sembuh= set_titik(data.recovered);
+                    var Sembuh = set_titik(data.recovered);
 
                     $('#pos').html(kasus);
                     $('#men').html(meninggal);
                     $('#sem').html(Sembuh);
-                }catch{
+                } catch {
                     alert('error');
                 }
             }
 
 
 
-    });
-}
- function dataNegara(){
+        });
+    }
+
+    function dataNegara() {
         $.ajax({
-            url : 'https://coronavirus-19-api.herokuapp.com/countries',
-            success : function(data){
-                try{
+            url: 'https://coronavirus-19-api.herokuapp.com/countries',
+            success: function (data) {
+                try {
 
                     var json = data;
-                    
+
                     var html = [];
 
-                    if(json.length > 0){
+                    if (json.length > 0) {
                         var i;
-                        for (i = 0; i < json.length; i++){
-                              var dataNegara = json[i];
-                              var namaNegara = dataNegara.country;
+                        for (i = 0; i < json.length; i++) {
+                            var dataNegara = json[i];
+                            var namaNegara = dataNegara.country;
 
-                              if (namaNegara === 'Indonesia'){
-                                    var kasus = set_titik(dataNegara.cases);
+                            if (namaNegara === 'Indonesia') {
+                                var kasus = set_titik(dataNegara.cases);
 
-                                    var mati = set_titik(dataNegara.deaths);
-                                    var sembuh = set_titik(dataNegara.recovered);
-                                    
-                                     $('#data-indo').html(
-                                        'Confirmed   : ' + kasus + '<br>' + 'Deaths         &nbsp &nbsp : ' +  mati + '<br>'+ 'Recovered : ' +sembuh 
-                                      )
-                              }
+                                var mati = set_titik(dataNegara.deaths);
+                                var sembuh = set_titik(dataNegara.recovered);
+
+                                $('#data-indo').html(
+                                    'Confirmed   : ' + kasus + '<br>' + 'Deaths         &nbsp &nbsp : ' + mati + '<br>' + 'Recovered : ' + sembuh
+                                )
+                            }
                         }
                     }
-                    
-                }catch{
+
+                } catch {
                     alert('Error');
                 }
             }
         });
-      }
-       function dataTable(){
+    }
+
+    function dataTable() {
         $.ajax({
-            url : 'https://coronavirus-19-api.herokuapp.com/countries',
-             success  : function(data){
-              try{
-                var json = data;
-                var html = [];
-                var hasil = "";
-                var pos = 0;
-                var sem = 0;
-                var mat = 0; 
+            url: 'https://coronavirus-19-api.herokuapp.com/countries',
+            success: function (data) {
+                try {
+                    var json = data;
+                    var html = [];
+                    var hasil = "";
+                    var pos = 0;
+                    var sem = 0;
+                    var mat = 0;
 
-                var no = 1;
-                        if(json.length > 0){
-                    var i;
+                    var no = 1;
+                    if (json.length > 0) {
+                        var i;
 
-                    for(i = 0; i <json.length ; i++)
-                    {
+                        for (i = 0; i < json.length; i++) {
 
-                          var dataAll = json;
+                            var dataAll = json;
 
 
-                            if ( dataAll[i].country != "World"){
+                            if (dataAll[i].country != "World") {
+                                hasil += "<tr>"
+                                hasil += "<td>" + no + "</td>\n";
+                                hasil += "<td>" + dataAll[i].country + "</td>\n";
+                                hasil += "<td>" + set_titik(dataAll[i].cases) + "</td>\n";
+                                hasil += "<td>" + dataAll[i].recovered + "</td>\n";
+                                hasil += "<td>" + set_titik(dataAll[i].deaths) + "</td>\n";
+                                // hasil += "<td>" + set_titik(dataAll.cases) + "</td>\n";
+                                // hasil += "<td>" + set_titik(dataAll.recovered) + "</td>\n";
+                                // // hasil += "<td>" + set_titik(dataAll.deaths) + "</td>\n";
+                                // var test = dataAll.country;
+
+                                hasil += "</tr>\n"
+                                no++;
+
+
+                                pos += (dataAll[i].cases);
+                                sem += (dataAll[i].recovered);
+                                mat += (dataAll[i].deaths);
+
+                            }
+                        }
                         hasil += "<tr>"
-                        hasil += "<td>" + no + "</td>\n";
-                        hasil += "<td>" + dataAll[i].country + "</td>\n";
-                        hasil += "<td>" + set_titik(dataAll[i].cases) + "</td>\n";
-                        hasil += "<td>" + dataAll[i].recovered    + "</td>\n";
-                        hasil += "<td>" + set_titik(dataAll[i].deaths)   + "</td>\n";
-                        // hasil += "<td>" + set_titik(dataAll.cases) + "</td>\n";
-                        // hasil += "<td>" + set_titik(dataAll.recovered) + "</td>\n";
-                        // // hasil += "<td>" + set_titik(dataAll.deaths) + "</td>\n";
-                        // var test = dataAll.country;
+                        hasil += "<td colspan='2'> Jumlah </td>"
+                        hasil += "<td> " + set_titik(pos) + "</td>"
+                        hasil += "<td> " + sem + "</td>"
+                        hasil += "<td> " + set_titik(mat) + "</td>"
 
-                        hasil += "</tr>\n"
-                        no++;
 
-                            
-                         pos += (dataAll[i].cases);
-                         sem += (dataAll[i].recovered);
-                         mat += (dataAll[i].deaths);
-              
+                        hasil += "</tr>"
+                        $('#isi').html(hasil);
+                    }
+                } catch {
+                    alert('eror');
                 }
-                }
-                        hasil += "<tr>"
-        hasil += "<td colspan='2'> Jumlah </td>"
-        hasil += "<td> " + set_titik(pos) + "</td>"
-        hasil += "<td> " + sem + "</td>"        
-        hasil += "<td> " + set_titik(mat) + "</td>"
-        
 
-        hasil += "</tr>"
-                $('#isi').html(hasil);
             }
-              }catch {
-                alert('eror');
-              }
-              
-             }
         });
-      }
+    }
 
 
-      // // public function statistik(){
+    // // public function statistik(){
 
-      // //       $.ajax({
-      // //       url : 'https://coronavirus-19-api.herokuapp.com/countries',
-      // //        success  : function(data){
+    // //       $.ajax({
+    // //       url : 'https://coronavirus-19-api.herokuapp.com/countries',
+    // //        success  : function(data){
 
-      // //               try{
-      // //           var json = data;
-      // //           var html = [];
-
-                    
-      // //       }catch{
+    // //               try{
+    // //           var json = data;
+    // //           var html = [];
 
 
-
+    // //       }catch{
 
 
 
-      // //       }
 
 
 
+    // //       }
 
 
 
@@ -596,18 +599,20 @@ function dataGlobal(){
 
 
 
-      // //        }
+
+
+
+    // //        }
 
 
 
 
-      // //    });
+    // //    });
 
 
 
 
 
 
-      // }
+    // }
 });
-

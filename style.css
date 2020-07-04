@@ -21,6 +21,61 @@ body {
     overflow: hidden;
 }
 
+.loader_bg {
+    position: fixed;
+    z-index: 999999;
+    background: #fff;
+    width: 100%;
+    height: 100%;
+}
+
+.loader {
+    border: 0 solid transparent;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    top: calc(50vh - 75px);
+    left: calc(50vw - 75px);
+
+}
+
+.loader:before,
+.loader:after {
+    content: '';
+    border: 1em solid blue;
+    border-radius: 50%;
+    width: inherit;
+    height: inherit;
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: loader 2s linear infinite;
+    opacity: 0;
+
+}
+
+.loader:before {
+    animation-delay: .5s;
+}
+
+@keyframes loader {
+    0% {
+        transform: scale(0);
+        ;
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 0;
+    }
+}
+
 .portofolio {
     overflow: hidden;
     color: white;
@@ -185,7 +240,9 @@ nav {
     height: 100%;
     width: 100%;
     object-fit: cover;
+
     object-position: top;
+
 
 
 }
@@ -260,41 +317,7 @@ nav {
         height: 500px;
     }
 
-    .details .owl-carousel img {
-        width: 170px;
-        height: 170px;
-        border-radius: 50%;
-    }
 
-    .details {
-        grid-row: 2/3;
-        grid-column: 2/3;
-        text-align: center;
-    }
-
-    .details h1 {
-        font-size: 48px;
-
-    }
-
-    .details h2 {
-        font-size: 38px;
-    }
-
-    .story,
-    .my-work {
-        flex-direction: column;
-    }
-
-    .story-description,
-    .work-description {
-        width: 100%;
-    }
-
-    .work-gallery {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    }
 
     .profile {
         padding-top: 30px;
