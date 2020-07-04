@@ -70,6 +70,9 @@ function set_titik(param, separator) {
     return result;
 }
 
+// indo
+
+
 var mymap = L.map('mapid').setView([5, 110], 3.5);
 
 L.tileLayer(
@@ -607,3 +610,4 @@ function dataGlobal(){
 
       // }
 });
+

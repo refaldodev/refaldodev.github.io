@@ -7,7 +7,7 @@ body {
 	display: flex;
 	justify-content: flex-end;
 	align-items: center;
-	height: 	50px;
+	height: 50px;
 }
 
 .hotline .telpon {
@@ -141,6 +141,7 @@ footer {
 #panel .container .row h3 {
 	font-size: 30px !important;
 }
+
 .panel .card-corona .card-panel {
 	border-radius: 20px;
 
@@ -333,11 +334,13 @@ thead {
 	height: 400px;
 
 }
-.petaP h2{
+
+.petaP h2 {
 	font-size: 30px !important;
 	margin-top: -15px;
 
 }
+
 #mapid {
 	height: 300px !important;
 
@@ -358,6 +361,7 @@ thead {
 		margin-top: 40px !important;
 
 	}
+
 	.tabel {
 		height: 550px;
 	}
@@ -663,6 +667,7 @@ thead {
 		border-top: 1px solid rgba(0, 0, 0, 0.1);
 
 	}
+
 	#statistik #container {
 		height: 600px !important;
 	}
@@ -710,9 +715,11 @@ thead {
 		opacity: 1;
 		transform: translateY(0x);
 	}
-#panel .container .row h3 {
-	font-size: 40px !important;
-}
+
+	#panel .container .row h3 {
+		font-size: 40px !important;
+	}
+
 	.panel .card-panel .text {
 
 		display: flex;
@@ -796,12 +803,13 @@ thead {
 		height: 600px;
 
 	}
-	.petaP h2{
-	font-size: 40px !important;
-	margin-top: -20px;
-	margin-bottom: 35px;
 
-}
+	.petaP h2 {
+		font-size: 40px !important;
+		margin-top: -20px;
+		margin-bottom: 35px;
+
+	}
 
 	#mapid {
 		height: 500px !important;
