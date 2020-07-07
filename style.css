@@ -117,12 +117,16 @@ nav {
 }
 
 .details .btn {
-    padding: 2px;
+    padding: 5px;
     color: black;
     background-color: yellow;
     border: none;
     border-radius: 3px;
     font-size: 10px;
+
+}
+.details a {
+    text-decoration: none;
 }
 
 .hero {
@@ -151,7 +155,13 @@ nav {
 .model-left {
     transform: translate(0%, -10%);
 }
+.model{
+        transform: translate(0%, 10%);
 
+}
+.hero:hover .model{
+        transform: translate(0%, 0%);
+} 
 .hero:hover .model-right {
     transform: translate(0%, 0%);
 }
@@ -163,7 +173,7 @@ nav {
 
 .details {
     grid-column: 2/3;
-    align-self: end;
+    align-self: center;
 }
 
 .details .owl-carousel img {
@@ -366,10 +376,14 @@ nav {
         height: 150px;
         margin-top: 60px;
     }
+    .details {
+            align-self: start;
 
+    }
     .details h1 {
         font-size: 15px;
         margin-bottom: 0;
+
     }
 
     .details h2 {
@@ -402,16 +416,18 @@ nav {
 }
 
 .nav-open h3 {
-    font-size: 20px;
-    padding-bottom: 40px;
+    font-size: 16px;
+    padding-bottom: 20px;
 }
 
 .nav-open p {
-    font-size: 17px;
+    font-size: 12px;
 }
 
 .social-links img {
-    padding: 0px 20px;
+    padding: 0px 5px;
+    width: 25px;
+    height: 25px;
 }
 
 .logo,

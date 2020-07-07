@@ -97,10 +97,10 @@ function init() {
                 y: 0
             })
             .set(nextLeft, {
-                clearProps: "all"
+                clearProps: 'all'
             })
             .set(nextRight, {
-                clearProps: "all"
+                clearProps: 'all'
             });
 
 
