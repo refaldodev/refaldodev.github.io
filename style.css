@@ -185,17 +185,24 @@ nav {
 .details h1 {
     font-size: 50px;
     font-family: PopRegular;
-}
+
+    }
 
 .details h2 {
     font-style: 40px;
-    padding-bottom: 20px 0px;
+    margin-top: -10px;
+    padding-bottom: 10px 0px;
+
+            margin-bottom: 10px;
+
 }
 
-.details p {
-    font-size: 20px;
-    padding: 20px 0px 50px 0px;
+
 }
+.details .btn{
+    padding: 100px;
+}
+
 
 .pages {
     position: absolute;
@@ -322,7 +329,7 @@ nav {
     }
 
     .hero img {
-        height: 500px;
+        height: 350px;
     }
 
     .details .owl-carousel img {
@@ -339,10 +346,11 @@ nav {
 
     .details h1 {
         font-size: 48px;
-
+    
     }
 
     .details h2 {
+        margin-top: 0px;
         font-size: 38px;
     }
 
@@ -387,8 +395,10 @@ nav {
     }
 
     .details h2 {
-        font-size: 13px;
+        font-size: 12px;
+        margin-bottom: 10px;
     }
+    
 
 
 }

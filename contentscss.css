@@ -15,12 +15,29 @@
     font-family: PopRegular;
     src: url('./fonts/Poppins-Regular.ttf');
 }
-
+@font-face {
+    font-family: PopMedium;
+    src: url('./fonts/Poppins-Medium.ttf');
+}
+@font-face {
+    font-family: RobRegular;
+    src: url('./fonts/Roboto-Regular.ttf');
+}
+@font-face {
+    font-family: RobMedium;
+    src: url('./fonts/Roboto-Medium.ttf');
+}
 body {
     font-family: PopLight;
 
 }
-
+ html,
+      body,
+      ul,
+      li {
+        margin: 0;
+        padding: 0;
+      }
 body .portofolio {
     overflow: hidden;
 }
@@ -47,7 +64,7 @@ body .portofolio {
 .loader:before,
 .loader:after {
     content: '';
-    border: 1em solid blue;
+    border: 1em solid #5CD3A1;
     border-radius: 50%;
     width: inherit;
     height: inherit;
@@ -80,12 +97,6 @@ body .portofolio {
     }
 }
 
-.portofolio {
-    overflow: hidden;
-    color: white;
-    background: radial-gradient(rgba(56, 54, 94, 1), rgba(15, 14, 32, 1));
-}
-
 nav {
     min-height: 10vh;
     width: 90%;
@@ -94,10 +105,11 @@ nav {
     justify-content: space-between;
     align-items: center;
     padding: 20px 0px;
+
 }
 
 .logo {
-    font-size: 20px;
+    font-size: 48px;
 
 }
 
@@ -108,185 +120,215 @@ nav {
 }
 
 
-.aboutme,
-.testimonials {
-    position: absolute;
-    bottom: 0%;
-    left: 0%;
-
-    width: 100%;
-    opacity: 0;
-    pointer-events: none;
-
-}
-
-.hero {
-    overflow: hidden;
-    height: 350px;
-    align-self: center;
-    justify-self: center;
-    display: flex;
-}
-
-.hero img {
-    height: 350px;
-    transition: transform 0.3s ease-out;
-    cursor: pointer;
-
-}
-
-.hero a {
-    display: flex;
-}
-
-.model-right {
-    transform: translate(0%, 10%);
-}
-
-.model-left {
-    transform: translate(0%, -10%);
-}
-
-.hero:hover .model-right {
-    transform: translate(0%, 0%);
-}
-
-.hero:hover .model-left {
-    transform: translate(0%, 0%);
-}
 
 
-.details {
-    grid-column: 2/3;
-    align-self: end;
-}
-
-.details h1 {
-    font-size: 50px;
-    font-family: PopRegular;
-}
-
-.details h2 {
-    font-style: 40px;
-    padding-bottom: 20px 0px;
-}
-
-.details p {
-    font-size: 20px;
-    padding: 20px 0px 50px 0px;
-}
-
-.pages {
-    position: absolute;
-    right: 5%;
-    top: 50%;
-    transform: translate(-50%);
-}
-
-.pages>div {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.pages h3 {
-    font-size: 24px;
-    padding: 30px;
-}
-
-.pages svg {
-    cursor: pointer;
-    opacity: 0.5;
-    transform: scale(2);
-}
-
-.pages svg:hover {
-    animation: dot 0.5s ease-in-out infinite alternate;
-}
-
-.pages svg.active {
-    opacity: 1;
-}
-
-@keyframes dot {
-    0% {
-        transform: scale(2);
-    }
-
-    100% {
-        transform: scale(4);
-    }
-}
-
-.banner {
-    width: 100%;
-    position: 100%;
-    height: 500px;
-    position: relative;
-}
-
-.banner img {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    object-position: top;
-
-
-}
-
-.author {
-    position: absolute;
-    top: 70%;
-    left: 50%;
-    transform: translate(-50%, -70%);
-    color: white;
-    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
-    text-align: center;
-
-}
-
-.author h1 {
-    font-size: 42px;
-}
-
-.author h3 {
-    padding: 10px 0px;
-    font-size: 32px;
-}
-
-.story,
-.my-work {
-    display: flex;
-    justify-content: space-between;
-    width: 90%;
-    margin: auto;
-    padding: 80px 0px;
-}
-
-.story-description h3,
-.work-description h3 {
-    font-size: 36px;
-    padding-bottom: 30px;
-}
-
-.story-description p,
-.work-description p {
-    padding: 20x 0px;
-    font-size: 20px;
-}
-
-.work-gallery {
-
+.container-jumbotron{
+    width:  90%;
+    margin:     60px auto;
     display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        /*grid-template-rows: repeat(3, 500px); */
+    justify-content:    space-between   ; 
+        height:     650px;
 
 }
 
-.work-gallery {
+.jumbotron{
+    display:    flex;           
+    
+
+}
+.about h1{
+    font-family:    RobMedium;
+    margin-bottom:  10px;
+    font-size:  48px;
+}
+.about h3{
+    font-family:    RobMedium;
+    font-size:  28px;
+    margin-bottom:     30px;
+}
+.about p{
+       font-family: PopMedium;
+}
+.about span{
+    color:  #5CD3A1;
+    font-weight:    bold;   
+}
+.about a {
+    background-color:    #5CD3A1;
+    text-decoration:    none;
+    display :inline-block;
+    width:  130px;
+    height:     50px;
+    line-height:    50px;
+    text-align:     center; 
+    color:  white;
+    margin-top:     35px;
+    border-radius:  10px;
+}
+.gambar .hiasan{
+    position:   absolute;   
+    top:    540px;
+    left:   0;
+}
+.container-services{
+    border-top:    1px solid rgba(0,0,0,0.1);
+}
+.container-services h1{
+    text-align:     center; 
+    margin-top:     100px;
+    margin-bottom:  60px;
+        width:  100%;
+}
+.container-services{
+    width:  90%;
+    margin:     60px auto;
+    display:    grid;   
+        grid-template-columns: repeat(auto-fit, minmax(850px, 1fr));
+        /*grid-template-rows: repeat(3, 500px); */
+    justify-content:    space-between   ; 
+
+
+
+}
+.services{
+    display:    flex;   
+    justify-content:   center; 
+    align-content:  center; 
+
+}
+.card{
+    width:  350px;
+    height:     200px;
+  box-shadow:   4px 4px rgba(0,0,0,0.1);
+  margin:   auto;   
+   border: 1px solid rgba(0,0,0,0.1);
+
+
+}
+.card img{
+    margin-left:    125px;
+    margin-top:     30px;
+    width:  100px;
+    height  :100px;
+
+}
+.card h6{
+    text-align:     center; 
+
+}
+.social-links img {
+  margin-right:     10px;
+}
+
+/*bukan mobile*/
+.nav-open {
+    position: absolute;
+    top: 0px;
+    left: 0px;
     width: 100%;
+    height: 50vh;
+    background: white;
+    z-index: 1;
+    color: black;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+    transform: translateY(-100%);
+}
+
+.contact {
+
+    grid-column: 2/3;
+}
+
+.nav-open h3 {
+    font-size: 20px;
+    padding-bottom: 40px;
+}
+
+.nav-open p {
+    font-size: 12px;
+}
+.nav-open p a{
+    text-decoration:    none;   
+    color:  black;
+    margin-right:   10px;
+}
+.social-links img {
+  margin-right:     10px;
+}
+
+.logo,
+.menu {
+    z-index: 2;
+}
+
+.menu {
+    cursor: pointer;
+}
+@media (max-width: 1024px) {
+
+.container-jumbotron{
+    width:  90%;
+    margin:     60px auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        /*grid-template-rows: repeat(3, 500px); */
+    justify-content:    space-between   ; 
+        height:     650px;
 
 }
 
-@media (max-width: 1024px) {
+.jumbotron{
+    display:    flex;           
+    
+
+}
+
+.about h1{
+    font-family:    RobMedium;
+    margin-bottom:  10px;
+    font-size:  48px;
+}
+.about h3{
+    font-family:    RobMedium;
+    font-size:  28px;
+    margin-bottom:     30px;
+}
+.about p{
+       font-family: PopMedium;
+}
+.about span{
+    color:  #5CD3A1;
+    font-weight:    bold;   
+}
+.about a {
+    background-color:    #5CD3A1;
+    text-decoration:    none;
+    display :inline-block;
+    width:  130px;
+    height:     50px;
+    line-height:    50px;
+    text-align:     center; 
+    color:  white;
+    margin-top:     35px;
+    border-radius:  10px;
+}
+.gambar .hiasan{
+    position:   absolute;   
+    top:    480px;
+    left:   0;
+}
+
+.services h1{
+    text-align:     center; 
+    margin-top:     100px;
+    margin-bottom:  60px;
+}
 
     .pages {
         grid-template-columns: 5% 1fr 5%;
@@ -294,51 +336,189 @@ nav {
         align-items: center;
     }
 
-    .hero {
-        grid-column: 2/3;
-        height: auto;
-    }
-
-    .hero img {
-        height: 500px;
-    }
-
-    .details {
-        grid-row: 2/3;
-        grid-column: 2/3;
-        text-align: center;
-    }
-
-    .details h1 {
-        font-size: 48px;
-
-    }
-
-    .details h2 {
-        font-size: 38px;
-    }
-
-    .story,
-    .my-work {
-        flex-direction: column;
-    }
-
-    .story-description,
-    .work-description {
-        width: 100%;
-    }
-
-    .work-gallery {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    }
-
     .profile {
         padding-top: 30px;
         text-align: center;
     }
 }
+@media (max-width: 576px) {
 
+.container-jumbotron{
+    width:  90%;
+    margin:     60px auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        /*grid-template-rows: repeat(3, 500px); */
+    /*justify-content:    space-between   ; */
+        
+grid-gap: 5px;
+height:    600px;
+}
+
+.logo {
+    font-size: 20px;
+
+}
+
+.jumbotron{
+    
+
+display:    flex;  
+
+align-content:  center; 
+justify-content:    space-around    ; 
+}
+.about{
+    order:  2;
+    width:  90%;
+    position:   absolute;   
+    top:    470px;
+
+
+}
+.about h1{
+    font-family:    RobMedium;
+    margin-bottom:  10px;
+    font-size:  18px;
+}
+.about h3{
+    font-family:    RobMedium;
+    font-size:  12px;
+    margin-bottom:     10px;
+}
+.about p{
+       font-family: PopMedium;
+       font-size:   10px;
+}
+.about span{
+    color:  #5CD3A1;
+    font-weight:    bold;   
+}
+.about a {
+    background-color:    #5CD3A1;
+    text-decoration:    none;
+    display :inline-block;
+    width:  100px;
+    height:     50px;
+    line-height:    50px;
+    text-align:     center; 
+    color:  white;
+    margin-top:     20px;
+    border-radius:  10px;
+    font-size:  10px;
+}
+
+.gambar img.jumbo{
+      width: 100%;
+    height:     300px;
+
+}
+.gambar .hiasan{
+    position:   absolute;   
+    top:    680px;
+    left:   0;
+    width:  100px;
+    
+}
+
+
+.container-services h1{
+    text-align:     center; 
+    margin-top:     80px;
+    margin-bottom:  60px;
+        width:  100%;
+}
+.container-services{
+    width:  90%;
+    margin:     60px auto;
+    display:    grid;   
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+        /*grid-template-rows: repeat(3, 500px); */
+    
+    
+
+
+}
+.services{
+    display:    flex;   
+    justify-content:   space-around ; 
+    align-content:  center; 
+flex-wrap: wrap;
+    max-width: 500px;
+    margin:     auto;   
+    position:   absolute;   
+    top:    1000px;
+}
+.card{
+    width:  300px;
+    border: 1px solid rgba(0,0,0,0.1);
+  box-shadow:   4px 4px rgba(0,0,0,0.1);
+  margin:   auto;   
+  border-radius:    10px;
+margin-bottom:  15px;
+
+}
+.card img{
+    margin-top:     30px;
+    width:  100px;
+    height  :100px;
+    margin-left:    100px;
+
+}
+.card h6{
+    text-align:     center; 
+
+}
+.nav-open {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 50vh;
+    background: white;
+    z-index: 1;
+    color: black;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+    transform: translateY(-100%);
+}
+
+.contact {
+
+    grid-column: 2/3;
+}
+
+
+.nav-open h3 {
+    font-size: 13px;
+    padding-bottom: 20px;
+}
+.daftar{
+    margin-top:     15px;
+}
+.nav-open p {
+    font-size: 12px;
+}
+.nav-open p a{
+    text-decoration:    none;   
+    color:  black;
+    margin-right:   10px;
+}
+
+
+.logo,
+.menu {
+    z-index: 2;
+}
+
+.menu {
+    cursor: pointer;
+} }
+
+/*dekstop*/
 @media (max-width: 760px) {
     .page {
         grid-template-rows: 1fr 1fr;
@@ -357,8 +537,132 @@ nav {
     }
 
 
+.container-jumbotron{
+    width:  90%;
+    margin:     60px auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        /*grid-template-rows: repeat(3, 500px); */
+    /*justify-content:    space-between   ; */
+        
+grid-gap: 5px;
+height:    600px;
 }
 
+.logo {
+    font-size: 20px;
+
+}
+
+.jumbotron{
+    
+
+display:    flex;  
+
+align-content:  center; 
+justify-content:    space-around    ; 
+}
+.about{
+    order:  2;
+    width:  90%;
+    position:   absolute;   
+    top:    470px;
+
+
+}
+.about h1{
+    font-family:    RobMedium;
+    margin-bottom:  10px;
+    font-size:  18px;
+}
+.about h3{
+    font-family:    RobMedium;
+    font-size:  12px;
+    margin-bottom:     10px;
+}
+.about p{
+       font-family: PopMedium;
+       font-size:   10px;
+}
+.about span{
+    color:  #5CD3A1;
+    font-weight:    bold;   
+}
+.about a {
+    background-color:    #5CD3A1;
+    text-decoration:    none;
+    display :inline-block;
+    width:  100px;
+    height:     50px;
+    line-height:    50px;
+    text-align:     center; 
+    color:  white;
+    margin-top:     20px;
+    border-radius:  10px;
+    font-size:  10px;
+}
+
+.gambar img.jumbo{
+      width: 100%;
+    height:     300px;
+
+}
+.gambar .hiasan{
+    position:   absolute;   
+    top:    680px;
+    left:   0;
+    width:  100px;
+    
+}
+
+
+.container-services h1{
+    text-align:     center; 
+    margin-top:     80px;
+    margin-bottom:  60px;
+        width:  100%;
+}
+.container-services{
+    width:  90%;
+    margin:     60px auto;
+    display:    grid;   
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+        /*grid-template-rows: repeat(3, 500px); */
+    
+    
+
+
+}
+.services{
+    display:    flex;   
+    justify-content:   space-around ; 
+    align-content:  center; 
+flex-wrap: wrap;
+    max-width: 500px;
+    margin:     auto;   
+    position:   absolute;   
+    top:    1000px;
+}
+.card{
+    width:  300px;
+    border: 1px solid rgba(0,0,0,0.1);
+  box-shadow:   4px 4px rgba(0,0,0,0.1);
+  margin:   auto;   
+  border-radius:    10px;
+margin-bottom:  15px;
+
+}
+.card img{
+    margin-top:     30px;
+    width:  100px;
+    height  :100px;
+    margin-left:    100px;
+
+}
+.card h6{
+    text-align:     center; 
+
+}
 .nav-open {
     position: absolute;
     top: 0px;
@@ -369,7 +673,7 @@ nav {
     z-index: 1;
     color: black;
     display: grid;
-    grid-template-columns: 5% 1fr 1fr 5%;
+    grid-template-columns: 1fr 1fr 1fr ;
     justify-items: center;
     align-items: center;
     text-align: center;
@@ -381,18 +685,23 @@ nav {
     grid-column: 2/3;
 }
 
+
 .nav-open h3 {
-    font-size: 20px;
-    padding-bottom: 40px;
+    font-size: 13px;
+    padding-bottom: 20px;
 }
-
+.daftar{
+    margin-top:     15px;
+}
 .nav-open p {
-    font-size: 17px;
+    font-size: 12px;
+}
+.nav-open p a{
+    text-decoration:    none;   
+    color:  black;
+    margin-right:   10px;
 }
 
-.social-links img {
-    padding: 0px 20px;
-}
 
 .logo,
 .menu {
@@ -401,4 +710,5 @@ nav {
 
 .menu {
     cursor: pointer;
+}
 }

@@ -144,8 +144,10 @@ function init() {
     const hamburger = document.querySelector('.menu');
     const hamburgerLines = document.querySelectorAll('.menu line');
     const navOpen = document.querySelector('.nav-open');
+    const daftar = document.querySelector('.daftar');
     const contact = document.querySelector('.contact');
     const social = document.querySelector('.social');
+
     const logo = document.querySelector('.logo');
 
     const tl = new TimelineMax({
@@ -155,20 +157,29 @@ function init() {
     tl.to(navOpen, 0.5, {
             y: 0
         })
+   
         .fromTo(contact, 0.5, {
             opacity: 0,
             y: 10
         }, {
             opacity: 1,
             y: 10
-        }, '-=0.1')
+        }, '-=0.4')
+        .fromTo(daftar, 0.5, {
+            opacity: 0,
+            y: 10
+        }, {
+            opacity: 1,
+            y: 10
+        }, '-=0.4')
         .fromTo(social, 0.5, {
             opacity: 0,
             y: 10
         }, {
             opacity: 1,
             y: 10
-        }, '-=0.5')
+        }, '-=0.4')
+        
         .fromTo(logo, 0.2, {
             color: "black"
         }, {
