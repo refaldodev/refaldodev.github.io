@@ -350,6 +350,11 @@ thead {
 	margin-bottom: 30px;
 }
 
+.panel .card-panel.indo p {
+	margin-bottom: -31px;
+
+}
+
 /* statistik */
 
 
@@ -409,10 +414,6 @@ thead {
 	margin-bottom: 20px;
 }
 
-.panel .card-panel.indo p {
-	margin-bottom: -30px;
-
-}
 
 @media (min-width: 768px) {
 
