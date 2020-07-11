@@ -482,7 +482,7 @@ $(document).ready(function () {
                                 var sembuh = set_titik(dataNegara.recovered);
 
                                 $('#data-indo').html(
-                                    'Confirmed   : ' + kasus + '<br>' + 'Deaths         &nbsp &nbsp : ' + mati + '<br>' + 'Recovered : ' + sembuh
+                                    '<p>Confirmed   : ' + kasus + '</p><br>' + '<p>Deaths         &nbsp : ' + mati + '</p><br>' + '<p>Recovered : ' + sembuh + '</p>'
                                 )
                             }
                         }

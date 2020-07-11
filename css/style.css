@@ -409,6 +409,11 @@ thead {
 	margin-bottom: 20px;
 }
 
+.panel .card-panel.indo p {
+	margin-bottom: -30px;
+
+}
+
 @media (min-width: 768px) {
 
 	.jumbo {
@@ -822,6 +827,13 @@ thead {
 	}
 
 
+	.panel .card-panel.indo p {
+		margin-top: 10px;
+		margin-bottom: -30px;
+
+	}
+
+
 	.tabel {
 		height: 550px;
 		overflow: scroll;
@@ -882,8 +894,6 @@ thead {
 	/* statistik */
 
 	/* contact index */
-
-
 
 
 
