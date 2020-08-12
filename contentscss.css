@@ -419,6 +419,23 @@ nav {
 }
 
 /*akhir portfolio*/
+
+/*projek*/
+
+.container-project{
+    width: 90%;
+   
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+}
+.subproject{
+    display: flex;
+     border:1px solid black;
+     justify-content: center;
+}
+/*akhir projek*/
 @media (max-width: 1024px) {
 
 

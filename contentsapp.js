@@ -22,6 +22,74 @@ modal.addEventListener("click", (e) => {
     }
 })
 
+// testimonials
+const testimonialsSlide = document.querySelector('.testimonials-slide');
+const testimonialsImages = document.querySelectorAll('.testimonials-slide img');
+
+// buttons
+const prevBtn = document.querySelector('#prevBtn');
+const nextBtn = document.querySelector('#nextBtn');
+
+// counter
+let counter = 1;
+const size = testimonialsImages[0].clientWidth;
+testimonialsSlide.style.transform = 'translateX(' + (-size * counter) + 'px)';
+
+// button listeners
+
+nextBtn.addEventListener('click', () => {
+    if (counter >= testimonialsImages.length - 1) return;
+    testimonialsSlide.style.transition = "transform 0.4s ease-in-out";
+    counter++;
+    testimonialsSlide.style.transform = 'translateX(' + (-size * counter) + 'px)';
+});
+
+prevBtn.addEventListener('click', () => {
+    if (counter <= 0) return;
+    testimonialsSlide.style.transition = "transform 0.4s ease-in-out";
+    counter--;
+    testimonialsSlide.style.transform = 'translateX(' + (-size * counter) + 'px)';
+});
+
+testimonialsSlide.addEventListener('transitioned', () => {
+    console.log(testimonialsImages[counter]);
+    if (testimonialsImages[counter].id === 'lastClone') {
+        testimonialsSlide.style.transition = "none";
+        counter = testimonialsImages.length - 2;
+        testimonialsSlide.style.transform = 'translateX(' + (-size * counter) + 'px)';
+
+    }
+    if (testimonialsImages[counter].id === 'firstClone') {
+        testimonialsSlide.style.transition = "none";
+        counter = testimonialsImages.length - counter;
+        testimonialsSlide.style.transform = 'translateX(' + (-size * counter) + 'px)';
+
+    }
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 function init() {
 
 
