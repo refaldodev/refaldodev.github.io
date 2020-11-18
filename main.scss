@@ -9,6 +9,12 @@ body {
     color: black !important;
     font-family: 'Poppins', sans-serif;
 
+    a {
+        &:active {
+            color: brown;
+        }
+    }
+
     .navbar-brand {
 
         font-size: 40px;
