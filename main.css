@@ -153,12 +153,12 @@ body {
 }
 
 .jumbotron-content .text-jumbo h1 {
-  font-size: 22px;
+  font-size: 24px;
   color: #4FCF9A;
 }
 
 .jumbotron-content .text-jumbo h3 {
-  font-size: 30px;
+  font-size: 18px;
 }
 
 .jumbotron-content .text-jumbo p {
@@ -443,6 +443,27 @@ body {
   font-size: 28px;
 }
 
+@media (min-width: 768px) {
+  .services-content .card-services {
+    height: 350px !important;
+  }
+  .services-content h6 {
+    font-size: 18px;
+  }
+  .services-content p {
+    font-size: 12px;
+  }
+  .services-content .animate__animated.animate__fadeInUp.card1 {
+    --animate-duration: 1s;
+  }
+  .services-content .animate__animated.animate__fadeInUp.card2 {
+    --animate-duration: 1.4s;
+  }
+  .services-content .animate__animated.animate__fadeInUp.card3 {
+    --animate-duration: 1.8s;
+  }
+}
+
 @media (min-width: 992px) {
   .navbar img {
     height: 60px;
@@ -460,10 +481,10 @@ body {
   }
   .jumbotron-content .text-jumbo h1 {
     color: #4FCF9A;
-    font-size: 28px;
+    font-size: 42px;
   }
   .jumbotron-content .text-jumbo h3 {
-    font-size: 40px;
+    font-size: 24px;
   }
   .jumbotron-content .text-jumbo h3 span {
     color: #4FCF9A;
