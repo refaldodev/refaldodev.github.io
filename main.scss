@@ -1,6 +1,6 @@
 body {
 
-    font-family: 'Roboto', sans-serif;
+    font-family: 'poppins', sans-serif;
 }
 
 
@@ -134,11 +134,11 @@ body {
 .jumbotron-content {
     min-height: 400px;
     margin-top: 30px;
-    display: flex;
+    // display: flex;
 
 
     .text-jumbo {
-        order: 2;
+        order: 1;
 
         h1 {
 
@@ -161,27 +161,34 @@ body {
         }
 
         .btn-cta-contact {
-            background-color: #7fabc9 !important;
-            color: white;
-
-            &:hover {
-                background-color: #0e598b !important;
-                color: white;
-            }
-        }
-
-        .btn-cta-cv {
             background-color: #4FCF9A !important;
             color: white;
+            box-shadow: 3px 5px 10px #888888;
 
             &:hover {
                 background-color: #0d8b57 !important;
                 color: white;
+                box-shadow: 1px 3px 18px #888888;
+
+            }
+        }
+
+        .btn-cta-cv {
+            border: 1px solid #585757;
+
+            box-shadow: 3px 5px 10px #888888;
+
+            color: #272727;
+
+            &:hover {
+                color: black;
+                box-shadow: 1px 3px 18px #888888;
+
             }
         }
 
         .gambar {
-            order: 1;
+            order: 2;
         }
     }
 }
@@ -190,19 +197,44 @@ body {
 .services-content {
     border-top: 1px solid rgba(95, 95, 95, 0.1);
 
+
     h1 {
         font-size: 28px;
     }
 
     .card-services {
-
+        background-color: white;
         border: 1px solid rgba(95, 95, 95, 0.1);
         border-radius: 10px;
+        height: 290px;
+        box-shadow: 3px 5px 10px #888888;
+
     }
 
     img {
-        height: 200px;
+        height: 150px;
+        padding-top: 10px;
 
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    .card-services:hover {
+        box-shadow: 1px 3px 18px #888888;
+
+
+    }
+
+    h6 {
+        font-size: 16px;
+    }
+
+    p {
+        font-size: 12px;
+        text-align: left;
+        padding: 5px 10px 40px 20px;
     }
 }
 
@@ -210,10 +242,43 @@ body {
     border: none;
 }
 
+// halaman services
+.services-contentt {
+    h1 {
+        font-size: 28px;
+    }
+
+    .card-servicess {
+        background-color: white;
+        border: 1px solid rgba(95, 95, 95, 0.1);
+        border-radius: 10px;
+        height: 300px;
+        box-shadow: 3px 5px 10px #888888;
+
+    }
+
+    .card-servicess:hover {
+        box-shadow: 1px 3px 18px #888888;
+
+    }
+
+    img {
+        height: 250px;
+    }
+
+    h4 {
+        font-size: 18px;
+    }
+
+    p {
+        font-size: 13px;
+    }
+
+}
+
 // portfolio
 
 .project {
-    border-top: 1px solid rgba(95, 95, 95, 0.1);
 
     h1 {
         font-size: 28px;
@@ -358,9 +423,7 @@ body {
 
 // tools and skilss
 .tools {
-    background-color: #E2E2E2;
-
-    border-top: 1px solid rgba(95, 95, 95, 0.1);
+    text-align: left;
 
     h1 {
         font-size: 28px;
@@ -380,6 +443,8 @@ body {
 .footer {
     border-top: 1px solid rgba(95, 95, 95, 0.1);
     min-height: 280px;
+    background-color: #333333;
+    color: white;
 
     .footer-bakcground {
         h3 {
@@ -391,14 +456,23 @@ body {
         }
 
         a {
-            color: black;
+            color: white;
         }
 
         img {
             width: 35px;
             height: 35px;
-            margin-right: 20px;
+            margin-right: 5px;
         }
+    }
+
+
+
+}
+
+.file {
+    h1 {
+        font-size: 28px;
     }
 
 }
@@ -447,11 +521,21 @@ body {
 
     // services
     .services-content {
+        .card-services {
+            height: 320px;
+        }
 
         h1 {
             font-size: 42px;
         }
 
+        h6 {
+            font-size: 22px;
+        }
+
+        p {
+            font-size: 13px;
+        }
     }
 
 
@@ -461,13 +545,16 @@ body {
             font-size: 42px;
         }
 
+        h6 {
+            font-size: 16px;
+        }
 
     }
 
 
     // tools
     .tools {
-        background-color: #E2E2E2;
+
 
         h1 {
             font-size: 42px;
@@ -478,6 +565,8 @@ body {
     .footer {
         border-top: 1px solid rgba(95, 95, 95, 0.1);
         min-height: 250px;
+        background-color: #333333;
+        color: white;
 
         .hiasan {
 
@@ -492,21 +581,25 @@ body {
 
         .footer-bakcground {
             h3 {
-                font-size: 48px;
+                font-size: 32px;
             }
 
             p {
-                font-size: 24px;
+                font-size: 18px;
             }
 
             a {
+                color: white;
+            }
+
+            a:hover {
                 color: black;
             }
 
             img {
                 width: 35px;
                 height: 35px;
-                margin-right: 20px;
+                margin-right: 10px;
             }
         }
 
