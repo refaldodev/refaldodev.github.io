@@ -2,6 +2,18 @@ body {
   font-family: 'poppins', sans-serif;
 }
 
+.animate__animated.animate__fadeInUp.card1 {
+  --animate-duration: 1s;
+}
+
+.animate__animated.animate__fadeInUp.card2 {
+  --animate-duration: 2s;
+}
+
+.animate__animated.animate__fadeInUp.card3 {
+  --animate-duration: 3s;
+}
+
 .navbar {
   background-color: white !important;
   color: black !important;
@@ -476,6 +488,15 @@ body {
   }
   .services-content p {
     font-size: 13px;
+  }
+  .services-content .animate__animated.animate__fadeInUp.card1 {
+    --animate-duration: 1s;
+  }
+  .services-content .animate__animated.animate__fadeInUp.card2 {
+    --animate-duration: 1.4s;
+  }
+  .services-content .animate__animated.animate__fadeInUp.card3 {
+    --animate-duration: 1.8s;
   }
   .project h1 {
     font-size: 42px;
