@@ -17,5 +17,5 @@ $(document).ready(function () {
 
 // loader
 setTimeout(function () {
-    $('.loader_bg').fadeToggle();
+    $('.loader').fadeToggle();
 }, 500);
