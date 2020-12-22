@@ -34,7 +34,7 @@ section.loader {
     height: 80px;
     position: absolute;
     top: calc(50vh - 75px);
-    left: calc(50vw - 50px);
+    left: calc(50vw - 35px);
 }
 
 .bouncer div {
@@ -74,6 +74,12 @@ section.loader {
 
     a {
         &:active {
+            color: brown;
+        }
+    }
+
+    a.nav-link {
+        &:hover {
             color: brown;
         }
     }
@@ -854,4 +860,17 @@ section.loader {
             transform: translateY(-100px);
         }
     }
+}
+
+// .active {
+//     color: red !important;
+// }
+//  {
+//     position: relative;
+//     d
+// }
+ul li a.aktif {
+    color: black !important;
+    text-decoration: none;
+
 }

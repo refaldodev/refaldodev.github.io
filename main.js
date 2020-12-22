@@ -1,4 +1,19 @@
+
+// $(document).ready(function(){
+  
+// });
+const currentLocation = location.href;
+const menuItem = document.querySelectorAll('li a');
+const menuLength = menuItem.length
+for ( let i = 0; i <menuLength; i++){
+    if(menuItem[i].href === currentLocation){
+        menuItem[i].className = "nav-link aktif";
+        // menuItem[i].parentNode.className = "nav-item aktif";
+       
+    }
+}
 // back to top
+
 $(document).ready(function () {
     $(window).scroll(function () {
         if ($(this).scrollTop() > 40) {
@@ -12,6 +27,8 @@ $(document).ready(function () {
             scrollTop: 0
         }, 800);
     });
+
+   
 });
 // }
 
