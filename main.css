@@ -114,6 +114,8 @@ section.loader {
 
 .jumbotron-content {
   font-family: 'poppins', sans-serif;
+  min-height: 460px;
+  margin-top: 30px;
 }
 
 .jumbotron-content h6 {
@@ -187,64 +189,6 @@ section.loader {
 
 #topBtn:hover {
   color: lightskyblue;
-}
-
-.jumbotron-content {
-  min-height: 400px;
-  margin-top: 30px;
-}
-
-.jumbotron-content .text-jumbo {
-  -webkit-box-ordinal-group: 2;
-      -ms-flex-order: 1;
-          order: 1;
-}
-
-.jumbotron-content .text-jumbo h1 {
-  font-size: 24px;
-  color: #4FCF9A;
-}
-
-.jumbotron-content .text-jumbo h3 {
-  font-size: 18px;
-}
-
-.jumbotron-content .text-jumbo p {
-  font-family: 'poppins', sans-serif;
-  margin-top: 18px;
-}
-
-.jumbotron-content .text-jumbo .btn-cta-contact {
-  background-color: #4FCF9A !important;
-  color: white;
-  -webkit-box-shadow: 3px 5px 10px #888888;
-          box-shadow: 3px 5px 10px #888888;
-}
-
-.jumbotron-content .text-jumbo .btn-cta-contact:hover {
-  background-color: #0d8b57 !important;
-  color: white;
-  -webkit-box-shadow: 1px 3px 18px #888888;
-          box-shadow: 1px 3px 18px #888888;
-}
-
-.jumbotron-content .text-jumbo .btn-cta-cv {
-  -webkit-box-shadow: 3px 5px 10px #888888;
-          box-shadow: 3px 5px 10px #888888;
-  color: #272727;
-}
-
-.jumbotron-content .text-jumbo .btn-cta-cv:hover {
-  color: black;
-  -webkit-box-shadow: 1px 3px 18px #c3c3c3;
-          box-shadow: 1px 3px 18px #c3c3c3;
-  background-color: #d6d6d6;
-}
-
-.jumbotron-content .text-jumbo .gambar {
-  -webkit-box-ordinal-group: 3;
-      -ms-flex-order: 2;
-          order: 2;
 }
 
 .services-content {

@@ -108,7 +108,8 @@ section.loader {
 
 .jumbotron-content {
     font-family: 'poppins', sans-serif;
-
+    min-height: 460px;
+    margin-top: 30px;
 
     h6 {
         font-size: 22px;
@@ -257,68 +258,7 @@ section.loader {
 //     }
 // }
 
-// jumbotron
 
-.jumbotron-content {
-    min-height: 400px;
-    margin-top: 30px;
-    // display: flex;
-
-
-    .text-jumbo {
-        order: 1;
-
-        h1 {
-
-            font-size: 24px;
-            color: #4FCF9A;
-        }
-
-        h3 {
-            font-size: 18px;
-
-
-
-
-
-        }
-
-        p {
-            font-family: 'poppins', sans-serif;
-            margin-top: 18px;
-        }
-
-        .btn-cta-contact {
-            background-color: #4FCF9A !important;
-            color: white;
-            box-shadow: 3px 5px 10px #888888;
-
-            &:hover {
-                background-color: #0d8b57 !important;
-                color: white;
-                box-shadow: 1px 3px 18px #888888;
-
-            }
-        }
-
-        .btn-cta-cv {
-
-            box-shadow: 3px 5px 10px #888888;
-
-            color: #272727;
-
-            &:hover {
-                color: black;
-                box-shadow: 1px 3px 18px #c3c3c3;
-                background-color: #d6d6d6;
-            }
-        }
-
-        .gambar {
-            order: 2;
-        }
-    }
-}
 
 // Services
 .services-content {
