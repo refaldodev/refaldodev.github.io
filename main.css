@@ -89,6 +89,21 @@ section.loader {
   background-color: white !important;
   color: black !important;
   font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+}
+
+.navbar .collapse {
+  border-bottom: 1px solid #d6d6d6;
+  width: 100%;
+}
+
+.navbar p {
+  font-size: 16px;
+  margin-top: 6px;
+}
+
+.navbar ul li a {
+  padding-top: 0;
 }
 
 .navbar a:active {
@@ -122,6 +137,61 @@ section.loader {
 .navbar .btn-contact:hover {
   background-color: #0d8b57 !important;
   color: white;
+}
+
+.jumbotron-content {
+  font-family: 'poppins', sans-serif;
+}
+
+.jumbotron-content h6 {
+  font-size: 22px;
+  margin-top: 30px;
+  margin-bottom: 5px;
+  letter-spacing: 1.5px;
+  font-weight: 700;
+}
+
+.jumbotron-content p {
+  font-size: 18px;
+  letter-spacing: 2px;
+}
+
+.jumbotron-content .foto img {
+  margin-top: 30px;
+  width: 180px;
+  height: 180px;
+}
+
+.jumbotron-content .deskripsi img {
+  margin-top: 30px;
+  width: 23px;
+  height: 23px;
+  margin-right: 15px;
+  margin-bottom: 30px;
+}
+
+.jumbotron-content .text-jumbo {
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+}
+
+.jumbotron-content .text-jumbo h1 {
+  color: #4FCF9A;
+  font-size: 42px;
+}
+
+.jumbotron-content .text-jumbo h3 {
+  font-size: 24px;
+}
+
+.jumbotron-content .text-jumbo h3 span {
+  color: #4FCF9A;
+}
+
+.jumbotron-content .text-jumbo p {
+  font-family: 'poppins', sans-serif;
+  margin-top: 20px;
 }
 
 /* button to top */
@@ -448,6 +518,43 @@ section.loader {
 }
 
 @media (min-width: 768px) {
+  .navbar {
+    font-size: 16px;
+  }
+  .navbar p {
+    font-size: 16px;
+    margin-top: 6px;
+  }
+  .navbar ul li a {
+    padding-top: 0;
+  }
+  .jumbotron-content {
+    font-family: 'poppins', sans-serif;
+  }
+  .jumbotron-content h6 {
+    font-size: 24px;
+    margin-top: 30px;
+    margin-bottom: 5px;
+    letter-spacing: 1.5px;
+    font-weight: 700;
+  }
+  .jumbotron-content p {
+    font-size: 16px;
+    letter-spacing: 2px;
+    font-weight: 700;
+  }
+  .jumbotron-content .foto img {
+    margin-top: 50px;
+    width: 210px;
+    height: 210px;
+  }
+  .jumbotron-content .deskripsi img {
+    margin-top: 25px;
+    width: 28px;
+    height: 28px;
+    margin-right: 20px;
+    margin-bottom: 40px;
+  }
   .services-content .card-services {
     height: 350px !important;
   }
@@ -469,14 +576,45 @@ section.loader {
 }
 
 @media (min-width: 992px) {
-  .navbar img {
-    height: 60px;
-    width: 60px;
+  .navbar {
+    font-size: 16px;
+  }
+  .navbar .collapse {
+    border: none;
+  }
+  .navbar p {
+    font-size: 16px;
+    margin-top: 6px;
+  }
+  .navbar ul li a {
+    padding-top: 0;
   }
   .jumbotron-content {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    font-family: 'poppins', sans-serif;
+    height: 80vh;
+  }
+  .jumbotron-content h6 {
+    font-size: 32px;
+    margin-top: 30px;
+    margin-bottom: 5px;
+    letter-spacing: 1.5px;
+    font-weight: 700;
+  }
+  .jumbotron-content p {
+    font-size: 24px;
+    letter-spacing: 2px;
+    font-weight: 700;
+  }
+  .jumbotron-content .foto img {
+    margin-top: 60px;
+    width: 210px;
+    height: 210px;
+  }
+  .jumbotron-content .deskripsi img {
+    margin-top: 30px;
+    width: 30px;
+    height: 30px;
+    margin-right: 20px;
   }
   .jumbotron-content .text-jumbo {
     -webkit-box-ordinal-group: 2;
@@ -496,11 +634,6 @@ section.loader {
   .jumbotron-content .text-jumbo p {
     font-family: 'poppins', sans-serif;
     margin-top: 20px;
-  }
-  .jumbotron-content .gambar {
-    -webkit-box-ordinal-group: 3;
-        -ms-flex-order: 2;
-            order: 2;
   }
   .services-content .card-services {
     height: 320px;
