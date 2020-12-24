@@ -42,7 +42,7 @@ section.loader {
 .bouncer div {
   width: 15px;
   height: 15px;
-  background-color: #4FCF9A;
+  background-color: #262726;
   border-radius: 50%;
   -webkit-animation: bouncer 0.5s cubic-bezier(0, 0.91, 0.66, 1.03) infinite alternate;
           animation: bouncer 0.5s cubic-bezier(0, 0.91, 0.66, 1.03) infinite alternate;
