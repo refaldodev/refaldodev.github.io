@@ -399,6 +399,7 @@ section.loader {
 
     p {
         font-size: 13px;
+        margin-top: 13px;
     }
 
 }
@@ -550,6 +551,7 @@ section.loader {
 
 // tools and skilss
 .tools {
+    margin-bottom: 30px;
     text-align: left;
 
     h1 {
@@ -801,10 +803,12 @@ section.loader {
 
         h6 {
             font-size: 22px;
+            padding-top: 8px;
         }
 
         p {
             font-size: 13px;
+            margin-top: 38px;
         }
 
         .animate__animated.animate__fadeInUp.card1 {
@@ -837,10 +841,20 @@ section.loader {
     // tools
     .tools {
 
+        margin-bottom: 60px;
 
         h1 {
             font-size: 42px;
         }
+
+        img {
+            width: 128px;
+            height: 100px;
+
+        }
+
+
+
     }
 
     // footer

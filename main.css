@@ -320,6 +320,7 @@ section.loader {
 
 .services-contentt p {
   font-size: 13px;
+  margin-top: 13px;
 }
 
 .project h1 {
@@ -449,6 +450,7 @@ section.loader {
 }
 
 .tools {
+  margin-bottom: 30px;
   text-align: left;
 }
 
@@ -616,9 +618,11 @@ section.loader {
   }
   .services-content h6 {
     font-size: 22px;
+    padding-top: 8px;
   }
   .services-content p {
     font-size: 13px;
+    margin-top: 38px;
   }
   .services-content .animate__animated.animate__fadeInUp.card1 {
     --animate-duration: 1s;
@@ -635,8 +639,15 @@ section.loader {
   .project h6 {
     font-size: 16px;
   }
+  .tools {
+    margin-bottom: 60px;
+  }
   .tools h1 {
     font-size: 42px;
+  }
+  .tools img {
+    width: 128px;
+    height: 100px;
   }
   .footer {
     border-top: 1px solid rgba(95, 95, 95, 0.1);
