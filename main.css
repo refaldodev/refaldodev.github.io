@@ -99,6 +99,7 @@ section.loader {
 
 .navbar p {
   font-size: 16px;
+  font-weight: 700;
   margin-top: 6px;
 }
 
@@ -106,37 +107,9 @@ section.loader {
   padding-top: 0;
 }
 
-.navbar a:active {
-  color: brown;
-}
-
-.navbar a.nav-link:hover {
-  color: brown;
-}
-
-.navbar .navbar-brand {
-  font-size: 40px;
-  font-weight: bold;
-}
-
-.navbar .navbar-brand img {
-  height: 45px;
-  width: 45px;
-}
-
 .navbar img {
   height: 30px;
   width: 30px;
-}
-
-.navbar .btn-contact {
-  background-color: #4FCF9A !important;
-  color: white;
-}
-
-.navbar .btn-contact:hover {
-  background-color: #0d8b57 !important;
-  color: white;
 }
 
 .jumbotron-content {

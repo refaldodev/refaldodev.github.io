@@ -84,6 +84,7 @@ section.loader {
     p {
         font-size: 16px;
         // padding-top: 15px;
+        font-weight: 700;
         margin-top: 6px;
     }
 
@@ -92,45 +93,16 @@ section.loader {
 
     }
 
-    a {
-        &:active {
-            color: brown;
-        }
-    }
 
-    a.nav-link {
-        &:hover {
-            color: brown;
-        }
-    }
-
-    .navbar-brand {
-
-        font-size: 40px;
-        font-weight: bold;
-    }
-
-    .navbar-brand img {
-
-        height: 45px;
-        width: 45px;
-
-    }
 
     img {
         height: 30px;
         width: 30px;
     }
 
-    .btn-contact {
-        background-color: #4FCF9A !important;
-        color: white;
 
-        &:hover {
-            background-color: #0d8b57 !important;
-            color: white;
-        }
-    }
+
+
 }
 
 
