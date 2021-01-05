@@ -896,6 +896,8 @@ thead {
 
 	/* contact index */
 
-
-
+	.tabelprovinsi {
+		height: 550px;
+		overflow: auto;
+	}
 }

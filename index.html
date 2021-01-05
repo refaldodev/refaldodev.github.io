@@ -38,9 +38,9 @@
 
 </head>
 
-<body>
+<body >
     <!-- loader -->
-    <section class="loader">
+    <section class="loader" id="loader"> 
         <div class="bouncer m-auto">
           <div></div>
           <div></div>
@@ -48,40 +48,56 @@
           <div></div>
         </div>
       </section>
+   
+    
     <!-- navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light navbar-togle " id="nav">
         <div class="container ">
             <a class="navbar-brand" href="index.html"><p>REFALDO RACHMAN</p></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <img src="img/menu.svg" alt="">
+              
+                    <svg width="100" height="48" viewBox="0 0 100 48" fill="none" xmlns="http://www.w3.org/2000/svg" id="hamburger">
+                        <path class="hamburger" d="M0 4C80 4 100 4 100 4" stroke="black" stroke-width="8"/>
+                        <path class="hamburger2" d="M0 24C60 24 75 24 75 24" stroke="black" stroke-width="8"/>
+                        <path class="hamburger3" d="M0 44C48 44 60 44 60 44" stroke="black" stroke-width="8"/>
+                        </svg>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ml-auto ">
+            <div class="collapse navbar-collapse " id="navbarNav">
+                <ul class="navbar-nav ml-auto  ">
                     <li class="nav-item mr-2">
                         <a class="nav-link" href="index.html">Home</a>
                     </li>
                     <li class="nav-item mr-2">
-                        <a class="nav-link" href="services.html">Services</a>
+                        <a class="nav-link" href="services.html" id="nav2">Services</a>
                     </li>
                     <li class="nav-item mr-2">
-                        <a class="nav-link" href="project.html">Project</a>
+                        <a class="nav-link" href="project.html" id="nav3">Project</a>
                     </li>
                     <li class="nav-item mr-2">
-                        <a class="nav-link" href="library.html">Library</a>
+                        <a class="nav-link" href="library.html" id="nav4">Library</a>
                     </li>
                     <li class="nav-item mr-2">
-                        <a class="nav-link" href="corona.html">Covid19</a>
+                        <a class="nav-link" href="covid.html" id="nav5">Covid19</a>
                     </li>
-                    <li class="nav-item mr-2">
-                        <a class="nav-link" href="mailto:mohrefaldorachman@gmail.com">Contact</a>
+                    <li class="nav-item mr-4">
+                        <a class="nav-link " href="mailto:mohrefaldorachman@gmail.com" id="nav6">Contact</a>
                     </li>
+                    <div>
+                        <input type="checkbox" class="checkbox " id="chk" />
+                        <label class="label" for="chk">
+                            <i class="fas fa-moon fa-xs"></i>
+                            <i class="fas fa-sun fa-xs"></i>
+                            <div class="ball"></div>
+                        </label>
+                    </div>
                 </ul>
                
             </div>
         </div>
     </nav>
-
+    
+<main class="theme">
     <!-- topbtn -->
     <button id="topBtn" class=" waves-effect waves-teal"><i class="fas fa-arrow-up"></i></i></button>
 
@@ -91,16 +107,16 @@
         <div class="container">
             <div class="row">
               <div class="col-12 text-center foto">
-                  <img src="potoprofile.png" alt="">
+                  <img src="./img/potoprofile.png" alt="">
               </div>
               <div class="col-12 text-center deskripsi">
                   <h6>REFALDO RACHMAN</h6>
                   <p>WEB DEVELOPER, UX DESIGN, UI DESIGN, CODER ADDICT AND TRAVELLER</p>
                     <div class="d-flex justify-content-center">
-                  <a target="_blank" href="https://github.com/refaldodev">    <img src="github.png" alt=""></a>
-                      <a target="_blank" href="https://twitter.com/Mohrefaldo"><img src="twitter.png" alt=""></a>
-                   <a target="_blank" href="https://dribbble.com/refaldoms">   <img src="dribbble.png" alt=""></a>
-                <a target="_blank" href="https://www.linkedin.com/in/mohammad-refaldo-rachman-5904531b0/">     <img src="linkedin.png" alt=""></a>
+                  <a target="_blank" href="https://github.com/refaldodev">    <img src="./img/github.png" alt=""></a>
+                      <a target="_blank" href="https://twitter.com/Mohrefaldo"><img src="./img/twitter.png" alt=""></a>
+                   <a target="_blank" href="https://dribbble.com/refaldoms">   <img src="./img/dribbble.png" alt=""></a>
+                <a target="_blank" href="https://www.linkedin.com/in/mohammad-refaldo-rachman-5904531b0/">     <img src="./img/linkedin.png" alt=""></a>
                     </div>
                   
               </div>
@@ -113,20 +129,20 @@
         <div class="container">
             <div class="row text-left ">
                 <div class="col-12 mb-5 mt-5 ">
-                    <h1 class=" " id="services">Services</h1>
+                    <h1 class="judul animate__animated" id="services">Services</h1>
                 </div>
-                <div class="col-lg-4 col-md-4 col-sm-12">
-                    <div class=" animasi card-services text-center mb-3 card1">
-                      <a href="services.html" class="text-dark">
+                <div class="col-lg-4 col-md-4 col-sm-12 ">
+                    <div class=" card-services text-center mb-4 animate__animated card1  ">
+                      <a href="services.html" class="">
                         <img src="img/uxdesignfix.png" alt="ux designer">
                         <h6 class="mt-4">UX Design</h6>
                         <p>UX design focuses on the interaction between real human users (like you and me) and everyday products and services, such as websites, apps, and even coffee machines.</p>
                     </a>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-4 col-sm-12 mb-3    ">
-                    <div class=" animasi card-services text-center card2" >
-                        <a href="services.html" class="text-dark">
+                <div class="col-lg-4 col-md-4 col-sm-12 mb-4    ">
+                    <div class=" animate__animated card-services dark-service2 text-center card2" >
+                        <a href="services.html" class="">
                         <img src="img/uidesignfix.png" alt="ux designer">
                         <h6 class="mt-4">UI Design</h6>
                         <p>The “UI” in UI design stands for “user interface.” The user interface is the graphical layout of an application. </p>
@@ -134,8 +150,8 @@
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-4 col-sm-12 mb-3">
-                    <div class="animasi card-services text-center card3" >
-                        <a href="services.html" class="text-dark">
+                    <div class="animate__animated  card-services dark-service3 text-center card3" >
+                        <a href="services.html" class="">
                         <img src="img/developerdesignfix.png" alt="ux designer">
                         <h6 class="mt-4">Web Developer</h6>
                         <p>Web Developer is the work involved in developing a website for the Internet (World Wide Web) or an intranet (a private network).</p>
@@ -151,30 +167,30 @@
         <div class="container">
             <div class="row">
                 <div class="col-12 title-portfolio text-left mb-5 mt-5">
-                    <h1>Project</h1>
+                    <h1 class="judulproject animate__animated">Project</h1>
                 </div>
-                <div class="col-12  portfolio-gambar box-shadow text-center animate__animated.animate__fadeInUp  ">
+                <div class="col-12  portfolio-gambar animate__animated gambar1 box-shadow text-center   ">
                     <a href=""></a><img src="img/recoffee.png" alt="Recoffee Shop" width="100%"
                         data-original="img/recoffee.png">
                     </a>
                     <a href="">
-                        <p>Recoffee Shop</p>
+                        <p class="color-dark">Recoffee Shop</p>
                     </a>
                 </div>
-                <div class="col-12 portfolio-gambar box-shadow text-center animate__animated.animate__fadeInUp ">
+                <div class="col-12 portfolio-gambar animate__animated box-shadow  gambar2  text-center  ">
                     <a href=""></a><img src="img/uiishlah.png" alt="LDK Ishlah" width="100%"
                         data-original="img/uiishlah.png">
                     </a>
                     <a href="">
-                        <p>LDK Ishlah</p>
+                        <p class="color-dark2">LDK Ishlah</p>
                     </a>
                 </div>
-                <div class="col-12 portfolio-gambar box-shadow text-center animate__animated.animate__fadeInUp">
+                <div class="col-12 portfolio-gambar animate__animated box-shadow  gambar3  text-center ">
                     <a href=""></a><img src="img/refal-full.jpg" alt="Refal Coffee" width="100%"
                         data-original="img/refal-full.jpg">
                     </a>
                     <a href="">
-                        <p>Refal Coffee</p>
+                        <p class="color-dark3">Refal Coffee</p>
                     </a>
                 </div>
             </div>
@@ -186,26 +202,26 @@
     </section>
 
     <!-- tools and skills -->
-    <section class="tools mt-5 pb-5 ">
+    <section class="tools mt-4 pb-5 ">
         <div class="container">
             <div class="row">
                 <div class="col-12 text-left mt-5 mb-5">
-                    <h1>Tools & Skills</h1>
+                    <h1 class="judulstools animate__animated">Tools & Skills</h1>
                 </div>
                 <div class="col-12  skills d-flex justify-content-center flex-wrap">
-                <img src="img/adobexd.png" alt="" class="ukuran">
-                    <img src="img/php.png" alt=""  class="ukuran">
-                    <img src="figma1.png" alt="" class="figma">
-                    <img src="img/laravel.png" alt=""  class="ukuran">
-                    <img src="img/ci.png" alt=""  class="ukuran">
-                    <img src="img/jquery.png" alt=""  class="ukuran">
+                <img src="img/adobexd.png" alt="" class="ukuran  animate__animated adobe">
+                    <img src="img/php.png" alt=""  class="ukuran animate__animated php">
+                    <img src="figma1.png" alt="" class="figma animate__animated figma">
+                    <img src="img/laravel.png" alt=""  class="animate__animated ukuran laravel">
+                    <img src="img/ci.png" alt=""  class="ukuran animate__animated ci">
+                    <img src="img/jquery.png" alt=""  class="animate__animated ukuran jquery">
                 </div>
             </div>
         </div>
 
     </section>
     <!-- footer -->
-    <footer class="footer ">
+    <footer class="footer " id="footer">
         <div class="container">
             <div class="row mt-5 ">
                 <div class="col-lg-10 col-md-10 col-sm-12 footer-bakcground ">
@@ -220,7 +236,7 @@
             </div>
         </div>
     </footer>
-
+</main>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 
@@ -235,8 +251,109 @@
     </script>
 
     <script src="js/all.js"></script>
-    <script src="main.js"></script>
+    <script src="./main.js"></script>
     <script>
+       
+let darkMode = localStorage.getItem("darkMode");
+
+const chk = document.getElementById('chk');
+
+const enableDarkMode = () => {
+    // add the class darkmode to the body
+    document.body.classList.toggle('dark');
+
+    document.querySelector('#nav').classList.toggle('dark');
+    document.querySelector('#navbarNav').classList.toggle('dark');
+ 
+    document.querySelector('.navbar-brand').classList.toggle('dark');
+    document.querySelector('#navbarNav a').classList.toggle('nav-color');
+    document.querySelector('#nav2').classList.toggle('nav-color');
+    document.querySelector('#nav3').classList.toggle('nav-color');
+    document.querySelector('#nav4').classList.toggle('nav-color');
+    document.querySelector('#nav5').classList.toggle('nav-color');
+    document.querySelector('#nav6').classList.toggle('nav-color');
+    document.querySelector('#footer').classList.toggle('dark');
+    document.querySelector('.card-services').classList.toggle('background-darkmode');
+   
+    document.querySelector('.dark-service2').classList.toggle('background-darkmode');
+    document.querySelector('.dark-service3').classList.toggle('background-darkmode');
+    document.querySelector('.color-dark').classList.toggle('color-teks');
+    document.querySelector('.color-dark2').classList.toggle('color-teks');
+    document.querySelector('.color-dark3').classList.toggle('color-teks');
+    var hamb = document.querySelector('.hamburger');
+    hamb.removeAttribute('stroke','black');
+     hamb.setAttribute('stroke','white');
+     var hamb2 = document.querySelector('.hamburger2');
+    hamb2.removeAttribute('stroke','black');
+     hamb2.setAttribute('stroke','white');
+     var hamb3 = document.querySelector('.hamburger3');
+    hamb3.removeAttribute('stroke','black');
+     hamb3.setAttribute('stroke','white');
+
+    var kelass = document.querySelector('.nav-link');
+   if(kelass.getAttribute('class') === 'nav-link aktif nav-color'){
+       kelass.removeAttribute('class','nav-color');
+       kelass.setAttribute('class', 'nav-link aktif');
+   }
+    
+     localStorage.setItem('darkMode', 'enabled');
+     
+
+}
+const disableDarkMode = () => {
+    document.querySelector('#hamburger').classList.add('color-teks');
+    // add the class darkmode to the body
+    document.querySelector('#nav').classList.remove('dark');
+    document.querySelector('#navbarNav').classList.remove('dark');
+ 
+    document.querySelector('.navbar-brand').classList.remove('dark');
+    document.querySelector('#navbarNav a').classList.remove('nav-color');
+    document.querySelector('.theme').classList.remove('dark');
+  
+    document.querySelector('#nav2').classList.remove('nav-color');
+    document.querySelector('#nav3').classList.remove('nav-color');
+    document.querySelector('#nav4').classList.remove('nav-color');
+    document.querySelector('#nav5').classList.remove('nav-color');
+    document.querySelector('#nav6').classList.remove('nav-color');
+    document.querySelector('.card-services').classList.remove('background-darkmode');
+    document.querySelector('#footer').classList.remove('dark');
+    document.querySelector('.dark-service2').classList.remove('background-darkmode');
+    document.querySelector('.dark-service3').classList.remove('background-darkmode');
+     document.body.classList.remove('dark');
+     document.querySelector('.project p').classList.remove('color');
+     document.body.classList.remove('dark');
+     document.querySelector('.color-dark').classList.remove('color-teks');
+    document.querySelector('.color-dark2').classList.remove('color-teks');
+    document.querySelector('.color-dark3').classList.remove('color-teks');
+    var hamb = document.querySelector('.hamburger');
+    hamb.removeAttribute('stroke','white');
+     hamb.setAttribute('stroke','black');
+     var hamb2 = document.querySelector('.hamburger2');
+    hamb2.removeAttribute('stroke','white');
+     hamb2.setAttribute('stroke','black');
+     var hamb3 = document.querySelector('.hamburger3');
+    hamb3.removeAttribute('stroke','white');
+     hamb3.setAttribute('stroke','black');
+     localStorage.setItem('darkMode', null);
+
+
+}
+
+if(darkMode === 'enabled'){
+    enableDarkMode();
+}
+chk.addEventListener('click', () => {
+
+darkMode= localStorage.getItem('darkMode');
+if(darkMode !== 'enabled'){
+    enableDarkMode();
+}else{
+    disableDarkMode();
+}
+});
+
+
+
         const modal = document.querySelector(".modal-gambar");
         const previews = document.querySelectorAll(".project img");
         const original = document.querySelector(".full-img");
@@ -262,34 +379,205 @@
         })
 
 
-//         $(document).ready(function () {
-//     $(window).scroll(function () {
-//         if ($(this).scrollTop() > 40) {
-//             $('.animasi').fadeIn();
-//         } else {
-//             $('.animasi').fadeOut();
-//         }
-//     });
-   
-// });
+// animation
+function scrollText(){
+  let textPanel = document.querySelector('.judul');
+  let textPosition = textPanel.getBoundingClientRect().top;
+  let textScreen = window.innerHeight;
+  if(textPosition < textScreen){
+    textPanel.classList.add('animate__fadeInUp');
+  }
+  
+}
+
+window.addEventListener('scroll', scrollText);
 
 
-// $(document).ready(function () {
-//     $(window).scroll(function () {
-//         if ($(this).scrollTop() > 60 ) {
-//             $('.animasi.card-services').addClass('animate__animated animasi animate__fadeInUp');
-//         } 
-//         // else if($(this).scrollTop() > 10) {
-          
-//         //     $('.animasi.card-services').addClass('animate__animated animasi animate__fadeOutDown');
-//         // }
+function scrollCard1(){
+  let cardPanel = document.querySelector('.card1');
+  let cardPosition = cardPanel.getBoundingClientRect().top;
+  let cardScreen = window.innerHeight;
+  if(cardPosition < cardScreen){
+    cardPanel.classList.add('animate__fadeInUp');
+  }
+  
+}
 
-//     });
-   
-// });
-// // }
+window.addEventListener('scroll', scrollCard1);
+function scrollCard2(){
+  let cardPanel = document.querySelector('.card2');
+  let cardPosition = cardPanel.getBoundingClientRect().top;
+  let cardScreen = window.innerHeight;
+  if(cardPosition < cardScreen){
+    cardPanel.classList.add('animate__fadeInUp');
+  }
+  
+}
+
+window.addEventListener('scroll', scrollCard2);
+function scrollCard3(){
+  let cardPanel = document.querySelector('.card3');
+  let cardPosition = cardPanel.getBoundingClientRect().top;
+  let cardScreen = window.innerHeight;
+  if(cardPosition < cardScreen){
+    cardPanel.classList.add('animate__fadeInUp');
+  }
+  
+}
+
+window.addEventListener('scroll', scrollCard3);
 
 
+
+
+// image
+
+
+function scrollJudul(){
+  let judulPanel = document.querySelector('.judulproject');
+  let judulPosition = judulPanel.getBoundingClientRect().top;
+  let judulScreen = window.innerHeight;
+  if(judulPosition < judulScreen){
+    judulPanel.classList.add('animate__fadeInUp');
+  }
+  
+}
+window.addEventListener('scroll', scrollJudul);
+
+function scrollImage1(){
+  let imagePanel = document.querySelector('.gambar1');
+  let imagePosition = imagePanel.getBoundingClientRect().top;
+  let imageScreen = window.innerHeight;
+  if(imagePosition < imageScreen){
+    imagePanel.classList.add('animate__fadeInLeft');
+  }
+  
+}
+
+window.addEventListener('scroll', scrollImage1);
+
+function scrollImage2(){
+  let imagePanel = document.querySelector('.gambar2');
+  let imagePosition = imagePanel.getBoundingClientRect().top;
+  let imageScreen = window.innerHeight;
+  if(imagePosition < imageScreen){
+    imagePanel.classList.add('animate__fadeInRight');
+  }
+  
+}
+
+window.addEventListener('scroll', scrollImage2);
+function scrollImage3(){
+  let imagePanel = document.querySelector('.gambar3');
+  let imagePosition = imagePanel.getBoundingClientRect().top;
+  let imageScreen = window.innerHeight;
+  if(imagePosition < imageScreen){
+    imagePanel.classList.add('animate__fadeInLeft');
+  }
+  
+}
+
+window.addEventListener('scroll', scrollImage3);
+
+// tools
+
+
+function scrollJudulTools(){
+  let toolsPanel = document.querySelector('.judulstools');
+  let toolsPosition = toolsPanel.getBoundingClientRect().top;
+  let toolsScreen = window.innerHeight;
+  if(toolsPosition < toolsScreen){
+    toolsPanel.classList.add('animate__fadeInUp');
+  }
+  
+}
+window.addEventListener('scroll', scrollJudulTools);
+
+
+
+function scrollAdobe(){
+  let adobePanel = document.querySelector('.adobe');
+  let adobePosition = adobePanel.getBoundingClientRect().top;
+  let adobeScreen = window.innerHeight;
+  if(adobePosition < adobeScreen){
+    adobePanel.style.setProperty('--animate-duration', '1s');
+    adobePanel.classList.add('animate__fadeInUp');
+  }
+  
+}
+
+window.addEventListener('scroll', scrollAdobe);
+
+
+function scrollPhp(){
+  let phpPanel = document.querySelector('.php');
+  let phpPosition = phpPanel.getBoundingClientRect().top;
+  let phpScreen = window.innerHeight;
+  if(phpPosition < phpScreen){
+  phpPanel.style.setProperty('--animate-duration', '1.2s');
+  phpPanel.classList.add('animate__fadeInUp');
+  }
+  
+}
+
+window.addEventListener('scroll', scrollPhp);
+
+
+
+function scrollFigma(){
+  let figmaPanel = document.querySelector('.figma');
+  let figmaPosition = figmaPanel.getBoundingClientRect().top;
+  let figmaScreen = window.innerHeight;
+  if(figmaPosition < figmaScreen){
+   figmaPanel.style.setProperty('--animate-duration', '1.4s');
+   figmaPanel.classList.add('animate__fadeInUp');
+  }
+  
+}
+
+window.addEventListener('scroll', scrollFigma);
+
+
+function scrollLaravel(){
+  let laravelPanel = document.querySelector('.laravel');
+  let laravelPosition = laravelPanel.getBoundingClientRect().top;
+  let laravelScreen = window.innerHeight;
+  if(laravelPosition < laravelScreen){
+    laravelPanel.style.setProperty('--animate-duration', '1.6s');
+    laravelPanel.classList.add('animate__fadeInUp');
+  }
+  
+}
+
+window.addEventListener('scroll', scrollLaravel);
+
+
+function scrollCi(){
+  let ciPanel = document.querySelector('.ci');
+  let ciPosition = ciPanel.getBoundingClientRect().top;
+  let ciScreen = window.innerHeight;
+  if(ciPosition < ciScreen){
+    ciPanel.style.setProperty('--animate-duration', '1.8s');
+    ciPanel.classList.add('animate__fadeInUp');
+  }
+  
+}
+
+window.addEventListener('scroll', scrollCi);
+
+
+function scrollJquery(){
+  let jqueryPanel = document.querySelector('.jquery');
+  let jqueryPosition = jqueryPanel.getBoundingClientRect().top;
+  let jqueryScreen = window.innerHeight;
+  if(jqueryPosition < jqueryScreen){
+   jqueryPanel.style.setProperty('--animate-duration', '2s');
+   jqueryPanel.classList.add('animate__fadeInUp');
+  }
+  
+}
+
+window.addEventListener('scroll', scrollJquery);
     </script>
 </body>
 

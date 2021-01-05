@@ -36,96 +36,133 @@
 </head>
 
 <body>
-    <!-- loader -->
-    <section class="loader">
+     <!-- loader -->
+     <section class="loader" id="loader"> 
         <div class="bouncer m-auto">
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
         </div>
-    </section>
+      </section>
+   
+    
+    
+    
     <!-- navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light navbar-togle " id="nav">
         <div class="container ">
             <a class="navbar-brand" href="index.html"><p>REFALDO RACHMAN</p></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <img src="img/menu.svg" alt="">
+              
+                    <svg width="100" height="48" viewBox="0 0 100 48" fill="none" xmlns="http://www.w3.org/2000/svg" id="hamburger">
+                        <path class="hamburger" d="M0 4C80 4 100 4 100 4" stroke="black" stroke-width="8"/>
+                        <path class="hamburger2" d="M0 24C60 24 75 24 75 24" stroke="black" stroke-width="8"/>
+                        <path class="hamburger3" d="M0 44C48 44 60 44 60 44" stroke="black" stroke-width="8"/>
+                        </svg>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ml-auto ">
+            <div class="collapse navbar-collapse " id="navbarNav">
+                <ul class="navbar-nav ml-auto  ">
                     <li class="nav-item mr-2">
                         <a class="nav-link" href="index.html">Home</a>
                     </li>
                     <li class="nav-item mr-2">
-                        <a class="nav-link" href="services.html">Services</a>
+                        <a class="nav-link" href="services.html" id="nav2">Services</a>
                     </li>
                     <li class="nav-item mr-2">
-                        <a class="nav-link" href="project.html">Project</a>
+                        <a class="nav-link" href="project.html" id="nav3">Project</a>
                     </li>
                     <li class="nav-item mr-2">
-                        <a class="nav-link" href="library.html">Library</a>
+                        <a class="nav-link" href="library.html" id="nav4">Library</a>
                     </li>
                     <li class="nav-item mr-2">
-                        <a class="nav-link" href="corona.html">Covid19</a>
+                        <a class="nav-link" href="covid.html" id="nav5">Covid19</a>
                     </li>
-                    <li class="nav-item mr-2">
-                        <a class="nav-link" href="mailto:mohrefaldorachman@gmail.com">Contact</a>
+                    <li class="nav-item mr-4">
+                        <a class="nav-link " href="mailto:mohrefaldorachman@gmail.com" id="nav6">Contact</a>
                     </li>
+                    <div>
+                        <input type="checkbox" class="checkbox " id="chk" />
+                        <label class="label" for="chk">
+                            <i class="fas fa-moon fa-xs"></i>
+                            <i class="fas fa-sun fa-xs"></i>
+                            <div class="ball"></div>
+                        </label>
+                    </div>
                 </ul>
                
             </div>
         </div>
     </nav>
+    
+    <div class="container mt-3">
+    <div class="alert alert-warning alert-dismissible fade show" role="alert">
+        Site is still under <strong>reconstruction</strong> (Late December 2020). Be patient!
 
-
-
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+    </div>
 
 
     <!-- topbtn -->
     <button id="topBtn" class=" waves-effect waves-teal"><i class="fas fa-arrow-up"></i></i></button>
 
-    <!-- My portfolio -->
-    <section class="project-full ">
-        <div class="container">
-            <div class="row">
-                <div class="col-12 title-portfolio text-center mb-5 mt-5">
-                    <h1>Project</h1>
-                </div>
-                <div class="col-12  portfolio-gambar text-center   ">
-                    <a href=""></a><img src="img/recoffee.png" alt="Recoffee Shop" width="100%"
-                        data-original="img/recoffee.png">
-                    </a>
-                    <a href="">
-                        <p>Recoffee Shop</p>
-                    </a>
-                </div>
-                <div class="col-12 portfolio-gambar text-center">
-                    <a href=""></a><img src="img/uiishlah.png" alt="LDK Ishlah" width="100%"
-                        data-original="img/uiishlah.png">
-                    </a>
-                    <a href="">
-                        <p>LDK Ishlah</p>
-                    </a>
-                </div>
-                <div class="col-12 portfolio-gambar text-center">
-                    <a href=""></a><img src="img/refal-full.jpg" alt="Refal Coffee" width="100%"
-                        data-original="img/refal-full.jpg">
-                    </a>
-                    <a href="">
-                        <p>Refal Coffee</p>
-                    </a>
-                </div>
+  <!-- My portfolio -->
+  <!-- <section class="project ">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 title-portfolio text-left mb-5 mt-5">
+                <h1>Project</h1>
+            </div>
+            <div class="col-12  portfolio-gambar box-shadow text-center animate__animated.animate__fadeInUp  ">
+                <a href=""></a><img src="img/recoffee.png" alt="Recoffee Shop" width="100%"
+                    data-original="img/recoffee.png">
+                </a>
+                <a href="">
+                    <p class="color-dark">Recoffee Shop</p>
+                </a>
+            </div>
+            <div class="col-12 portfolio-gambar box-shadow text-center animate__animated.animate__fadeInUp ">
+                <a href=""></a><img src="img/uiishlah.png" alt="LDK Ishlah" width="100%"
+                    data-original="img/uiishlah.png">
+                </a>
+                <a href="">
+                    <p class="color-dark2">LDK Ishlah</p>
+                </a>
+            </div>
+            <div class="col-12 portfolio-gambar box-shadow text-center animate__animated.animate__fadeInUp">
+                <a href=""></a><img src="img/refal-full.jpg" alt="Refal Coffee" width="100%"
+                    data-original="img/refal-full.jpg">
+                </a>
+                <a href="">
+                    <p class="color-dark3">Refal Coffee</p>
+                </a>
             </div>
         </div>
-        <div class="modal-gambar">
-            <img src="img/refal-full.jpg" alt="" class="full-img">
-            <p class="caption">test</p>
-        </div>
-    </section>
-
-    
+    </div>
+    <div class="modal-gambar">
+        <img src="img/refal-full.jpg" alt="" class="full-img">
+        <p class="caption">test</p>
+    </div>
+</section> -->
+<section class="projectt">
+<div class="container ">
+    <div class="row">
+<div class="col-12 title-portfolio text-left mb-5 mt-5">
+    <h1>Project</h1>
+</div>
+</div>  
+<div class="row text-center ">
+<div class="col-12 ">
+    <img src="./img/kontruksi.png" alt="" style="width: 100%; height: 400px;">
+</div>
+</div>
+  
+</div>
+</section>
     <!-- tools and skills -->
     <section class="tools mt-5 pb-5 ">
         <div class="container">
@@ -146,7 +183,7 @@
 
     </section>
     <!-- footer -->
-    <footer class="footer ">
+    <footer class="footer " id="footer">
         <div class="container">
             <div class="row mt-5 ">
                 <div class="col-lg-10 col-md-10 col-sm-12 footer-bakcground ">
@@ -161,7 +198,6 @@
             </div>
         </div>
     </footer>
-
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -179,29 +215,122 @@
     <script src="main.js"></script>
 
     <script>
-        const modal = document.querySelector(".modal-gambar");
-        const previews = document.querySelectorAll(".project-full img");
-        const original = document.querySelector(".full-img");
-        const caption = document.querySelector(".caption");
+        // const modal = document.querySelector(".modal-gambar");
+        // const previews = document.querySelectorAll(".project-full img");
+        // const original = document.querySelector(".full-img");
+        // const caption = document.querySelector(".caption");
 
-        previews.forEach(preview => {
-            preview.addEventListener("click", () => {
-                modal.classList.add("open");
-                original.classList.add("open");
-                // dynamic change text and image
-                const originalSrc = preview.getAttribute("data-original");
-                original.src = `${originalSrc}`;
-                const altText = preview.alt;
-                caption.textContent = altText;
+        // previews.forEach(preview => {
+        //     preview.addEventListener("click", () => {
+        //         modal.classList.add("open");
+        //         original.classList.add("open");
+        //         // dynamic change text and image
+        //         const originalSrc = preview.getAttribute("data-original");
+        //         original.src = `${originalSrc}`;
+        //         const altText = preview.alt;
+        //         caption.textContent = altText;
 
-            })
-        });
-        modal.addEventListener("click", (e) => {
-            if (e.target.classList.contains("modal-gambar")) {
-                modal.classList.remove("open");
-                original.classList.remove("open");
-            }
-        })
+        //     })
+        // });
+        // modal.addEventListener("click", (e) => {
+        //     if (e.target.classList.contains("modal-gambar")) {
+        //         modal.classList.remove("open");
+        //         original.classList.remove("open");
+        //     }
+        // })
+        
+let darkMode = localStorage.getItem("darkMode");
+
+const chk = document.getElementById('chk');
+
+const enableDarkMode = () => {
+    // add the class darkmode to the body
+    document.body.classList.toggle('dark');
+
+    document.querySelector('#nav').classList.toggle('dark');
+    document.querySelector('#navbarNav').classList.toggle('dark');
+ 
+    document.querySelector('.navbar-brand').classList.toggle('dark');
+    document.querySelector('#navbarNav a').classList.toggle('nav-color');
+    document.querySelector('#nav2').classList.toggle('nav-color');
+    document.querySelector('#nav3').classList.toggle('nav-color');
+    document.querySelector('#nav4').classList.toggle('nav-color');
+    document.querySelector('#nav5').classList.toggle('nav-color');
+    document.querySelector('#nav6').classList.toggle('nav-color');
+    document.querySelector('#footer').classList.toggle('dark');
+  
+    // document.querySelector('.color-dark').classList.toggle('color-teks');
+    // document.querySelector('.color-dark2').classList.toggle('color-teks');
+    // document.querySelector('.color-dark3').classList.toggle('color-teks');
+    var hamb = document.querySelector('.hamburger');
+    hamb.removeAttribute('stroke','black');
+     hamb.setAttribute('stroke','white');
+     var hamb2 = document.querySelector('.hamburger2');
+    hamb2.removeAttribute('stroke','black');
+     hamb2.setAttribute('stroke','white');
+     var hamb3 = document.querySelector('.hamburger3');
+    hamb3.removeAttribute('stroke','black');
+     hamb3.setAttribute('stroke','white');
+     var kelass = document.querySelector('#nav3');
+   if(kelass.getAttribute('class') === 'nav-link aktif nav-color'){
+       kelass.removeAttribute('class','nav-color');
+       kelass.setAttribute('class', 'nav-link aktif');
+   }
+    
+    
+     localStorage.setItem('darkMode', 'enabled');
+     
+
+}
+const disableDarkMode = () => {
+    document.querySelector('#hamburger').classList.add('color-teks');
+    // add the class darkmode to the body
+    document.querySelector('#nav').classList.remove('dark');
+    document.querySelector('#navbarNav').classList.remove('dark');
+ 
+    document.querySelector('.navbar-brand').classList.remove('dark');
+    document.querySelector('#navbarNav a').classList.remove('nav-color');
+    
+    document.querySelector('#nav2').classList.remove('nav-color');
+    document.querySelector('#nav3').classList.remove('nav-color');
+    document.querySelector('#nav4').classList.remove('nav-color');
+    document.querySelector('#nav5').classList.remove('nav-color');
+    document.querySelector('#nav6').classList.remove('nav-color');
+    
+     document.body.classList.remove('dark');
+    //  document.querySelector('.project p').classList.remove('color');
+    //  document.body.classList.remove('dark');
+    //  document.querySelector('.color-dark').classList.remove('color-teks');
+    // document.querySelector('.color-dark2').classList.remove('color-teks');
+    // document.querySelector('.color-dark3').classList.remove('color-teks');
+    var hamb = document.querySelector('.hamburger');
+    hamb.removeAttribute('stroke','white');
+     hamb.setAttribute('stroke','black');
+     var hamb2 = document.querySelector('.hamburger2');
+    hamb2.removeAttribute('stroke','white');
+     hamb2.setAttribute('stroke','black');
+     var hamb3 = document.querySelector('.hamburger3');
+    hamb3.removeAttribute('stroke','white');
+     hamb3.setAttribute('stroke','black');
+     localStorage.setItem('darkMode', null);
+
+
+}
+
+if(darkMode === 'enabled'){
+    enableDarkMode();
+}
+chk.addEventListener('click', () => {
+
+darkMode= localStorage.getItem('darkMode');
+if(darkMode !== 'enabled'){
+    enableDarkMode();
+}else{
+    disableDarkMode();
+}
+});
+
+
     </script>
 </body>
 

@@ -1,0 +1,556 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+        <script data-ad-client="ca-pub-3936683634046245" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <link rel="stylesheet" href="https://cdn.datatables.net/1.10.22/css/jquery.dataTables.min.css">
+    <!-- google fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400&display=swap"
+        rel="stylesheet">
+        <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+      />
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="main.css">
+    <link rel="icon" href="img/logo/logo.png">
+
+    <title>Covid | Refaldo</title>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-179256393-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-179256393-1');
+    </script>
+
+</head>
+
+<body class= >
+    
+     <!-- loader -->
+     <section class="loader" id="loader"> 
+      <div class="bouncer m-auto">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </section>
+ 
+     
+    
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light navbar-togle " id="nav">
+        <div class="container ">
+            <a class="navbar-brand" href="index.html"><p>REFALDO RACHMAN</p></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              
+                    <svg width="100" height="48" viewBox="0 0 100 48" fill="none" xmlns="http://www.w3.org/2000/svg" id="hamburger">
+                        <path class="hamburger" d="M0 4C80 4 100 4 100 4" stroke="black" stroke-width="8"/>
+                        <path class="hamburger2" d="M0 24C60 24 75 24 75 24" stroke="black" stroke-width="8"/>
+                        <path class="hamburger3" d="M0 44C48 44 60 44 60 44" stroke="black" stroke-width="8"/>
+                        </svg>
+            </button>
+            <div class="collapse navbar-collapse " id="navbarNav">
+                <ul class="navbar-nav ml-auto  ">
+                    <li class="nav-item mr-2">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item mr-2">
+                        <a class="nav-link" href="services.html" id="nav2">Services</a>
+                    </li>
+                    <li class="nav-item mr-2">
+                        <a class="nav-link" href="project.html" id="nav3">Project</a>
+                    </li>
+                    <li class="nav-item mr-2">
+                        <a class="nav-link" href="library.html" id="nav4">Library</a>
+                    </li>
+                    <li class="nav-item mr-2">
+                        <a class="nav-link" href="covid.html" id="nav5">Covid19</a>
+                    </li>
+                    <li class="nav-item mr-4">
+                        <a class="nav-link " href="mailto:mohrefaldorachman@gmail.com" id="nav6">Contact</a>
+                    </li>
+                    <div>
+                        <input type="checkbox" class="checkbox " id="chk" />
+                        <label class="label" for="chk">
+                            <i class="fas fa-moon fa-xs"></i>
+                            <i class="fas fa-sun fa-xs"></i>
+                            <div class="ball"></div>
+                        </label>
+                    </div>
+                </ul>
+               
+            </div>
+        </div>
+    </nav>
+    
+    
+
+    <!-- topbtn -->
+    <button id="topBtn" class=" waves-effect waves-teal"><i class="fas fa-arrow-up"></i></i></button>
+
+    <!-- jumbotron -->
+    <section class="coronavirus ">
+    <div class="jumbotron jumbotron-fluid " id="jumbotron">
+        <div class="container">
+            <div class="row" id="bg">
+                <div class="col-12 mb-4 judul">
+          <h1 class="big" >Kawal Informasi Corona</h1>
+          <p class=" mt-1">Situs ini merupakan kesukarelaan saya dalam mengawal keakuratan data Informasi seputar corona.</p>
+        </div>
+
+        <div class="col-12  mb-3">
+            <h4 class="">Jumlah Kasus di Indonesia Saat Ini</h4>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12">
+            <div class="card">
+                <div class="card-body card-case" id="confirmed">
+                  
+                 <img src="./img/hightemperature.png" alt="" class="">
+                  
+                  
+                </div>
+              </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12">
+            <div class="card " id="card2">
+                <div class="card-body card-case" id="recovered">
+                  
+                 <img src="./img/lowtemperature.png" alt="" class="">
+                  
+                </div>
+              </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12">
+            <div class="card " id="card3">
+                <div class="card-body card-case" id="hospital">
+                  
+                 <img src="./img/doctor.png" alt="" class="">
+                  
+                </div>
+              </div>
+        </div>
+        
+        <div class="col-lg-3 col-md-6 col-sm-12">
+            <div class="card " id="card4">
+                <div class="card-body card-case" id="rip">
+                  
+                 <img src="./img/death.png" alt="" class="">
+                </div>
+              </div>
+        </div>
+        <div class="col-12 mt-5 mb-3">
+            <h4 class="">Penambahan Kasus Hari Ini di Indonesia</h4>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-12">
+            <div class="card " id="card5">
+                <div class="card-body card-case"id="posIndoPerHari">
+                  
+                 <img src="./img/hightemperature.png" alt="" class="">
+                  
+                </div>
+              </div>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-12">
+            <div class="card " id="card6">
+                <div class="card-body card-case"id="semIndoPerHari">
+                  
+                 <img src="./img/lowtemperature.png" alt="" class="">
+                  
+                </div>
+              </div>
+        </div>
+       
+        <div class="col-lg-4 col-md-4 col-sm-12">
+            <div class="card" id="card7">
+                <div class="card-body card-case " id="menIndoPerHari">
+                  
+                 <img src="./img/death.png" alt="" class="">
+                  
+                  
+                </div>
+              </div>
+        </div>
+        <div class="col-8 mt-3 text-muted " id="updatet">
+            <p>
+                Update Terakhir : <span id="update"></span>
+            </p>
+            <p >
+                Sumber Data API :  <a href="https://github.com/Reynadi531/api-covid19-indonesia-v2">https://github.com/Reynadi531/api-covid19-indonesia-v2</a>
+            </p>
+
+        </div>
+        </div>
+        </div>
+      </div></section>
+   
+    
+<div class="container mb-5 tabelcuy" >
+    <div class="row justify-content-center">
+    <div class="col-lg-12 col-md-12 col-sm-12 col-xl-12">
+    <div class="card "  id="bgtable">
+        <div class="card-header  judulkartu">
+          <h5>Data Kasus Coronavirus di Indonesia Berdasarkan Provinsi</h5>
+          </div>
+        <div class="card-body" >
+        
+      
+    <table id="new"  class="dark2 hover row-border stripe">
+        <thead class="thead">
+            <tr >
+                <th>No</th>
+                <th>Provinces</th>
+                <th>Confirmed</th>
+                <th>Recovered</th>
+                <th>Death</th>
+            </tr>
+        </thead>
+        <tbody class=" tbody text-dark"></tbody>
+    </table>
+</div>
+</div>
+</div>
+</div>
+</div>
+      <!-- end tabel -->
+      <!-- hightchart -->
+      <div class="container statistik mt-5 " >
+<figure class="highcharts-figure mb-5 mt-5" >
+    <div id="container"></div>
+    <p class="highcharts-description">
+     
+    </p>
+  </figure>
+</div>
+
+    <!-- footer -->
+    <footer class="footer " id="footer">
+        <div class="container">
+            <div class="row mt-5 ">
+                <div class="col-lg-10 col-md-10 col-sm-12 footer-bakcground ">
+                    <h3>Get in touch</h3>
+                    <p>For business inquiry please send email to
+                        <u><a href="mailto:mohrefaldorachman@gmail.com">mohrefaldorachman@gmail.com
+                            </a></u>
+                    </p>
+                   
+
+                </div>
+            </div>
+        </div>
+    </footer >
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+        integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.datatables.net/1.10.22/js/jquery.dataTables.min.js"></script>
+   
+   <script src="https://code.highcharts.com/highcharts.js"></script>
+   <script src="https://code.highcharts.com/modules/series-label.js"></script>
+   <script src="https://code.highcharts.com/modules/exporting.js"></script>
+   <script src="https://code.highcharts.com/modules/export-data.js"></script>
+   <script src="https://code.highcharts.com/modules/accessibility.js"></script>
+   
+    <script src="js/all.js"></script>
+    <script src="./main.js"></script>
+    <script>
+     
+
+//     //  $.getJSON('https://data.covid19.go.id/public/api/update.json', function(data){
+//     $('.big').on('click', function(){
+//         console.log('oke');
+//     })
+
+// // })
+
+let darkMode = localStorage.getItem("darkMode");
+
+const chk = document.getElementById('chk');
+
+const enableDarkMode = () => {
+    // add the class darkmode to the body
+    document.querySelector('#jumbotron').classList.toggle('dark');
+    document.querySelector('#nav').classList.toggle('dark');
+    document.querySelector('#navbarNav').classList.toggle('dark');
+ 
+    document.querySelector('.navbar-brand').classList.toggle('dark');
+    document.querySelector('#navbarNav a').classList.toggle('nav-color');
+    document.querySelector('#nav2').classList.toggle('nav-color');
+    document.querySelector('#nav3').classList.toggle('nav-color');
+    document.querySelector('#nav4').classList.toggle('nav-color');
+    document.querySelector('#nav5').classList.toggle('nav-color');
+    document.querySelector('#nav6').classList.toggle('nav-color');
+    document.querySelector('.card').classList.toggle('dark2');
+    document.querySelector('#card2').classList.toggle('dark2');
+    document.querySelector('#card3').classList.toggle('dark2');
+    document.querySelector('#card4').classList.toggle('dark2');
+    document.querySelector('#card5').classList.toggle('dark2');
+    document.querySelector('#card6').classList.toggle('dark2');
+    document.querySelector('#card7').classList.toggle('dark2');
+    document.querySelector('#update').classList.toggle('dark2');
+    document.querySelector('#bgtable').classList.toggle('dark2');
+    document.querySelector('#new').classList.toggle('dark2');
+    document.querySelector('.judulkartu').classList.toggle('bgtablewarna');
+    document.querySelector('.thead').classList.toggle('trcolor');
+    document.querySelector('.tbody').classList.toggle('tbcolor');
+   
+
+
+    
+    document.querySelector('#footer').classList.toggle('dark');
+    var hamb = document.querySelector('.hamburger');
+    hamb.removeAttribute('stroke','black');
+     hamb.setAttribute('stroke','white');
+     var hamb2 = document.querySelector('.hamburger2');
+    hamb2.removeAttribute('stroke','black');
+     hamb2.setAttribute('stroke','white');
+     var hamb3 = document.querySelector('.hamburger3');
+    hamb3.removeAttribute('stroke','black');
+     hamb3.setAttribute('stroke','white');   
+    var kelass = document.querySelector('#nav5');
+   if(kelass.getAttribute('class') === 'nav-link aktif nav-color'){
+       kelass.removeAttribute('class','nav-color');
+       kelass.setAttribute('class', 'nav-link aktif');
+   }
+     document.body.classList.toggle('dark');
+     localStorage.setItem('darkMode', 'enabled');
+
+
+}
+const disableDarkMode = () => {
+    // add the class darkmode to the body
+    document.querySelector('#jumbotron').classList.remove('dark');
+    document.querySelector('#nav').classList.remove('dark');
+    document.querySelector('#navbarNav').classList.remove('dark');
+    document.querySelector('.judulkartu').classList.remove('bgtablewarna');
+    document.querySelector('.thead').classList.remove('trcolor');
+    document.querySelector('.navbar-brand').classList.remove('dark');
+    document.querySelector('#navbarNav a').classList.remove('nav-color');
+    document.querySelector('#nav2').classList.remove('nav-color');
+    document.querySelector('#nav3').classList.remove('nav-color');
+    document.querySelector('#nav4').classList.remove('nav-color');
+    document.querySelector('#nav5').classList.remove('nav-color');
+    document.querySelector('#nav6').classList.remove('nav-color');
+    document.querySelector('.card').classList.remove('dark2');
+    document.querySelector('#card2').classList.remove('dark2');
+    document.querySelector('#card3').classList.remove('dark2');
+    document.querySelector('#card4').classList.remove('dark2');
+    document.querySelector('#card5').classList.remove('dark2');
+    document.querySelector('#card6').classList.remove('dark2');
+    document.querySelector('#card7').classList.remove('dark2');
+    document.querySelector('#bgtable').classList.remove('dark2');
+    document.querySelector('.judulkartu').classList.remove('dark2');
+    document.querySelector('.tbody').classList.remove('tbcolor');
+    document.querySelector('.loader').classList.remove('darkloader');
+
+    document.querySelector('#footer').classList.remove('dark');
+    document.querySelector('#update').classList.remove('dark');
+    document.querySelector('#update').setAttribute('class','updatecolor');
+
+    var hamb = document.querySelector('.hamburger');
+    hamb.removeAttribute('stroke','white');
+     hamb.setAttribute('stroke','black');
+     var hamb2 = document.querySelector('.hamburger2');
+    hamb2.removeAttribute('stroke','white');
+     hamb2.setAttribute('stroke','black');
+     var hamb3 = document.querySelector('.hamburger3');
+    hamb3.removeAttribute('stroke','white');
+     hamb3.setAttribute('stroke','black');
+     document.body.classList.remove('dark');
+     localStorage.setItem('darkMode', null);
+
+
+}
+
+if(darkMode === 'enabled'){
+    enableDarkMode();
+}
+chk.addEventListener('click', () => {
+
+darkMode= localStorage.getItem('darkMode');
+if(darkMode !== 'enabled'){
+    enableDarkMode();
+}else{
+    disableDarkMode();
+}
+});
+
+
+// tabledata
+
+$.getJSON('https://apicovid19indonesia-v2.vercel.app/api/indonesia/provinsi/alt' ,function(result){
+  var data = [result];
+  // a +=result;
+var i =1;
+$.each(data, function(i,data){
+  
+  var data = data;
+  
+  $('#new').DataTable( {
+    data: data,
+    columns: [
+      { data: `FID` },
+      { data: `Provinsi` },
+      { data: 'Kasus_Posi' },
+      { data: 'Kasus_Semb' },
+      { data: 'Kasus_Meni' },
+      
+  ],
+  responsive: true,
+  row: '#b0bed9'
+  } );
+});
+});
+
+// hightchart
+
+$.getJSON('https://apicovid19indonesia-v2.vercel.app/api/indonesia/harian',function(data){
+    
+    // Array.rom(data);
+    // var dataAll = [];
+    let dataAll = data;
+    let positif = dataAll.map(function(elem){
+        return elem.positif;
+    });
+    let sembuh = dataAll.map(function(elem){
+        return elem.sembuh;
+    });
+    let meninggal = dataAll.map(function(elem){
+        return elem.meninggal;
+    });
+    
+//   console.log([tes]);
+
+  Highcharts.chart('container', {
+    chart: {
+
+
+      backgroundColor: '#3d405b',
+      polar: true,
+      type: 'line',
+      scrollablePlotArea: {
+        minWidth: 700,
+        scrollPositionX: 1
+    }
+   },
+    title: {
+      text: 'Pertumbuhan Corona sampai saat ini',
+      style:{"color": "white"}
+    },
+  
+    subtitle: {
+      text: 'Source: https://github.com/Reynadi531/api-covid19-indonesia-v2'
+    },
+  
+    yAxis: {
+      title: {
+        text: 'Jumlah Pertumbuhan'
+      }
+    },
+  
+    xAxis: {
+      accessibility: {
+        rangeDescription: 'Range: 2010 to 2017'
+      }
+    },
+  
+    legend: {
+      layout: 'vertical',
+      align: 'right',
+      verticalAlign: 'middle',
+    },
+  
+    plotOptions: {
+      series: {
+        label: {
+          connectorAllowed: false
+        },
+        pointStart: 1,
+      },
+      accessibility: {
+        description: "data"
+      },
+      tooltip: {
+        headerFormat: '<b>hari</b>',
+      
+    }
+      
+    },
+  
+    series: [{
+      name: 'Positif',
+      data: positif,
+      color: '#faa307'
+    }, {
+      name: 'Sembuh',
+      data: sembuh,
+      color: '#2a9d8f'
+    }, {
+      name: 'Meninggal',
+      data: meninggal,
+      color: '#e63946'
+    }],
+  
+    responsive: {
+      rules: [{
+        condition: {
+          maxWidth: 500
+        },
+        chartOptions: {
+          legend: {
+            layout: 'horizontal',
+            align: 'center',
+            verticalAlign: 'bottom'
+          }
+        }
+      }]
+    }
+  
+  });
+  responsive: {
+    rules: [{
+        condition: {
+            maxWidth: 500
+        },
+        chartOptions: {
+            legend: {
+                layout: 'horizontal',
+                align: 'center',
+                verticalAlign: 'bottom'
+            }
+        }
+    }]
+}
+})
+// console.log(datachart);
+
+
+    </script>
+</body>
+
+</html>

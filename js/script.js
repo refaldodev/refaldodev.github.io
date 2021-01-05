@@ -1,3 +1,8 @@
+
+
+
+    
+
 setTimeout(function () {
     $('.loader_bg').fadeToggle();
 }, 500);
@@ -247,7 +252,7 @@ fetch(
             jml_sem = jumlah_sembuh;
             jml_mat = Jumlah_Mat;
             negara = Country;
-            console.log(negara);
+            // console.log(negara);
         }
         // totalPos +=  Number(data[i].attributes.Confirmed);
         // totalMen +=  Number(data[i].attributes.Deaths);
@@ -275,7 +280,7 @@ fetch(
 
 
 
-        call_hightchart();
+        // call_hightchart();
 
 
 
@@ -306,125 +311,125 @@ $(document).ready(function () {
 });
 // }
 
-call_hightchart();
+// call_hightchart();
 
-function call_hightchart() {
+// function call_hightchart() {
 
-    // Highcharts.chart('container', {
-    //     chart: {
-    //         type: 'column'
-    //     },
-    //     title: {
-    //         text: 'Data Corona Indonesia'
-    //     },
-    //     subtitle: {
-    //         text: 'refaldodev.github.io'
-    //     },
-    //     xAxis: {
-    //         categories: Country,
-    //         crosshair: true
-    //     },
-    //     yAxis: {
-    //         min: 0,
-    //         title: {
-    //             text: 'Jumlah Orang'
-    //         }
-    //     },
+//     // Highcharts.chart('container', {
+//     //     chart: {
+//     //         type: 'column'
+//     //     },
+//     //     title: {
+//     //         text: 'Data Corona Indonesia'
+//     //     },
+//     //     subtitle: {
+//     //         text: 'refaldodev.github.io'
+//     //     },
+//     //     xAxis: {
+//     //         categories: Country,
+//     //         crosshair: true
+//     //     },
+//     //     yAxis: {
+//     //         min: 0,
+//     //         title: {
+//     //             text: 'Jumlah Orang'
+//     //         }
+//     //     },
 
-    //     tooltip: {
-    //         headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
-    //         pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
-    //             '<td style="padding:0"><b>{point.y:.1f}</b></td></tr>',
-    //         footerFormat: '</table>',
-    //         shared: true,
-    //         useHTML: true
-    //     },
-    //     plotOptions: {
-    //         column: {
-    //             pointPadding: 0.2,
-    //             borderWidth: 0
-    //         }
-    //     },
-    //     series: [{
-    //         name: 'Jumlah Sakit',
-    //         data: Jumlah_Sak
-    //     },{
-    //         name: 'Confirmed',
-    //         data: Jumlah_Sak
-    //     }, 
-    //     {
-    //         name: 'sembuh',
-    //         data: Jumlah_Semb
+//     //     tooltip: {
+//     //         headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
+//     //         pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
+//     //             '<td style="padding:0"><b>{point.y:.1f}</b></td></tr>',
+//     //         footerFormat: '</table>',
+//     //         shared: true,
+//     //         useHTML: true
+//     //     },
+//     //     plotOptions: {
+//     //         column: {
+//     //             pointPadding: 0.2,
+//     //             borderWidth: 0
+//     //         }
+//     //     },
+//     //     series: [{
+//     //         name: 'Jumlah Sakit',
+//     //         data: Jumlah_Sak
+//     //     },{
+//     //         name: 'Confirmed',
+//     //         data: Jumlah_Sak
+//     //     }, 
+//     //     {
+//     //         name: 'sembuh',
+//     //         data: Jumlah_Semb
 
-    //     }]
-    // });
+//     //     }]
+//     // });
 
-    // Highcharts.chart('container', {
-    //     chart: {
-    //         type: 'area'
-    //     },
-    //     title: {
-    //         text: 'Statistik Penyebaran Corona'
-    //     },
-    //     subtitle: {
-    //         text: 'Refaldodev.github.io'
-    //     },
-    //     xAxis: {
-    //         categories: negara ,
-    //         tickmarkPlacement: 'on',
-    //         title: {
-    //             enabled: false
-    //         }
-    //     },
-    //     yAxis: {
-    //         labels: {
-    //             format: '{value}%'
-    //         },
-    //         title: {
-    //             enabled: false
-    //         }
-    //     },
-    //     tooltip: {
-    //         pointFormat: '<span style="color:{series.color}">{series.name}</span>: <b></b> ({point.y:,.0f} )<br/>',
-    //         split: true
-    //     },
-    //     plotOptions: {
-    //         area: {
-    //             stacking: 'percent',
-    //             lineColor: '#ffffff',
-    //             lineWidth: 1,
-    //             marker: {
-    //                 lineWidth: 1,
-    //                 lineColor: '#ffffff'
-    //             },
-    //             accessibility: {
-    //                 pointDescriptionFormatter: function (point) {
-    //                     function round(x) {
-    //                         return Math.round(x * 100) / 100;
-    //                     }
-    //                     return (point.index + 1) + ', ' + point.category + ', ' +
-    //                         point.y + ' milions, ' + round(point.percentage) + '%, ' +
-    //                         point.series.name;
-    //                 }
-    //             }
-    //         }
-    //     },
-    //     series: [{
-    //         name: 'Deaths',
-    //         data: Jumlah_Mat
-    //     }, {
-    //         name: 'Confirmed',
-    //         data: Jumlah_Sak
+//     // Highcharts.chart('container', {
+//     //     chart: {
+//     //         type: 'area'
+//     //     },
+//     //     title: {
+//     //         text: 'Statistik Penyebaran Corona'
+//     //     },
+//     //     subtitle: {
+//     //         text: 'Refaldodev.github.io'
+//     //     },
+//     //     xAxis: {
+//     //         categories: negara ,
+//     //         tickmarkPlacement: 'on',
+//     //         title: {
+//     //             enabled: false
+//     //         }
+//     //     },
+//     //     yAxis: {
+//     //         labels: {
+//     //             format: '{value}%'
+//     //         },
+//     //         title: {
+//     //             enabled: false
+//     //         }
+//     //     },
+//     //     tooltip: {
+//     //         pointFormat: '<span style="color:{series.color}">{series.name}</span>: <b></b> ({point.y:,.0f} )<br/>',
+//     //         split: true
+//     //     },
+//     //     plotOptions: {
+//     //         area: {
+//     //             stacking: 'percent',
+//     //             lineColor: '#ffffff',
+//     //             lineWidth: 1,
+//     //             marker: {
+//     //                 lineWidth: 1,
+//     //                 lineColor: '#ffffff'
+//     //             },
+//     //             accessibility: {
+//     //                 pointDescriptionFormatter: function (point) {
+//     //                     function round(x) {
+//     //                         return Math.round(x * 100) / 100;
+//     //                     }
+//     //                     return (point.index + 1) + ', ' + point.category + ', ' +
+//     //                         point.y + ' milions, ' + round(point.percentage) + '%, ' +
+//     //                         point.series.name;
+//     //                 }
+//     //             }
+//     //         }
+//     //     },
+//     //     series: [{
+//     //         name: 'Deaths',
+//     //         data: Jumlah_Mat
+//     //     }, {
+//     //         name: 'Confirmed',
+//     //         data: Jumlah_Sak
 
-    //     },{
-    //         name: 'Confirmed',
-    //         data: Jumlah_Sak
+//     //     },{
+//     //         name: 'Confirmed',
+//     //         data: Jumlah_Sak
 
 
-    //     }]
-    // });
+//     //     }]
+//     // });
 
-}
+// }
 
 $(document).ready(function () {
 
@@ -597,11 +602,6 @@ $(document).ready(function () {
 
 
 
-
-
-
-
-
     // //        }
 
 
@@ -616,3 +616,5 @@ $(document).ready(function () {
 
     // }
 });
+
+
