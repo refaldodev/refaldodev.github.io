@@ -38,7 +38,7 @@ $(document).ready(function () {
 
 // loader
 setTimeout(function () {
-    $('#loader').fadeToggle();
+    $('.progress-container').fadeToggle();
 }, 500);
 
 

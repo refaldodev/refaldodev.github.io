@@ -37,64 +37,59 @@
 
 <body>
      <!-- loader -->
-     <section class="loader" id="loader"> 
+     <!-- <section class="loader" id="loader"> 
         <div class="bouncer m-auto">
           <div></div>
           <div></div>
           <div></div>
           <div></div>
         </div>
-      </section>
+      </section> -->
    
     
+      <div class="progress-container">
+        <div class="progress"></div>
+      </div>
     
-    
-    <!-- navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light navbar-togle " id="nav">
-        <div class="container ">
-            <a class="navbar-brand" href="index.html"><p>REFALDO RACHMAN</p></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-              
-                    <svg width="100" height="48" viewBox="0 0 100 48" fill="none" xmlns="http://www.w3.org/2000/svg" id="hamburger">
-                        <path class="hamburger" d="M0 4C80 4 100 4 100 4" stroke="black" stroke-width="8"/>
-                        <path class="hamburger2" d="M0 24C60 24 75 24 75 24" stroke="black" stroke-width="8"/>
-                        <path class="hamburger3" d="M0 44C48 44 60 44 60 44" stroke="black" stroke-width="8"/>
-                        </svg>
-            </button>
-            <div class="collapse navbar-collapse " id="navbarNav">
-                <ul class="navbar-nav ml-auto  ">
-                    <li class="nav-item mr-2">
-                        <a class="nav-link" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item mr-2">
-                        <a class="nav-link" href="services.html" id="nav2">Services</a>
-                    </li>
-                    <li class="nav-item mr-2">
-                        <a class="nav-link" href="project.html" id="nav3">Project</a>
-                    </li>
-                    <li class="nav-item mr-2">
-                        <a class="nav-link" href="library.html" id="nav4">Library</a>
-                    </li>
-                    <li class="nav-item mr-2">
-                        <a class="nav-link" href="covid.html" id="nav5">Covid19</a>
-                    </li>
-                    <li class="nav-item mr-4">
-                        <a class="nav-link " href="mailto:mohrefaldorachman@gmail.com" id="nav6">Contact</a>
-                    </li>
-                    <div>
-                        <input type="checkbox" class="checkbox " id="chk" />
-                        <label class="label" for="chk">
-                            <i class="fas fa-moon fa-xs"></i>
-                            <i class="fas fa-sun fa-xs"></i>
-                            <div class="ball"></div>
-                        </label>
-                    </div>
-                </ul>
+   <!-- navbar -->
+   <nav class="navbar navbar-expand-lg navbar-light navbar-togle " id="nav">
+    <div class="container ">
+        <a class="navbar-brand" href="index.html"><p>REFALDO RACHMAN</p></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          
+                <svg width="100" height="48" viewBox="0 0 100 48" fill="none" xmlns="http://www.w3.org/2000/svg" id="hamburger">
+                    <path class="hamburger" d="M0 4C80 4 100 4 100 4" stroke="black" stroke-width="8"/>
+                    <path class="hamburger2" d="M0 24C60 24 75 24 75 24" stroke="black" stroke-width="8"/>
+                    <path class="hamburger3" d="M0 44C48 44 60 44 60 44" stroke="black" stroke-width="8"/>
+                    </svg>
+        </button>
+        <div class="collapse navbar-collapse " id="navbarNav">
+            <ul class="navbar-nav ml-auto  ">
+                <li class="nav-item mr-2">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item mr-2">
+                    <a class="nav-link" href="services.html" id="nav2">Services</a>
+                </li>
+                <li class="nav-item mr-2">
+                    <a class="nav-link" href="project.html" id="nav3">Project</a>
+                </li>
+                <li class="nav-item mr-2">
+                    <a class="nav-link" href="library.html" id="nav4">Library</a>
+                </li>
+                <li class="nav-item mr-2">
+                    <a class="nav-link" href="covid.html" id="nav5">Covid19</a>
+                </li>
+                <li class="nav-item mr-4">
+                    <a class="nav-link " href="mailto:mohrefaldorachman@gmail.com" id="nav6">Contact</a>
+                </li>
                
-            </div>
+            </ul>
+           
         </div>
-    </nav>
+    </div>
+</nav>
     
     <div class="container mt-3">
     <div class="alert alert-warning alert-dismissible fade show" role="alert">
@@ -238,98 +233,7 @@
         //         original.classList.remove("open");
         //     }
         // })
-        
-let darkMode = localStorage.getItem("darkMode");
-
-const chk = document.getElementById('chk');
-
-const enableDarkMode = () => {
-    // add the class darkmode to the body
-    document.body.classList.toggle('dark');
-
-    document.querySelector('#nav').classList.toggle('dark');
-    document.querySelector('#navbarNav').classList.toggle('dark');
- 
-    document.querySelector('.navbar-brand').classList.toggle('dark');
-    document.querySelector('#navbarNav a').classList.toggle('nav-color');
-    document.querySelector('#nav2').classList.toggle('nav-color');
-    document.querySelector('#nav3').classList.toggle('nav-color');
-    document.querySelector('#nav4').classList.toggle('nav-color');
-    document.querySelector('#nav5').classList.toggle('nav-color');
-    document.querySelector('#nav6').classList.toggle('nav-color');
-    document.querySelector('#footer').classList.toggle('dark');
-  
-    // document.querySelector('.color-dark').classList.toggle('color-teks');
-    // document.querySelector('.color-dark2').classList.toggle('color-teks');
-    // document.querySelector('.color-dark3').classList.toggle('color-teks');
-    var hamb = document.querySelector('.hamburger');
-    hamb.removeAttribute('stroke','black');
-     hamb.setAttribute('stroke','white');
-     var hamb2 = document.querySelector('.hamburger2');
-    hamb2.removeAttribute('stroke','black');
-     hamb2.setAttribute('stroke','white');
-     var hamb3 = document.querySelector('.hamburger3');
-    hamb3.removeAttribute('stroke','black');
-     hamb3.setAttribute('stroke','white');
-     var kelass = document.querySelector('#nav3');
-   if(kelass.getAttribute('class') === 'nav-link aktif nav-color'){
-       kelass.removeAttribute('class','nav-color');
-       kelass.setAttribute('class', 'nav-link aktif');
-   }
-    
-    
-     localStorage.setItem('darkMode', 'enabled');
-     
-
-}
-const disableDarkMode = () => {
-    document.querySelector('#hamburger').classList.add('color-teks');
-    // add the class darkmode to the body
-    document.querySelector('#nav').classList.remove('dark');
-    document.querySelector('#navbarNav').classList.remove('dark');
- 
-    document.querySelector('.navbar-brand').classList.remove('dark');
-    document.querySelector('#navbarNav a').classList.remove('nav-color');
-    
-    document.querySelector('#nav2').classList.remove('nav-color');
-    document.querySelector('#nav3').classList.remove('nav-color');
-    document.querySelector('#nav4').classList.remove('nav-color');
-    document.querySelector('#nav5').classList.remove('nav-color');
-    document.querySelector('#nav6').classList.remove('nav-color');
-    
-     document.body.classList.remove('dark');
-    //  document.querySelector('.project p').classList.remove('color');
-    //  document.body.classList.remove('dark');
-    //  document.querySelector('.color-dark').classList.remove('color-teks');
-    // document.querySelector('.color-dark2').classList.remove('color-teks');
-    // document.querySelector('.color-dark3').classList.remove('color-teks');
-    var hamb = document.querySelector('.hamburger');
-    hamb.removeAttribute('stroke','white');
-     hamb.setAttribute('stroke','black');
-     var hamb2 = document.querySelector('.hamburger2');
-    hamb2.removeAttribute('stroke','white');
-     hamb2.setAttribute('stroke','black');
-     var hamb3 = document.querySelector('.hamburger3');
-    hamb3.removeAttribute('stroke','white');
-     hamb3.setAttribute('stroke','black');
-     localStorage.setItem('darkMode', null);
-
-
-}
-
-if(darkMode === 'enabled'){
-    enableDarkMode();
-}
-chk.addEventListener('click', () => {
-
-darkMode= localStorage.getItem('darkMode');
-if(darkMode !== 'enabled'){
-    enableDarkMode();
-}else{
-    disableDarkMode();
-}
-});
-
+   
 
     </script>
 </body>

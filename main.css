@@ -1175,4 +1175,49 @@ ul li a.aktif {
 .highcharts-data-table tr:hover {
   background: #f1f7ff;
 }
+
+.progress-container {
+  height: 4px;
+  width: 100%;
+  z-index: 10000;
+  position: absolute;
+}
+
+.progress {
+  height: 100%;
+  width: 100%;
+  background: #ff4754;
+  -webkit-animation: progress 0.5s ease;
+          animation: progress 0.5s ease;
+}
+
+@-webkit-keyframes progress {
+  0% {
+    width: 0%;
+  }
+  25% {
+    width: 23%;
+  }
+  75% {
+    width: 75%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+@keyframes progress {
+  0% {
+    width: 0%;
+  }
+  25% {
+    width: 23%;
+  }
+  75% {
+    width: 75%;
+  }
+  100% {
+    width: 100%;
+  }
+}
 /*# sourceMappingURL=main.css.map */

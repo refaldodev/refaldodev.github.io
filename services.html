@@ -34,7 +34,7 @@
 </head>
 
 <body>
-     <!-- loader -->
+     <!-- loader
      <section class="loader" id="loader"> 
         <div class="bouncer m-auto">
           <div></div>
@@ -43,10 +43,13 @@
           <div></div>
         </div>
       </section>
-   
+    -->
       
   
     
+    <div class="progress-container">
+        <div class="progress"></div>
+      </div>
     <!-- navbar -->
     <nav class="navbar navbar-expand-lg navbar-light navbar-togle " id="nav">
         <div class="container ">
@@ -80,14 +83,7 @@
                     <li class="nav-item mr-4">
                         <a class="nav-link " href="mailto:mohrefaldorachman@gmail.com" id="nav6">Contact</a>
                     </li>
-                    <div>
-                        <input type="checkbox" class="checkbox " id="chk" />
-                        <label class="label" for="chk">
-                            <i class="fas fa-moon fa-xs"></i>
-                            <i class="fas fa-sun fa-xs"></i>
-                            <div class="ball"></div>
-                        </label>
-                    </div>
+                   
                 </ul>
                
             </div>
@@ -257,7 +253,10 @@ const enableDarkMode = () => {
        kelass.removeAttribute('class','nav-color');
        kelass.setAttribute('class', 'nav-link aktif');
    }
-    
+   var progressbg = document.querySelector('.progress-container');
+//    progressbg.setAttribute('class','dark');
+
+   
      localStorage.setItem('darkMode', 'enabled');
      
 
