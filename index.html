@@ -135,7 +135,7 @@
                       <a href="services.html" class="">
                         <img src="img/uxdesignfix.png" alt="ux designer">
                         <h6 class="mt-4">UX Design</h6>
-                        <p>UX design focuses on the interaction between real human users (like you and me) and everyday products and services, such as websites, apps, and even coffee machines.</p>
+                        <p>User experience (UX) design is the process design teams use to create products that provide meaningful and relevant experiences to users.</p>
                     </a>
                     </div>
                 </div>
@@ -280,17 +280,17 @@
 
 
 // animation
-function scrollText(){
-  let textPanel = document.querySelector('.judul');
-  let textPosition = textPanel.getBoundingClientRect().top;
-  let textScreen = window.innerHeight;
-  if(textPosition < textScreen){
-    textPanel.classList.add('animate__fadeInUp');
-  }
+// function scrollText(){
+//   let textPanel = document.querySelector('.judul');
+//   let textPosition = textPanel.getBoundingClientRect().top;
+//   let textScreen = window.innerHeight;
+//   if(textPosition < textScreen){
+//     textPanel.classList.add('animate__fadeInUp');
+//   }
   
-}
+// }
 
-window.addEventListener('scroll', scrollText);
+// window.addEventListener('scroll', scrollText);
 
 
 function scrollCard1(){
@@ -367,6 +367,7 @@ function scrollImage2(){
 }
 
 window.addEventListener('scroll', scrollImage2);
+
 function scrollImage3(){
   let imagePanel = document.querySelector('.gambar3');
   let imagePosition = imagePanel.getBoundingClientRect().top;
