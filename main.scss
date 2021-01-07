@@ -3,6 +3,45 @@ body {
     font-family: 'poppins', sans-serif;
 }
 
+.progress-container {
+    height: 2px;
+    width: 100%;
+    z-index: 10000;
+    position: absolute;
+
+}
+
+.progress {
+    height: 100%;
+    width: 100%;
+
+    background: #ff4754;
+
+    animation: progress 0.5s ease;
+}
+
+@keyframes progress {
+    0% {
+        width: 0%;
+    }
+
+    15% {
+        width: 15%;
+    }
+
+    25% {
+        width: 25%;
+    }
+
+    75% {
+        width: 75%;
+    }
+
+    100% {
+        width: 100%;
+    }
+}
+
 @import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
 
 * {
@@ -817,6 +856,46 @@ tr.trcolor {
         background-color: #4a4e69 !important;
         color: white !important;
     }
+
+    .progress-container {
+        height: 4px;
+        width: 100%;
+        z-index: 10000;
+        position: absolute;
+
+    }
+
+    .progress {
+        height: 100%;
+        width: 100%;
+
+        background: #ff4754;
+
+        animation: progress 0.5s ease;
+    }
+
+    @keyframes progress {
+        0% {
+            width: 0%;
+        }
+
+        15% {
+            width: 15%;
+        }
+
+        25% {
+            width: 25%;
+        }
+
+        75% {
+            width: 75%;
+        }
+
+        100% {
+            width: 100%;
+        }
+    }
+
 }
 
 // dekstop
@@ -1311,56 +1390,46 @@ tr.trcolor {
 
 
 
-    /* bouncing balls*/
-    section.loader {
-        background-color: rgb(78, 78, 78);
-        position: fixed;
+
+    .progress-container {
+        height: 4px;
         width: 100%;
-        height: 100vh !important;
-        z-index: 999999;
-        // margin-top: 60px;
-    }
-
-    .bouncer {
-        display: flex;
-        justify-content: space-around;
-        align-items: flex-end;
-        width: 100px;
-        height: 100px;
+        z-index: 10000;
         position: absolute;
-        top: calc(50vh - 75px);
-        left: calc(50vw - 50px);
+
     }
 
-    .bouncer div {
-        width: 20px;
-        height: 20px;
-        background-color: rgb(231, 231, 231);
-        border-radius: 50%;
-        animation: bouncer 0.5s cubic-bezier(0, .91, .66, 1.03) infinite alternate;
+    .progress {
+        height: 100%;
+        width: 100%;
+
+        background: #ff4754;
+
+        animation: progress 0.5s ease;
     }
 
-    .bouncer div:nth-child(2) {
-        animation-delay: 0.1s;
-    }
-
-    .bouncer div:nth-child(3) {
-        animation-delay: 0.2s;
-    }
-
-    .bouncer div:nth-child(4) {
-        animation-delay: 0.3s;
-    }
-
-    @keyframes bouncer {
-        from {
-            transform: translateY(0);
+    @keyframes progress {
+        0% {
+            width: 0%;
         }
 
-        to {
-            transform: translateY(-100px);
+        15% {
+            width: 15%;
+        }
+
+        25% {
+            width: 25%;
+        }
+
+        75% {
+            width: 75%;
+        }
+
+        100% {
+            width: 100%;
         }
     }
+
 }
 
 // .active {
@@ -1418,43 +1487,4 @@ ul li a.aktif {
 
 .highcharts-data-table tr:hover {
     background: #f1f7ff;
-}
-
-.progress-container {
-    height: 4px;
-    width: 100%;
-    z-index: 10000;
-    position: absolute;
-
-}
-
-.progress {
-    height: 100%;
-    width: 100%;
-
-    background: #ff4754;
-
-    animation: progress 0.5s ease;
-}
-
-@keyframes progress {
-    0% {
-        width: 0%;
-    }
-
-    15% {
-        width: 15%;
-    }
-
-    25% {
-        width: 25%;
-    }
-
-    75% {
-        width: 75%;
-    }
-
-    100% {
-        width: 100%;
-    }
 }
