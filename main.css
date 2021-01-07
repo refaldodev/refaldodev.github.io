@@ -1195,8 +1195,11 @@ ul li a.aktif {
   0% {
     width: 0%;
   }
+  15% {
+    width: 15%;
+  }
   25% {
-    width: 23%;
+    width: 25%;
   }
   75% {
     width: 75%;
@@ -1210,8 +1213,11 @@ ul li a.aktif {
   0% {
     width: 0%;
   }
+  15% {
+    width: 15%;
+  }
   25% {
-    width: 23%;
+    width: 25%;
   }
   75% {
     width: 75%;
