@@ -255,6 +255,7 @@ section.loader {
   margin-top: 12px;
   letter-spacing: 2px;
   line-height: 29px;
+  font-weight: bold;
 }
 
 .jumbotron-content .foto img {
@@ -620,8 +621,8 @@ table {
   overflow: auto !important;
 }
 
-tr.trcolor {
-  background-color: #2c2f3d;
+tr th {
+  background-color: #1d1d1f !important;
   color: white !important;
 }
 
