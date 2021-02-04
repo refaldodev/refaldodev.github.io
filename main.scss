@@ -59,11 +59,6 @@ body {
     margin: 0;
 }
 
-.dark {
-    background: #292C35 !important;
-    color: white !important;
-}
-
 .checkbox {
     opacity: 0;
     position: absolute;
@@ -316,11 +311,6 @@ section.loader {
 
 #topBtn:hover {
     color: lightskyblue;
-}
-
-.background-darkmode {
-    background-color: #4a4e69 !important;
-    color: white !important;
 }
 
 
@@ -705,10 +695,6 @@ tr.trcolor {
     }
 }
 
-.dark2 {
-    background: #4a4e69 !important;
-    color: white !important;
-}
 
 .trcolor {
     color: black !important;
@@ -931,20 +917,6 @@ tr.trcolor {
         margin: 0;
     }
 
-    .dark {
-        background: #292C35 !important;
-        color: white !important;
-    }
-
-    .dark2 {
-        background: #4a4e69 !important;
-        color: white !important;
-    }
-
-    .dark3 {
-        background: #4a4e69 !important;
-        color: black !important;
-    }
 
     .checkbox {
         opacity: 0;
@@ -1104,21 +1076,10 @@ tr.trcolor {
 
     // services
     .services-content {
-        .text-darkmode {
 
-            color: white;
-        }
 
         font-family: 'Poppins',
-        sans-serif;
-
-        .background-darkmode {
-            background-color: #4a4e69;
-
-
-
-            color: white !important;
-        }
+            sans-serif;
 
 
 
@@ -1147,43 +1108,6 @@ tr.trcolor {
 
     }
 
-    // halaman services
-    .services-contentt {
-        margin-top: 80px;
-
-        h1 {
-            font-size: $fontjuduldekstop;
-        }
-
-        .card-servicess {
-            background-color: white;
-            border: 1px solid rgba(95, 95, 95, 0.1);
-            border-radius: 10px;
-            height: 300px;
-            box-shadow: 3px 5px 10px #888888;
-
-        }
-
-        .card-servicess:hover {
-            box-shadow: 1px 3px 18px #888888;
-
-        }
-
-        img {
-            height: 250px;
-            width: 50%;
-        }
-
-        h4 {
-            font-size: 18px;
-        }
-
-        p {
-            font-size: 13px;
-            margin-top: 13px;
-        }
-
-    }
 
     // project
 
