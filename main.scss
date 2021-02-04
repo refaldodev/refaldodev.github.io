@@ -223,7 +223,7 @@ section.loader {
 .jumbotron-content {
     font-family: 'poppins', sans-serif;
     min-height: 420px;
-    margin-top: 130px;
+    margin-top: 135px;
 
     h6 {
         font-size: 22px;
@@ -236,9 +236,10 @@ section.loader {
 
     p {
         font-size: 18px;
+        margin-top: 12px;
         // margin-bottom: 24px;
         letter-spacing: 2px;
-
+        line-height: 29px;
     }
 
     .foto {
@@ -256,7 +257,7 @@ section.loader {
             width: 23px;
             height: 23px;
             margin-right: 15px;
-            margin-bottom: 30px;
+            margin-bottom: 100px;
         }
     }
 
