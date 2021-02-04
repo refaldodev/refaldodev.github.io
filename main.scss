@@ -1,14 +1,20 @@
+$fontjuduldekstop: 42px;
+$fontjudulmobile: 28px;
+$shadow : 0 2px 10px rgba(0, 0, 0, 0.5) !important;
+
 body {
 
     font-family: 'poppins', sans-serif;
 }
 
 .progress-container {
-    height: 1px;
+    height: 2px;
     width: 100%;
+
+
     z-index: 10000;
     position: absolute;
-
+    top: 0;
 }
 
 .progress {
@@ -172,6 +178,8 @@ section.loader {
     font-family: 'Poppins', sans-serif;
     font-size: 16px;
 
+
+
     svg {
         width: 30px;
         height: 30px;
@@ -220,7 +228,7 @@ section.loader {
 .jumbotron-content {
     font-family: 'poppins', sans-serif;
     min-height: 420px;
-    margin-top: 30px;
+    margin-top: 85px;
 
     h6 {
         font-size: 22px;
@@ -263,7 +271,7 @@ section.loader {
         h1 {
 
             color: #4FCF9A;
-            font-size: 42px;
+            font-size: $fontjudulmobile;
         }
 
         h3 {
@@ -318,6 +326,7 @@ section.loader {
 
 // Services
 .services-content {
+
     border-top: 1px solid rgba(95, 95, 95, 0.1);
 
     a {
@@ -325,7 +334,7 @@ section.loader {
     }
 
     h1 {
-        font-size: 28px;
+        font-size: $fontjudulmobile;
     }
 
 
@@ -372,8 +381,10 @@ section.loader {
 
 // halaman services
 .services-contentt {
+    margin-top: 60px;
+
     h1 {
-        font-size: 28px;
+        font-size: $fontjudulmobile;
     }
 
     .card-servicess {
@@ -407,12 +418,17 @@ section.loader {
 }
 
 // portfolio
-.projectt {}
+
+.projectt {
+    margin-top: 80px;
+    font-size: 16px;
+
+}
 
 .project {
 
     h1 {
-        font-size: 28px;
+        font-size: $fontjudulmobile;
     }
 
     p {
@@ -490,11 +506,10 @@ section.loader {
 
 }
 
-
 .project-full {
 
     h1 {
-        font-size: 28px;
+        font-size: $fontjudulmobile;
     }
 
     a {
@@ -568,7 +583,7 @@ section.loader {
     text-align: left;
 
     h1 {
-        font-size: 28px;
+        font-size: $fontjudulmobile;
     }
 
     img {
@@ -582,6 +597,7 @@ section.loader {
 }
 
 .coronavirus {
+    margin-top: 65px;
 
     #updatet p {
         font-size: 12px !important;
@@ -730,6 +746,8 @@ tr.trcolor {
 }
 
 .file {
+    margin-top: 60px;
+
     h1 {
         font-size: 28px;
     }
@@ -740,6 +758,7 @@ tr.trcolor {
     .navbar {
         font-size: 16px;
         font-family: 'poppins', sans-serif;
+
 
         p {
             font-size: 16px;
@@ -976,6 +995,16 @@ tr.trcolor {
 
     .navbar {
         font-family: 'poppins', sans-serif;
+        z-index: 12;
+
+        .bayangan {
+            background-color: #ff4754 !important;
+
+        }
+
+
+
+
 
         .nav-color {
             color: white !important;
@@ -1006,8 +1035,10 @@ tr.trcolor {
 
 
     .jumbotron-content {
+        margin-top: 130px;
         font-family: 'poppins', sans-serif;
         height: 80vh;
+
 
         h6 {
             font-size: 32px;
@@ -1050,7 +1081,7 @@ tr.trcolor {
             h1 {
 
                 color: #4FCF9A;
-                font-size: 42px;
+                font-size: $fontjuduldekstop;
             }
 
             h3 {
@@ -1100,7 +1131,7 @@ tr.trcolor {
         }
 
         h1 {
-            font-size: 42px;
+            font-size: $fontjuduldekstop;
         }
 
         h6 {
@@ -1118,8 +1149,10 @@ tr.trcolor {
 
     // halaman services
     .services-contentt {
+        margin-top: 80px;
+
         h1 {
-            font-size: 42px;
+            font-size: $fontjuduldekstop;
         }
 
         .card-servicess {
@@ -1153,9 +1186,15 @@ tr.trcolor {
     }
 
     // project
+
+    .projectt {
+        margin-top: 80px;
+    }
+
+
     .project {
         h1 {
-            font-size: 42px;
+            font-size: $fontjuduldekstop;
         }
 
         h6 {
@@ -1181,7 +1220,7 @@ tr.trcolor {
         margin-bottom: 60px;
 
         h1 {
-            font-size: 42px;
+            font-size: $fontjuduldekstop;
         }
 
         img {
@@ -1217,6 +1256,7 @@ tr.trcolor {
     }
 
     .coronavirus {
+        margin-top: 80px;
 
         #updatet p {
             font-size: 14px !important;
@@ -1353,6 +1393,8 @@ tr.trcolor {
     }
 
     .file {
+        margin-top: 80px;
+
         img {
             border-radius: 0 30px 0 0;
         }
@@ -1396,7 +1438,7 @@ tr.trcolor {
         width: 100%;
         z-index: 10000;
         position: absolute;
-
+        top: 0;
     }
 
     .progress {

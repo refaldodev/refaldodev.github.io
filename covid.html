@@ -48,7 +48,7 @@
  
      
   <!-- navbar -->
-  <nav class="navbar navbar-expand-lg navbar-light navbar-togle " id="nav">
+  <nav class="navbar navbar-expand-lg navbar-light navbar-togle fixed-top" id="nav">
     <div class="container ">
         <a class="navbar-brand" href="index.html"><p>REFALDO RACHMAN</p></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
@@ -351,9 +351,7 @@ text: 'Data perhari'
     },
   
     xAxis: {
-      accessibility: {
-        rangeDescription: 'Range: 2010 to 2017'
-      }
+      type: 'datetime'
     },
   
     legend: {
@@ -364,10 +362,10 @@ text: 'Data perhari'
   
     plotOptions: {
       series: {
-        label: {
-          connectorAllowed: false
-        },
-        pointStart: 1,
+       
+        pointStart: Date.UTC(2020,02,02),
+        pointInterval: 24 * 3600 * 1000 // one day
+
       },
       accessibility: {
         description: "data"

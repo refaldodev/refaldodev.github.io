@@ -9,6 +9,7 @@ body {
   width: 100%;
   z-index: 10000;
   position: absolute;
+  top: 0;
 }
 
 .progress {
@@ -243,7 +244,7 @@ section.loader {
 .jumbotron-content {
   font-family: 'poppins', sans-serif;
   min-height: 420px;
-  margin-top: 30px;
+  margin-top: 85px;
 }
 
 .jumbotron-content h6 {
@@ -281,7 +282,7 @@ section.loader {
 
 .jumbotron-content .text-jumbo h1 {
   color: #4FCF9A;
-  font-size: 42px;
+  font-size: 28px;
 }
 
 .jumbotron-content .text-jumbo h3 {
@@ -372,6 +373,10 @@ section.loader {
   border: none;
 }
 
+.services-contentt {
+  margin-top: 60px;
+}
+
 .services-contentt h1 {
   font-size: 28px;
 }
@@ -402,6 +407,11 @@ section.loader {
 .services-contentt p {
   font-size: 13px;
   margin-top: 13px;
+}
+
+.projectt {
+  margin-top: 80px;
+  font-size: 16px;
 }
 
 .project h1 {
@@ -552,6 +562,10 @@ section.loader {
   height: 80px;
 }
 
+.coronavirus {
+  margin-top: 65px;
+}
+
 .coronavirus #updatet p {
   font-size: 12px !important;
 }
@@ -678,6 +692,10 @@ tr.trcolor {
   width: 35px;
   height: 35px;
   margin-right: 5px;
+}
+
+.file {
+  margin-top: 60px;
 }
 
 .file h1 {
@@ -880,7 +898,11 @@ tr.trcolor {
   }
   .navbar {
     font-family: 'poppins', sans-serif;
+    z-index: 12;
     font-size: 16px;
+  }
+  .navbar .bayangan {
+    background-color: #ff4754 !important;
   }
   .navbar .nav-color {
     color: white !important;
@@ -899,6 +921,7 @@ tr.trcolor {
     color: #a5a5a5 !important;
   }
   .jumbotron-content {
+    margin-top: 130px;
     font-family: 'poppins', sans-serif;
     height: 80vh;
   }
@@ -971,6 +994,9 @@ tr.trcolor {
     font-size: 13px;
     margin-top: 38px;
   }
+  .services-contentt {
+    margin-top: 80px;
+  }
   .services-contentt h1 {
     font-size: 42px;
   }
@@ -996,6 +1022,9 @@ tr.trcolor {
   .services-contentt p {
     font-size: 13px;
     margin-top: 13px;
+  }
+  .projectt {
+    margin-top: 80px;
   }
   .project h1 {
     font-size: 42px;
@@ -1036,6 +1065,7 @@ tr.trcolor {
     color: white;
   }
   .coronavirus {
+    margin-top: 80px;
     font-family: 'poppins', sans-serif;
   }
   .coronavirus #updatet p {
@@ -1133,6 +1163,9 @@ tr.trcolor {
     height: 35px;
     margin-right: 10px;
   }
+  .file {
+    margin-top: 80px;
+  }
   .file img {
     border-radius: 0 30px 0 0;
   }
@@ -1164,6 +1197,7 @@ tr.trcolor {
     width: 100%;
     z-index: 10000;
     position: absolute;
+    top: 0;
   }
   .progress {
     height: 100%;
