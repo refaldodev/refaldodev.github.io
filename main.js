@@ -125,28 +125,18 @@ $.each(dataAll, function(i,data){
 // }
 // window.addEventListener('scroll', scrollText);
 
-// function scrollCard() {
-//   var cardPanel = document.querySelector('.card-corona');
-//   var cardPosition = cardPanel.getBoundingClientRect().top;
-//   var cardScreen = window.innerHeight;
-
-//   if (cardPosition < cardScreen) {
-//       cardPanel.classList.add('card-panel-view');
-//   }
-
-
-// }
-// window.addEventListener('scroll', scrollCard);
-
 const nav = document.querySelector('nav')
 window.addEventListener('scroll', fixNav)
 
 function fixNav() {
     if(window.scrollY > nav.offsetHeight ) {
         nav.classList.add('bg-light');
+        nav.classList.add('shadow');
+        
         
     } else {
         nav.classList.remove('bg-light');
+        nav.classList.remove('shadow');
         
     }
 }
