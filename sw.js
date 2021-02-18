@@ -1,4 +1,4 @@
-
+// registrasi serviceworker
 if ('serviceWorker' in navigator) {
     window.addEventListener('load', function() {
       navigator.serviceWorker.register('/sw.js').then(function(registration) {
@@ -11,7 +11,7 @@ if ('serviceWorker' in navigator) {
     });
   }
 
-
+// chache
   var CACHE_NAME = 'refaldo-cache-v1';
 var urlsToCache = [
   '/',
