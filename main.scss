@@ -335,7 +335,7 @@ section.loader {
         // background-color: white;
         border: 1px solid rgba(95, 95, 95, 0.1);
         border-radius: 10px;
-        height: 290px;
+        height: 280px;
         box-shadow: 3px 5px 10px #888888;
 
     }
@@ -363,7 +363,7 @@ section.loader {
     p {
         font-size: 12px;
         text-align: left;
-        padding: 5px 10px 40px 20px;
+        padding: 3px 10px 40px 20px;
     }
 }
 
@@ -1084,9 +1084,12 @@ tr th {
             sans-serif;
 
 
-
         .card-services {
-            height: 320px;
+            height: 340px;
+
+            img {
+                height: 200px;
+            }
 
             a {
                 color: #000;
@@ -1104,7 +1107,7 @@ tr th {
 
         p {
             font-size: 13px;
-            margin-top: 38px;
+            margin-top: 5px;
         }
 
 

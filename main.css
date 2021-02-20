@@ -333,7 +333,7 @@ section.loader {
 .services-content .card-services {
   border: 1px solid rgba(95, 95, 95, 0.1);
   border-radius: 10px;
-  height: 290px;
+  height: 280px;
   -webkit-box-shadow: 3px 5px 10px #888888;
           box-shadow: 3px 5px 10px #888888;
 }
@@ -359,7 +359,7 @@ section.loader {
 .services-content p {
   font-size: 12px;
   text-align: left;
-  padding: 5px 10px 40px 20px;
+  padding: 3px 10px 40px 20px;
 }
 
 .services-content.text-services {
@@ -947,7 +947,10 @@ tr th {
     font-family: 'Poppins', sans-serif;
   }
   .services-content .card-services {
-    height: 320px;
+    height: 340px;
+  }
+  .services-content .card-services img {
+    height: 200px;
   }
   .services-content .card-services a {
     color: #000;
@@ -961,7 +964,7 @@ tr th {
   }
   .services-content p {
     font-size: 13px;
-    margin-top: 38px;
+    margin-top: 5px;
   }
   .projectt {
     margin-top: 80px;
