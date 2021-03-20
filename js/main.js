@@ -60,11 +60,11 @@ function set_titik(param, separator) {
     return result;
 }
 
-
 $.getJSON('https://apicovid19indonesia-v2.vercel.app/api/indonesia', function(hasil){
     
     // dirawat, sembuh, meninggal, positif
     // var total = 0;
+
     $('#confirmed').append(`<p style="color:#faa307">${set_titik(hasil.positif)}</p>`);
     $('#recovered').append(`<p style="color:#2a9d8f">${set_titik(hasil.sembuh)}</p>`) ;
     $('#hospital').append(`<p style="color:#f4a261">${set_titik(hasil.dirawat)}</p>`) ;
