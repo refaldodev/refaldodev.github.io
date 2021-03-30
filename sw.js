@@ -12,7 +12,7 @@ if ('serviceWorker' in navigator) {
   }
 
 // chache
-  var CACHE_NAME = 'refaldo-cache-v1';
+  var CACHE_NAME = 'refaldo-cache-v3';
 var urlsToCache = [
   '/',
     '/index.html',
@@ -88,3 +88,12 @@ self.addEventListener('fetch', function(event) {
       })
     );
   });
+
+//   if ('caches' in window) {
+//     caches.keys()
+//       .then(function(keyList) {
+//           return Promise.all(keyList.map(function(key) {
+//               return caches.delete(key);
+//           }));
+//       })
+// }
