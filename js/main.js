@@ -60,14 +60,22 @@ function set_titik(param, separator) {
     return result;
 }
 
-$.getJSON('https://apicovid19indonesia-v2.vercel.app/api/indonesia', function(hasil){
-    
-    // dirawat, sembuh, meninggal, positif
-    // var total = 0;
+
+$(document).ready(function(){
     $('#confirmed').append(`<p style="color:#faa307" id="isikonfirm">---</p>`);
     $('#recovered').append(`<p style="color:#2a9d8f" id="isisembuh">---</p>`) ;
     $('#hospital').append(`<p style="color:#f4a261" id="isidirawat">---</p>`) ;
     $('#rip').append(`<p style="color:#e63946" id="isimeninggal">---</p>`) ;
+
+    $('#posIndoPerHari').append(`<p style="color:#faa307" id="positifperhari">---</p>`);
+    $('#semIndoPerHari').append(`<p style="color:#2a9d8f" id="sembuhperhari">---</p>`) ;
+    $('#menIndoPerHari').append(`<p style="color:#e63946" id="meninggalperhari">---</p>`) ;
+})
+$.getJSON('https://apicovid19indonesia-v2.vercel.app/api/indonesia', function(hasil){
+    
+    // dirawat, sembuh, meninggal, positif
+    // var total = 0;
+    
     setTimeout(() => {
 
         $('#isikonfirm').html(`${set_titik(hasil.positif)}`);
@@ -81,13 +89,13 @@ $.getJSON('https://apicovid19indonesia-v2.vercel.app/api/indonesia', function(ha
     // })
 });
 
+
+
 $.getJSON('https://apicovid19indonesia-v2.vercel.app/api/indonesia/harian', function(data){
     // console.log(data);
     var update = data;
         var panjang = update.length-1;
-        $('#posIndoPerHari').append(`<p style="color:#faa307" id="positifperhari">---</p>`);
-        $('#semIndoPerHari').append(`<p style="color:#2a9d8f" id="sembuhperhari">---</p>`) ;
-        $('#menIndoPerHari').append(`<p style="color:#e63946" id="meninggalperhari">---</p>`) ;
+     
 
         setTimeout(() => {
         $('#positifperhari').html(`${set_titik(update[panjang].positif)}`);
