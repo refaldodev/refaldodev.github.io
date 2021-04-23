@@ -25,6 +25,7 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="icon" href="img/logo/logo.png">
     <link rel="manifest" href="./manifest.json">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
     <title>Refaldo Rachman</title>
     <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -41,6 +42,7 @@
     </script>
 
 </head>
+
 
 <body >
     <!-- loader -->
@@ -138,10 +140,11 @@
         <div class="container">
             <div class="row text-left ">
                 <div class="col-12 mb-5 mt-5 ">
-                    <h1 class="judul animate__animated" id="services">Services</h1>
+                    <h1 class="judul animate__animated" id="services" data-aos="fade-up">Services</h1>
                 </div>
                 <div class="col-lg-4 col-md-4 col-sm-12 ">
-                    <div class=" card-services text-center mb-4 animate__animated card1  ">
+                    <div class=" card-services text-center mb-4 animate__animated card1" data-aos="fade-up" 
+                    >
                       <a href="" class="">
                         <img src="img/uxdesign.png" alt="ux designer">
                         <h6 class="mt-4">UX Design</h6>
@@ -150,7 +153,7 @@
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-4 col-sm-12 mb-4    ">
-                    <div class=" animate__animated card-services dark-service2 text-center card2" >
+                    <div class=" animate__animated card-services dark-service2 text-center card2" data-aos="fade-up"     data-aos-delay="100">
                         <a href="" class="">
                         <img src="img/uidesign.png" alt="ux designer">
                         <h6 class="mt-4">UI Design</h6>
@@ -160,7 +163,7 @@
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-4 col-sm-12 mb-3">
-                    <div class="animate__animated  card-services dark-service3 text-center card3" >
+                    <div class="animate__animated  card-services dark-service3 text-center card3" data-aos="fade-up"     data-aos-delay="200" >
                         <a href="" class="">
                         <img src="img/developerdesignfix.png" alt="ux designer">
                         <h6 class="mt-4">Web Developer</h6>
@@ -177,17 +180,17 @@
         <div class="container">
             <div class="row">
                 <div class="col-12 title-portfolio text-left mb-5 mt-5">
-                    <h1 class="judulproject animate__animated">Project</h1>
+                    <h1 class="judulproject animate__animated" data-aos="fade-up"  >Project</h1>
                 </div>
-                <div class="col-12  portfolio-gambar animate__animated gambar1 box-shadow text-center   ">
+                <div class="col-12  portfolio-gambar animate__animated gambar1 box-shadow text-center   "  data-aos="fade-up"     data-aos-delay="200">
                     <a href=""></a><img src="img/recoffee.jpg" alt="Recoffee Shop" width="100%"
-                        data-original="img/recoffee.jpg">
+                        data-original="img/recoffee.jpg" >
                     </a>
                     <a href="">
                         <p class="color-dark">Recoffee Shop</p>
                     </a>
                 </div>
-                <div class="col-12 portfolio-gambar animate__animated box-shadow  gambar2  text-center  ">
+                <div class="col-12 portfolio-gambar animate__animated box-shadow  gambar2  text-center  "  data-aos="fade-up"     data-aos-delay="200">
                     <a href=""></a><img src="img/uiishlah.jpg" alt="LDK Ishlah" width="100%"
                         data-original="img/uiishlah.jpg">
                     </a>
@@ -195,7 +198,7 @@
                         <p class="color-dark2">LDK Ishlah</p>
                     </a>
                 </div>
-                <div class="col-12 portfolio-gambar animate__animated box-shadow  gambar3  text-center ">
+                <div class="col-12 portfolio-gambar animate__animated box-shadow  gambar3  text-center "  data-aos="fade-up"     data-aos-delay="200">
                     <a href=""></a><img src="img/refal-full.jpg" alt="Refal Coffee" width="100%"
                         data-original="img/refal-full.jpg">
                     </a>
@@ -216,15 +219,15 @@
         <div class="container">
             <div class="row">
                 <div class="col-12 text-left mt-5 mb-5">
-                    <h1 class="judulstools animate__animated">Tools & Skills</h1>
+                    <h1 class="judulstools animate__animated"  data-aos="fade-up"  >Tools & Skills</h1>
                 </div>
                 <div class="col-12  skills d-flex justify-content-center flex-wrap">
-                <img src="img/adobexd.png" alt="" class="ukuran  animate__animated adobe">
-                <img src="img/figma1.png" alt="" class="figma animate__animated figma">
-                <img src="img/react.png" alt=""  class="animate__animated ukuran jquery">
-                    <img src="img/php.png" alt=""  class="ukuran animate__animated php">
-                    <img src="img/laravel.png" alt=""  class="animate__animated ukuran laravel">
-                    <img src="img/ci.png" alt=""  class="ukuran animate__animated ci">
+                <img src="img/adobexd.png" alt="" class="ukuran  animate__animated adobe" data-aos="zoom-in" data-aos-delay="50">
+                <img src="img/figma1.png" alt="" class="figma animate__animated figma"  data-aos="zoom-in" data-aos-delay="100">
+                <img src="img/react.png" alt=""  class="animate__animated ukuran jquery"  data-aos="zoom-in" data-aos-delay="150">
+                    <img src="img/php.png" alt=""  class="ukuran animate__animated php"  data-aos="zoom-in" data-aos-delay="200">
+                    <img src="img/laravel.png" alt=""  class="animate__animated ukuran laravel"  data-aos="zoom-in" data-aos-delay="250">
+                    <img src="img/ci.png" alt=""  class="ukuran animate__animated ci"  data-aos="zoom-in" data-aos-delay="300">
                 </div>
             </div>
         </div>
@@ -307,6 +310,10 @@
 
 
     </script>
+     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+     <script>
+       AOS.init();
+     </script>
 </body>
 
 </html>
