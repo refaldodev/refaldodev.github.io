@@ -2,6 +2,7 @@
 @import url("https://fonts.googleapis.com/css?family=Muli&display=swap");
 body {
   font-family: 'poppins', sans-serif;
+  
 }
 
 html{
@@ -674,6 +675,7 @@ tr th {
   
 html{
   filter: invert(1) hue-rotate(180deg);     
+    
  }
   img{
     filter: invert(1) hue-rotate(180deg);      
