@@ -1,5 +1,76 @@
+let lightMode = localStorage.getItem('lightMode');
 
+let darkModeToggle = document.querySelector('.btnColor');
+let html = document.querySelector('html');
+let img = document.querySelector('.img-theme');
+let image = document.querySelectorAll('img');
 
+const enableLightMode = () => {
+    // 1. Add the class to the body
+    
+    if(html.dataset.colorMode === 'dark'){
+
+        html.dataset.colorMode = 'light'
+        img.src = "img/night.png"
+        image.forEach(m => {
+            m.dataset.imgColor = 'light' 
+        })
+        // 2. Update darkMode in localStorage
+        localStorage.setItem('lightMode', 'enabled');
+        
+        
+    }
+  }
+  
+  const disableLightMode = () => {
+    // 1. Remove the class from the body
+    if(html.dataset.colorMode === 'light'){
+
+    html.dataset.colorMode = 'dark'
+    img.src = "img/sun.png"
+    // image.dataset.imgColor = 'dark' 
+    image.forEach(m => {
+        m.dataset.imgColor = 'dark' 
+    })
+    // 2. Update darkMode in localStorage 
+    localStorage.setItem('lightMode', null);
+
+  
+}
+  }
+
+  if(lightMode === 'enabled'){
+      enableLightMode();
+  }
+
+  darkModeToggle.addEventListener('click', () => {
+lightMode = localStorage.getItem('lightMode');
+ if(lightMode !== 'enabled'){
+     enableLightMode();
+ }else{
+     disableLightMode();
+ }
+  })
+
+//   legacy
+// darkModeToggle.addEventListener('click', function(){
+//     console.log('oke');
+//     if(html.dataset.colorMode === 'dark'){
+//         html.dataset.colorMode = 'light'
+//         img.src = "img/night.png"
+//         image.forEach(m => {
+//             m.dataset.imgColor = 'light' 
+//         })
+//     }else {
+//         html.dataset.colorMode = 'dark'
+//         img.src = "img/sun.png"
+//         // image.dataset.imgColor = 'dark' 
+//         image.forEach(m => {
+//             m.dataset.imgColor = 'dark' 
+//         })
+
+//     }
+// })
 // $(document).ready(function(){
   
 // });

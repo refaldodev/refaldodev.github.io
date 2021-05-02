@@ -5,10 +5,11 @@ body {
   
 }
 
-html{
+html[data-color-mode="dark"]{
   filter: invert(1) hue-rotate(180deg);     
+  
  }
-  img{
+  img[data-img-color="dark"]{
     filter: invert(1) hue-rotate(180deg);      
   }
 .progress-container {
@@ -673,11 +674,11 @@ tr th {
 
 @media (min-width: 768px) {
   
-html{
+html[data-color-mode="dark"]{
   filter: invert(1) hue-rotate(180deg);     
     
  }
-  img{
+  img[data-img-color="dark"]{
     filter: invert(1) hue-rotate(180deg);      
   }
   .navbar {
@@ -730,6 +731,15 @@ html{
   .services-content img {
     width: 100%;
   }
+  /* footer */
+  .btnColor {
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+    background-color: white;
+  }
+
+
   #bgtable {
     width: 100%;
     font-size: 14px !important;
@@ -808,10 +818,10 @@ html{
             box-sizing: border-box;
   }
 
-  html{
+  html[data-color-mode="dark"]{
     filter: invert(1) hue-rotate(180deg);     
    }
-    img{
+    img[data-img-color="dark"]{
       filter: invert(1) hue-rotate(180deg);      
     }
 
