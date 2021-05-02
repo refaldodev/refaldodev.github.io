@@ -12,7 +12,7 @@ if ('serviceWorker' in navigator) {
   }
 
 // chache
-  var CACHE_NAME = 'refaldo-cache-v4.3.3';
+  var CACHE_NAME = 'refaldo-cache-v4.4.1';
 var urlsToCache = [
   '/',
     '/index.html',
