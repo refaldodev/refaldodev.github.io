@@ -671,6 +671,13 @@ tr th {
 .file h1 {
   font-size: 28px;
 }
+ .btnColor {
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+    background-color: white;
+  }
+
 
 @media (min-width: 768px) {
   
@@ -1125,6 +1132,13 @@ html[data-color-mode="dark"]{
   #topBtn:hover {
     color: lightskyblue;
   }
+  .btnColor {
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+    background-color: white;
+  }
+
   .progress-container {
     height: 4px;
     width: 100%;
