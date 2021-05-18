@@ -1,56 +1,76 @@
-let lightMode = localStorage.getItem('lightMode');
+// let lightMode = localStorage.getItem('lightMode');
 
-let darkModeToggle = document.querySelector('.btnColor');
-let html = document.querySelector('html');
-let img = document.querySelector('.img-theme');
-let image = document.querySelectorAll('img');
+// let darkModeToggle = document.querySelector('.btnColor');
+// let html = document.querySelector('html');
+// let img = document.querySelector('.img-theme');
+// let image = document.querySelectorAll('img');
 
-const enableLightMode = () => {
-    // 1. Add the class to the body
+// const enableLightMode = () => {
+//     // 1. Add the class to the body
     
-    if(html.dataset.colorMode === 'dark'){
+//     if(html.dataset.colorMode === 'dark'){
 
-        html.dataset.colorMode = 'light'
-        img.src = "img/night.png"
-        image.forEach(m => {
-            m.dataset.imgColor = 'light' 
-        })
-        // 2. Update darkMode in localStorage
-        localStorage.setItem('lightMode', 'enabled');
+//         html.dataset.colorMode = 'light'
+//         img.src = "img/night.png"
+//         image.forEach(m => {
+//             m.dataset.imgColor = 'light' 
+//         })
+//         // 2. Update darkMode in localStorage
+//         localStorage.setItem('lightMode', 'enabled');
         
         
-    }
-  }
+//     }
+//   }
   
-  const disableLightMode = () => {
-    // 1. Remove the class from the body
-    if(html.dataset.colorMode === 'light'){
+//   const disableLightMode = () => {
+//     // 1. Remove the class from the body
+//     if(html.dataset.colorMode === 'light'){
 
-    html.dataset.colorMode = 'dark'
-    img.src = "img/sun.png"
-    // image.dataset.imgColor = 'dark' 
-    image.forEach(m => {
-        m.dataset.imgColor = 'dark' 
-    })
-    // 2. Update darkMode in localStorage 
-    localStorage.setItem('lightMode', null);
+//     html.dataset.colorMode = 'dark'
+//     img.src = "img/sun.png"
+//     // image.dataset.imgColor = 'dark' 
+//     image.forEach(m => {
+//         m.dataset.imgColor = 'dark' 
+//     })
+//     // 2. Update darkMode in localStorage 
+//     localStorage.setItem('lightMode', null);
 
   
+// }
+//   }
+
+//   if(lightMode === 'enabled'){
+//       enableLightMode();
+//   }
+
+//   darkModeToggle.addEventListener('click', () => {
+// lightMode = localStorage.getItem('lightMode');
+//  if(lightMode !== 'enabled'){
+//      enableLightMode();
+//  }else{
+//      disableLightMode();
+//  }
+//   })
+
+
+// animation bg
+let gambar = document.querySelector('#gambar');
+let contoh = document.querySelector('#contoh');
+
+let judul = document.querySelector('#teks');
+let subjudul = document.querySelector('#subteks');
+const animated_bgs = document.querySelectorAll('.animated-bg')
+const animated_bg_texts = document.querySelectorAll('.animated-bg-text')
+
+
+function getData (){
+    contoh.innerHTML = `<img src="img/uxdesign.png" alt="ux designer" data-img-color="dark" >
+    <h6 class="mt-4 title-services >UX Design</h6 id="teks"> 
+    <p class="sub-title " id="subteks">I will provide a good experience on your website or mobile app.</p>`;
+    animated_bgs.forEach((bg) => bg.classList.remove('animated-bg'))
+    animated_bg_texts.forEach((bg) => bg.classList.remove('animated-bg-text'))
 }
-  }
-
-  if(lightMode === 'enabled'){
-      enableLightMode();
-  }
-
-  darkModeToggle.addEventListener('click', () => {
-lightMode = localStorage.getItem('lightMode');
- if(lightMode !== 'enabled'){
-     enableLightMode();
- }else{
-     disableLightMode();
- }
-  })
+// setTimeout(getData, 2500)
 
 //   legacy
 // darkModeToggle.addEventListener('click', function(){

@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" data-color-mode="dark">
+<html lang="en" >
 
 <head>
     <!-- Required meta tags -->
@@ -25,7 +25,7 @@
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-    <link rel="stylesheet" href="css/main.css?v=1.4">
+    <link rel="stylesheet" href="css/main.css?v=1.5">
     <link rel="stylesheet" href="css/all.css">
     <link rel="icon" href="img/logo/logo.png">
     <link rel="manifest" href="./manifest.json">
@@ -154,33 +154,30 @@
                         <h1 class="judul animate__animated" id="services" data-aos="fade-up">Services</h1>
                     </div>
                     <div class="col-lg-4 col-md-4 col-sm-12 ">
-                        <div class=" card-services text-center mb-4 animate__animated card1 border-secondary " data-aos="fade-up">
-                            <a href="" class="">
-                                <img src="img/uxdesign.png" alt="ux designer" data-img-color="dark">
-                                <h6 class="mt-4">UX Design</h6>
-                                <p>I will provide a good experience on your website or mobile app.</p>
-                            </a>
+                        <div class="card-services text-center mb-4 animate__animated card1  " data-aos="fade-up" id="contoh">
+                                <img src="img/uxdesign.png" alt="ux designer" data-img-color="dark" class="">
+                                <h6 class="mt-4 title-services ">UX Design</h6>
+                                <p class="sub-title ">I will provide a good experience on your website or mobile app.</p>
+                           
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-4 col-sm-12 mb-4    ">
-                        <div class=" animate__animated card-services dark-service2 text-center card2 border-secondary"   data-aos="fade-up"
+                        <div class=" animate__animated card-services dark-service2 text-center card2 "   data-aos="fade-up"
                             data-aos-delay="100">
-                            <a href="" class="">
                                 <img src="img/uidesign.png" alt="ux designer" data-img-color="dark">
                                 <h6 class="mt-4">UI Design</h6>
                                 <p>I'm going to make your website and mobile app look really attractive.
                                 </p>
-                            </a>
+                           
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-4 col-sm-12 mb-3">
-                        <div class="animate__animated  card-services dark-service3 text-center card3 border-secondary" data-aos="fade-up"
+                        <div class="animate__animated  card-services dark-service3 text-center card3 " data-aos="fade-up"
                             data-aos-delay="200">
-                            <a href="" class="">
                                 <img src="img/developerdesignfix.png" alt="ux designer" data-img-color="dark">
                                 <h6 class="mt-4">Web Developer</h6>
                                 <p>I'm going to build a website and mobile app and it's really fast.</p>
-                            </a>
+                           
                         </div>
                     </div>
                 </div>
@@ -259,7 +256,7 @@
                 <div class="row">
                     <div class="col-12 text-center">
                         <p>Let's talk about Web, UX Design, UI Design, Coder and Travelling <br>
-                           <button class="btnColor rounded mt-1 mb-1"> <img src="img/sun.png" alt="" width="20px" class="img-theme" data-img-color="dark"></button><br>
+                      
                             © 2021 All rights reserved
                         </p>
 
@@ -325,7 +322,9 @@
     </script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
-        AOS.init();
+        AOS.init({
+            startEvent: 'load',
+        });
     </script>
 </body>
 

@@ -759,7 +759,7 @@ tr th {
 
     }
 
-
+  
 
     .jumbotron-content {
         font-family: 'poppins', sans-serif;
@@ -908,7 +908,6 @@ tr th {
     * {
         box-sizing: border-box;
     }
-
 
     body {
 
@@ -1110,6 +1109,7 @@ tr th {
     }
 
 
+    
     // project
 
     .projectt {
@@ -1155,7 +1155,14 @@ tr th {
         }
 
     }
-
+    .btnColor {
+        padding: 5px;
+        border-radius: 5px;
+        border: none;
+        background-color: white;
+      }
+    
+    
     .trcolor {
         background-color: #2c2f3d;
         color: white !important;

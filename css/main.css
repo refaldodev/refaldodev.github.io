@@ -2,16 +2,8 @@
 @import url("https://fonts.googleapis.com/css?family=Muli&display=swap");
 body {
   font-family: 'poppins', sans-serif;
-  
 }
 
-html[data-color-mode="dark"]{
-  filter: invert(1) hue-rotate(180deg);     
-  
- }
-  img[data-img-color="dark"]{
-    filter: invert(1) hue-rotate(180deg);      
-  }
 .progress-container {
   height: 2px;
   width: 100%;
@@ -463,8 +455,6 @@ section.loader {
   opacity: 1;
   z-index: 999999;
   pointer-events: all;
-  background-color: black;
-  color: white;
 }
 
 .project .full-img {
@@ -528,8 +518,6 @@ section.loader {
   opacity: 1;
   z-index: 999999;
   pointer-events: all;
-  background-color: black;
-  color: white;
 }
 
 .project-full .full-img {
@@ -664,6 +652,31 @@ tr th {
   color: black !important;
 }
 
+.footer {
+  border-top: 1px solid rgba(95, 95, 95, 0.1);
+  min-height: 280px;
+  background-color: #292C35;
+  color: white;
+}
+
+.footer .footer-bakcground h3 {
+  font-size: 25px;
+}
+
+.footer .footer-bakcground p {
+  font-size: 12px;
+}
+
+.footer .footer-bakcground a {
+  color: white;
+}
+
+.footer .footer-bakcground img {
+  width: 35px;
+  height: 35px;
+  margin-right: 5px;
+}
+
 .file {
   margin-top: 60px;
 }
@@ -671,23 +684,8 @@ tr th {
 .file h1 {
   font-size: 28px;
 }
- .btnColor {
-    padding: 5px;
-    border-radius: 5px;
-    border: none;
-    background-color: white;
-  }
-
 
 @media (min-width: 768px) {
-  
-html[data-color-mode="dark"]{
-  filter: invert(1) hue-rotate(180deg);     
-    
- }
-  img[data-img-color="dark"]{
-    filter: invert(1) hue-rotate(180deg);      
-  }
   .navbar {
     font-size: 16px;
     font-family: 'poppins', sans-serif;
@@ -738,15 +736,6 @@ html[data-color-mode="dark"]{
   .services-content img {
     width: 100%;
   }
-  /* footer */
-  .btnColor {
-    padding: 5px;
-    border-radius: 5px;
-    border: none;
-    background-color: white;
-  }
-
-
   #bgtable {
     width: 100%;
     font-size: 14px !important;
@@ -824,18 +813,6 @@ html[data-color-mode="dark"]{
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
   }
-
-  html[data-color-mode="dark"]{
-    filter: invert(1) hue-rotate(180deg);     
-   }
-    img[data-img-color="dark"]{
-      filter: invert(1) hue-rotate(180deg);      
-    }
-
-.fa-sun{
-  color: #f1c40f !important;
-
-}
   body {
     margin: 0;
   }
@@ -911,9 +888,6 @@ html[data-color-mode="dark"]{
   .navbar ul li a {
     padding-top: 0;
   }
-  .navbar li img {
-    cursor: pointer;
-  }
   .navbar .nav-link:hover {
     color: #a5a5a5 !important;
   }
@@ -965,8 +939,7 @@ html[data-color-mode="dark"]{
     margin-top: 20px;
   }
   .services-content {
-    font-family: 'Poppins',
- sans-serif;
+    font-family: 'Poppins', sans-serif;
   }
   .services-content .card-services {
     height: 340px;
@@ -1014,6 +987,12 @@ html[data-color-mode="dark"]{
     width: 128px;
     height: 100px;
   }
+  .btnColor {
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+    background-color: white;
+  }
   .trcolor {
     background-color: #2c2f3d;
     color: white !important;
@@ -1031,8 +1010,7 @@ html[data-color-mode="dark"]{
   }
   .coronavirus {
     margin-top: 80px;
-    font-family: 'poppins',
- sans-serif;
+    font-family: 'poppins', sans-serif;
   }
   .coronavirus #updatet p {
     font-size: 14px !important;
@@ -1102,7 +1080,33 @@ html[data-color-mode="dark"]{
     margin-top: 90px !important;
     margin-bottom: 100px;
   }
-  
+  .footer {
+    border-top: 1px solid rgba(95, 95, 95, 0.1);
+    min-height: 250px;
+    background-color: #292C35;
+    color: white;
+  }
+  .footer .hiasan img {
+    width: 265px !important;
+    height: 265px !important;
+  }
+  .footer .footer-bakcground h3 {
+    font-size: 32px;
+  }
+  .footer .footer-bakcground p {
+    font-size: 18px;
+  }
+  .footer .footer-bakcground a {
+    color: white;
+  }
+  .footer .footer-bakcground a:hover {
+    color: black;
+  }
+  .footer .footer-bakcground img {
+    width: 35px;
+    height: 35px;
+    margin-right: 10px;
+  }
   .file {
     margin-top: 80px;
   }
@@ -1132,13 +1136,6 @@ html[data-color-mode="dark"]{
   #topBtn:hover {
     color: lightskyblue;
   }
-  .btnColor {
-    padding: 5px;
-    border-radius: 5px;
-    border: none;
-    background-color: white;
-  }
-
   .progress-container {
     height: 4px;
     width: 100%;
